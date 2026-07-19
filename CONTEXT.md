@@ -58,6 +58,32 @@ La base actuelle contient :
 - favoris et historique en IndexedDB ;
 - manifest PWA, service worker et configuration Netlify.
 
+## Point d'Arret
+
+Derniere mise a jour de contexte : 19 juillet 2026, 22:42 CEST.
+
+Le projet est pousse sur `main` vers `https://github.com/nouhailler/Paleogeneticor`. Le dernier commit fonctionnel avant cette note est `378c672` (`Fix mobile timeline layout`).
+
+Ce qui vient d'etre termine :
+
+- creation de la base PWA React/TypeScript/Vite ;
+- ajout de la documentation visuelle README, de `CONTEXT.md` et de `CHANGELOG.md` ;
+- ajout des icones PWA pour installation mobile ;
+- ajout de captures d'ecran desktop et mobile ;
+- correction de l'accueil mobile pour eviter les debordements horizontaux ;
+- correction de la frise rapide mobile ;
+- traduction de la categorie `climate` en `Climat` dans l'affichage de la frise.
+
+Validation realisee :
+
+```bash
+npm run lint
+npm run test
+npm run build
+```
+
+Etat Git attendu a la reprise : branche `main` propre et synchronisee avec `origin/main`.
+
 ## Conventions de Donnees
 
 Les types principaux sont definis dans `src/types/domain.ts`. Les donnees JSON doivent rester compatibles avec ces types.
@@ -77,3 +103,11 @@ Pour ajouter une espece :
 - Etendre les donnees bibliographiques.
 - Ajouter des tests de rendu pour les routes principales.
 - Ajouter un audit Lighthouse PWA dans le workflow de validation.
+
+## Notes de Reprise
+
+- La carte Leaflet est volontairement offline-friendly et n'utilise pas de tuiles externes obligatoires.
+- La frise rapide est dans `src/components/TimelineStrip.tsx`.
+- Les libelles de categories de frise sont traduits cote composant via `categoryLabels`.
+- Les captures README sont dans `public/images/screenshots`.
+- Les icones d'installation sont dans `public/icons`.

@@ -24,6 +24,27 @@ Paleogeneticor est une application educative concue pour le grand public, les et
   <img src="public/images/screenshots/home-desktop.png" alt="Accueil Paleogeneticor desktop" width="900" />
 </p>
 
+## Etat au 19 juillet 2026
+
+La session s'arrete sur une base applicative compilee, documentee et poussee sur GitHub. Le dernier commit de travail avant cette note est `378c672`, qui corrige la frise rapide mobile et traduit la categorie `climate` en `Climat`.
+
+Etat valide :
+
+- application React/Vite fonctionnelle en local ;
+- PWA configuree avec icones mobile et service worker ;
+- README, CONTEXT et CHANGELOG presents ;
+- captures d'ecran generees dans `public/images/screenshots` ;
+- accueil mobile corrige, dont la frise rapide responsive ;
+- depot distant configure sur `https://github.com/nouhailler/Paleogeneticor`.
+
+Commandes validees pendant la session :
+
+```bash
+npm run lint
+npm run test
+npm run build
+```
+
 ## Captures
 
 | Accueil mobile | Especes humaines | ADN ancien |
@@ -115,3 +136,10 @@ Le manifest est genere par `vite-plugin-pwa` depuis `vite.config.ts`. Le service
 - [CONTEXT.md](CONTEXT.md) : vision produit, principes techniques et conventions d'evolution.
 - [CHANGELOG.md](CHANGELOG.md) : historique des versions.
 - [PROMPT.md](PROMPT.md) : cahier des charges initial.
+
+## Reprise conseillee
+
+1. Lancer `npm install` si les dependances ne sont pas presentes.
+2. Lancer `npm run dev` puis verifier l'accueil mobile et desktop.
+3. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
+4. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.
