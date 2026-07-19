@@ -1,0 +1,26 @@
+[
+  {
+    "id": "denisova-cave",
+    "name": "Grotte de Denisova",
+    "kind": "site",
+    "coordinates": { "lat": 51.397, "lng": 84.68 },
+    "summary": "Site cle pour l'identification des Denisoviens et les interactions entre groupes humains.",
+    "relatedEntityId": "denisovans"
+  },
+  {
+    "id": "max-planck-eva",
+    "name": "Max Planck Institute for Evolutionary Anthropology",
+    "kind": "laboratory",
+    "coordinates": { "lat": 51.327, "lng": 12.373 },
+    "summary": "Laboratoire majeur dans l'etude des genomes anciens.",
+    "relatedEntityId": "lab-mpi-eva"
+  },
+  {
+    "id": "neander-valley",
+    "name": "Vallee de Neander",
+    "kind": "site",
+    "coordinates": { "lat": 51.226, "lng": 6.951 },
+    "summary": "Lieu de decouverte historique associe au nom Neandertal.",
+    "relatedEntityId": "homo-neanderthalensis"
+  }
+]

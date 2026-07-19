@@ -1,0 +1,23 @@
+[
+  {
+    "id": "ancient-dna-pcr",
+    "title": "Premieres amplifications d'ADN ancien",
+    "year": 1984,
+    "category": "Technique",
+    "summary": "Les premieres etudes demontrent que des fragments d'ADN peuvent persister dans des restes biologiques anciens."
+  },
+  {
+    "id": "neanderthal-genome",
+    "title": "Publication du genome neandertalien",
+    "year": 2010,
+    "category": "Genome",
+    "summary": "Le genome neandertalien revele des melanges genetiques avec les ancetres de nombreuses populations actuelles."
+  },
+  {
+    "id": "denisovan-discovery",
+    "title": "Identification des Denisoviens",
+    "year": 2010,
+    "category": "Espece",
+    "summary": "Un groupe humain est reconnu a partir de donnees genetiques issues d'un petit fragment osseux."
+  }
+]

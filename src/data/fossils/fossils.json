@@ -1,0 +1,28 @@
+[
+  {
+    "id": "denisova-3",
+    "name": "Denisova 3",
+    "speciesId": "denisovans",
+    "discoveredYear": 2008,
+    "location": "Grotte de Denisova, Altai",
+    "coordinates": { "lat": 51.397, "lng": 84.68 },
+    "museum": "Collections archeologiques russes",
+    "importance": "Fragment de phalange ayant permis d'identifier les Denisoviens par l'ADN.",
+    "publications": [
+      { "label": "Genetic history of an archaic hominin group from Denisova Cave", "year": 2010, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "vindija-33-19",
+    "name": "Vindija 33.19",
+    "speciesId": "homo-neanderthalensis",
+    "discoveredYear": 1980,
+    "location": "Grotte de Vindija, Croatie",
+    "coordinates": { "lat": 46.31, "lng": 16.08 },
+    "museum": "Croatian Natural History Museum",
+    "importance": "Un des specimens centraux pour les genomes neandertaliens de haute qualite.",
+    "publications": [
+      { "label": "A high-coverage Neandertal genome", "year": 2014, "source": "Nature" }
+    ]
+  }
+]

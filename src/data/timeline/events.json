@@ -1,0 +1,23 @@
+[
+  {
+    "id": "sapiens-origin",
+    "title": "Premiers Homo sapiens connus",
+    "dateKya": 300,
+    "category": "species",
+    "summary": "Les fossiles africains documentent une emergence progressive de notre espece."
+  },
+  {
+    "id": "last-glacial-maximum",
+    "title": "Dernier maximum glaciaire",
+    "dateKya": 21,
+    "category": "climate",
+    "summary": "Periode froide majeure ayant influence les refuges et migrations humaines."
+  },
+  {
+    "id": "ngs-human-evolution",
+    "title": "Acceleration du sequencage ancien",
+    "year": 2010,
+    "category": "innovation",
+    "summary": "Le haut debit transforme l'etude des populations anciennes."
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "id": "denisovans",
+  "name": "Denisoviens",
+  "period": "Pleistocene moyen et superieur",
+  "rangeStartKya": 300,
+  "rangeEndKya": 30,
+  "region": "Asie du Nord et traces genetiques en Oceanie et Asie",
+  "summary": "Groupe humain identifie d'abord par l'ADN ancien, avec un registre fossile encore tres rare.",
+  "genetics": "Les Denisoviens ont contribue au patrimoine genetique de populations actuelles, notamment en Oceanie et dans certaines regions d'Asie.",
+  "culture": ["Occupation de grottes", "Adaptation a haute altitude probable", "Interactions avec d'autres humains"],
+  "tools": ["Industries lithiques regionales", "Objets de parure associes au site de Denisova"],
+  "hybridations": ["Homo sapiens", "Homo neanderthalensis"],
+  "coordinates": [
+    { "lat": 51.397, "lng": 84.68 },
+    { "lat": 35.45, "lng": 102.57 }
+  ],
+  "bibliography": [
+    { "label": "Genetic history of an archaic hominin group from Denisova Cave", "year": 2010, "source": "Nature" },
+    { "label": "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau", "year": 2019, "source": "Nature" }
+  ]
+}

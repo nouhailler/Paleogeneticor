@@ -1,0 +1,21 @@
+{
+  "id": "homo-neanderthalensis",
+  "name": "Homo neanderthalensis",
+  "period": "Environ 430 000 a 40 000 ans avant le present",
+  "rangeStartKya": 430,
+  "rangeEndKya": 40,
+  "region": "Europe et Asie occidentale",
+  "summary": "Espece humaine robuste adaptee aux environnements froids, connue par un abondant registre fossile et par plusieurs genomes anciens.",
+  "genetics": "Les genomes neandertaliens montrent des episodes d'introgression avec Homo sapiens et une diversite regionale limitee dans certains groupes tardifs.",
+  "culture": ["Mousterien", "Utilisation du feu", "Soin aux individus fragiles", "Parures possibles"],
+  "tools": ["Racloirs", "Pointes Levallois", "Outils sur eclats"],
+  "hybridations": ["Homo sapiens", "Denisoviens"],
+  "coordinates": [
+    { "lat": 49.974, "lng": 7.95 },
+    { "lat": 43.35, "lng": 5.53 }
+  ],
+  "bibliography": [
+    { "label": "Draft sequence of the Neandertal genome", "year": 2010, "source": "Science" },
+    { "label": "A high-coverage Neandertal genome", "year": 2014, "source": "Nature" }
+  ]
+}

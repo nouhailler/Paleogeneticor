@@ -1,0 +1,21 @@
+{
+  "id": "homo-sapiens",
+  "name": "Homo sapiens",
+  "period": "Environ 300 000 ans avant le present a aujourd'hui",
+  "rangeStartKya": 300,
+  "rangeEndKya": 0,
+  "region": "Origine africaine puis expansion mondiale",
+  "summary": "Espece humaine actuelle, documentee par les fossiles, l'archeologie et les genomes anciens et modernes.",
+  "genetics": "Les genomes anciens permettent de suivre les expansions, remplacements partiels, melanges et adaptations locales.",
+  "culture": ["Industries lithiques variees", "Art mobilier et parietal", "Navigation", "Agriculture tardive"],
+  "tools": ["Lames", "Aiguilles", "Propulseurs", "Microlithes"],
+  "hybridations": ["Homo neanderthalensis", "Denisoviens"],
+  "coordinates": [
+    { "lat": 31.8, "lng": -7.1 },
+    { "lat": -24.2, "lng": 29.0 }
+  ],
+  "bibliography": [
+    { "label": "The genomic history of Ice Age Europe", "year": 2016, "source": "Nature" },
+    { "label": "Ancient human genomes suggest three ancestral populations for present-day Europeans", "year": 2014, "source": "Nature" }
+  ]
+}

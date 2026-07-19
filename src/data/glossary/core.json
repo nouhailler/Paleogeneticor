@@ -1,0 +1,20 @@
+[
+  {
+    "id": "adn-ancien",
+    "term": "ADN ancien",
+    "definition": "ADN extrait de restes biologiques anciens, souvent fragmente et chimiquement altere.",
+    "category": "Genetique"
+  },
+  {
+    "id": "introgression",
+    "term": "Introgression",
+    "definition": "Integration durable de segments genetiques d'une population dans le genome d'une autre apres hybridation.",
+    "category": "Evolution"
+  },
+  {
+    "id": "ngs",
+    "term": "Sequencage haut debit",
+    "definition": "Ensemble de technologies permettant de lire massivement des fragments d'ADN en parallele.",
+    "category": "Technique"
+  }
+]

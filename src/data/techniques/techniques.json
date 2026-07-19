@@ -1,0 +1,23 @@
+[
+  {
+    "id": "pcr",
+    "name": "PCR",
+    "year": 1983,
+    "summary": "Amplification ciblee de fragments d'ADN.",
+    "impact": "A rendu possible les premieres analyses d'ADN ancien, tout en augmentant les exigences contre la contamination."
+  },
+  {
+    "id": "ngs",
+    "name": "Sequencage haut debit",
+    "year": 2005,
+    "summary": "Lecture massive et parallele de fragments d'ADN.",
+    "impact": "A permis de reconstruire des genomes anciens complets ou partiels."
+  },
+  {
+    "id": "capture-hybridation",
+    "name": "Capture par hybridation",
+    "year": 2007,
+    "summary": "Enrichissement de fragments d'interet avant sequencage.",
+    "impact": "Utile pour travailler sur des echantillons pauvres en ADN endogene."
+  }
+]
