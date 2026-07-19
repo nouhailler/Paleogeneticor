@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Paleogeneticor">
+  <defs>
+    <linearGradient id="bg" x1="74" x2="438" y1="52" y2="460" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f6f73"/>
+      <stop offset="0.58" stop-color="#0f3b3e"/>
+      <stop offset="1" stop-color="#182323"/>
+    </linearGradient>
+    <linearGradient id="helixA" x1="149" x2="363" y1="114" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#fffdf8"/>
+      <stop offset="1" stop-color="#d7efe8"/>
+    </linearGradient>
+    <linearGradient id="helixB" x1="363" x2="149" y1="114" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#f0b06f"/>
+      <stop offset="1" stop-color="#b65f25"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <circle cx="390" cy="132" r="56" fill="#fffdf8" opacity="0.1"/>
+  <circle cx="128" cy="386" r="72" fill="#d9894f" opacity="0.12"/>
+  <path d="M166 112c114 0 184 110 184 288" fill="none" stroke="url(#helixA)" stroke-width="36" stroke-linecap="round"/>
+  <path d="M346 112c-114 0-184 110-184 288" fill="none" stroke="url(#helixB)" stroke-width="36" stroke-linecap="round"/>
+  <path d="M204 166h104M184 226h144M176 286h160M186 346h140" stroke="#fffdf8" stroke-width="24" stroke-linecap="round" opacity="0.94"/>
+  <path d="M148 402c50 26 160 35 222-2" fill="none" stroke="#f0b06f" stroke-width="16" stroke-linecap="round" opacity="0.9"/>
+  <path d="M144 102c21-18 51-25 88-20" fill="none" stroke="#fffdf8" stroke-width="12" stroke-linecap="round" opacity="0.72"/>
+</svg>

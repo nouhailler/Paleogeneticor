@@ -64,7 +64,10 @@ export function AppLayout() {
           </Link>
         </div>
       </header>
-      <main key={location.pathname} className="mx-auto max-w-7xl px-4 py-6 sm:py-8">
+      <main
+        key={location.pathname}
+        className="mx-auto w-full max-w-[100vw] overflow-hidden px-4 pb-20 pt-6 sm:max-w-7xl sm:py-8"
+      >
         <Outlet />
       </main>
       <nav className="fixed inset-x-0 bottom-0 z-40 border-t border-black/10 bg-paper md:hidden" aria-label="Navigation mobile">
