@@ -11,6 +11,9 @@ const DnaPage = lazy(() => import('./pages/DnaPage').then((module) => ({ default
 const MapPage = lazy(() => import('./pages/MapPage').then((module) => ({ default: module.MapPage })));
 const TreePage = lazy(() => import('./pages/TreePage').then((module) => ({ default: module.TreePage })));
 const GlossaryPage = lazy(() => import('./pages/GlossaryPage').then((module) => ({ default: module.GlossaryPage })));
+const GlossaryDetailPage = lazy(() =>
+  import('./pages/GlossaryDetailPage').then((module) => ({ default: module.GlossaryDetailPage }))
+);
 const FossilsPage = lazy(() => import('./pages/FossilsPage').then((module) => ({ default: module.FossilsPage })));
 const DiscoveriesPage = lazy(() =>
   import('./pages/DiscoveriesPage').then((module) => ({ default: module.DiscoveriesPage }))
@@ -122,6 +125,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'Glossaire' }
+      },
+      {
+        path: 'glossary/:id',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <GlossaryDetailPage />
+          </Suspense>
+        ),
+        handle: { title: 'Fiche glossaire' }
       },
       {
         path: 'library',

@@ -3,18 +3,117 @@
     "id": "adn-ancien",
     "term": "ADN ancien",
     "definition": "ADN extrait de restes biologiques anciens, souvent fragmente et chimiquement altere.",
-    "category": "Genetique"
+    "category": "Genetique",
+    "image": "/images/glossary/adn-ancien.webp",
+    "details": [
+      "L'ADN ancien provient de restes biologiques comme des os, des dents, des cheveux, des sediments ou des objets ayant conserve des traces organiques.",
+      "Avec le temps, les molecules se cassent en fragments courts et subissent des alterations chimiques. Ces dommages aident parfois a reconnaitre l'ADN authentiquement ancien.",
+      "Son analyse exige des laboratoires specialises, des controles de contamination et des methodes bioinformatiques capables de travailler avec des donnees tres degradees."
+    ],
+    "example": "Dans l'application, les fiches Neandertaliens et Denisoviens reposent sur l'ADN ancien pour expliquer les hybridations avec Homo sapiens."
   },
   {
     "id": "introgression",
     "term": "Introgression",
     "definition": "Integration durable de segments genetiques d'une population dans le genome d'une autre apres hybridation.",
-    "category": "Evolution"
+    "category": "Evolution",
+    "image": "/images/glossary/introgression.webp",
+    "details": [
+      "L'introgression commence par un croisement entre deux populations ou lignees distinctes. Certains descendants transmettent ensuite des segments herites de l'autre groupe.",
+      "Si ces segments restent presents sur de nombreuses generations, ils deviennent detectables dans les genomes actuels ou anciens.",
+      "Chez les humains, l'introgression explique une partie de l'ascendance neandertalienne et denisovienne retrouvee dans plusieurs populations modernes."
+    ],
+    "example": "La rubrique ADN utilise ce terme pour decrire les segments neandertaliens et denisoviens encore presents chez Homo sapiens."
   },
   {
     "id": "ngs",
     "term": "Sequencage haut debit",
     "definition": "Ensemble de technologies permettant de lire massivement des fragments d'ADN en parallele.",
-    "category": "Technique"
+    "category": "Technique",
+    "image": "/images/glossary/ngs.webp",
+    "details": [
+      "Le sequencage haut debit lit des millions ou milliards de petits fragments d'ADN en meme temps, au lieu de traiter une sequence unique.",
+      "Cette approche est decisive pour l'ADN ancien, car les echantillons contiennent beaucoup de fragments courts, abimes et melanges a de l'ADN environnemental.",
+      "Les fragments lus sont ensuite compares a des genomes de reference pour reconstruire les positions probables dans le genome."
+    ],
+    "example": "Les decouvertes sur le genome neandertalien et les Denisoviens dependent directement du sequencage haut debit."
+  },
+  {
+    "id": "contamination",
+    "term": "Contamination",
+    "definition": "Presence d'ADN moderne ou exterieur dans un echantillon ancien, pouvant fausser l'interpretation.",
+    "category": "Laboratoire",
+    "image": "/images/glossary/contamination.webp",
+    "details": [
+      "La contamination peut venir des fouilleurs, des conservateurs, des chercheurs, de microbes ou d'autres echantillons manipules au meme endroit.",
+      "Elle est particulierement problematique pour les fossiles humains, car l'ADN moderne ressemble beaucoup a l'ADN que l'on cherche a etudier.",
+      "Les laboratoires utilisent des salles propres, des combinaisons, des controles negatifs et l'analyse des dommages moleculaires pour limiter et mesurer ce risque."
+    ],
+    "example": "Quand une fiche mentionne un genome ancien, la fiabilite depend aussi de la maniere dont la contamination a ete controlee."
+  },
+  {
+    "id": "genomique-comparative",
+    "term": "Genomique comparative",
+    "definition": "Comparaison de genomes pour identifier ressemblances, differences, parentes et melanges entre populations.",
+    "category": "Bioinformatique",
+    "image": "/images/glossary/genomique-comparative.webp",
+    "details": [
+      "La genomique comparative aligne des sequences provenant de plusieurs individus, populations ou especes afin de mesurer leurs ressemblances et divergences.",
+      "Dans la paleogenetique humaine, elle permet de comparer Homo sapiens, Neandertaliens, Denisoviens et populations actuelles.",
+      "Ces comparaisons revelent des relations de parente, des migrations, des goulots d'etranglement et des episodes de metissage."
+    ],
+    "example": "La page Arbre et les fiches especes s'appuient sur cette idee pour relier les groupes humains entre eux."
+  },
+  {
+    "id": "couverture",
+    "term": "Couverture",
+    "definition": "Nombre moyen de lectures de sequencage disponibles pour une position donnee du genome.",
+    "category": "Bioinformatique",
+    "image": "/images/glossary/couverture.webp",
+    "details": [
+      "La couverture indique combien de fragments independants soutiennent une meme region du genome.",
+      "Une couverture faible peut suffire pour detecter une parente generale, mais elle limite les analyses fines et augmente l'incertitude.",
+      "Une couverture elevee permet d'appeler les variants avec plus de confiance et de distinguer plus clairement contamination, erreurs et signal biologique."
+    ],
+    "example": "Les publications sur les genomes neandertaliens distinguent souvent les brouillons de genome et les genomes a haute couverture."
+  },
+  {
+    "id": "haplogroupe",
+    "term": "Haplogroupe",
+    "definition": "Grande branche genetique definie par des mutations partagees, souvent utilisee pour l'ADN mitochondrial ou le chromosome Y.",
+    "category": "Population",
+    "image": "/images/glossary/haplogroupe.webp",
+    "details": [
+      "Un haplogroupe regroupe des lignees qui partagent une serie de mutations heritees d'un ancetre commun.",
+      "Les haplogroupes mitochondriaux suivent principalement les lignees maternelles, tandis que ceux du chromosome Y suivent les lignees paternelles.",
+      "Ils sont utiles pour etudier des migrations, mais ils ne representent qu'une petite partie de l'ascendance totale d'un individu."
+    ],
+    "example": "Dans une fiche de population, un haplogroupe peut aider a decrire une lignee, mais il ne remplace pas l'analyse du genome entier."
+  },
+  {
+    "id": "datation-radiocarbone",
+    "term": "Datation radiocarbone",
+    "definition": "Methode de datation fondee sur la decroissance du carbone 14 dans les matieres organiques.",
+    "category": "Archeologie",
+    "image": "/images/glossary/datation-radiocarbone.webp",
+    "details": [
+      "La datation radiocarbone mesure le carbone 14 restant dans un materiau organique comme un os, du charbon ou une fibre vegetale.",
+      "Comme le carbone 14 diminue apres la mort de l'organisme, sa quantite permet d'estimer l'age de l'echantillon dans une limite chronologique donnee.",
+      "Les dates doivent etre calibrees et interpretees avec le contexte archeologique, car l'age mesure peut concerner l'objet date et non directement l'evenement etudie."
+    ],
+    "example": "Les fiches fossiles et decouvertes utilisent les datations pour replacer les restes humains et les sites dans le temps."
+  },
+  {
+    "id": "paleoproteomique",
+    "term": "Paleoproteomique",
+    "definition": "Etude des proteines anciennes conservees dans des fossiles, utile quand l'ADN est absent ou trop degrade.",
+    "category": "Technique",
+    "image": "/images/glossary/paleoproteomique.webp",
+    "details": [
+      "Les proteines, notamment dans l'email dentaire, peuvent parfois survivre plus longtemps que l'ADN dans certains environnements.",
+      "La paleoproteomique compare des fragments de proteines pour identifier un groupe biologique ou rapprocher un fossile d'une lignee connue.",
+      "Elle ne remplace pas toujours le genome, mais elle ouvre des possibilites lorsque l'ADN ancien ne peut plus etre recupere."
+    ],
+    "example": "La decouverte de restes denisoviens sur le plateau tibetain illustre l'interet de la paleoproteomique."
   }
 ]

@@ -39,6 +39,10 @@ export function getDiscoveryById(id: string): Discovery | undefined {
   return discoveries.find((item) => item.id === id);
 }
 
+export function getGlossaryTermById(id: string): GlossaryTerm | undefined {
+  return glossary.find((item) => item.id === id);
+}
+
 export function buildSearchDocuments(): SearchDocument[] {
   return [
     ...species.map((item) => ({
@@ -70,8 +74,8 @@ export function buildSearchDocuments(): SearchDocument[] {
       kind: 'glossary' as const,
       title: item.term,
       subtitle: item.category,
-      body: item.definition,
-      path: '/glossary'
+      body: `${item.definition} ${item.details.join(' ')} ${item.example}`,
+      path: `/glossary/${item.id}`
     })),
     ...techniques.map((item) => ({
       id: item.id,

@@ -63,6 +63,9 @@ export interface GlossaryTerm {
   term: string;
   definition: string;
   category: string;
+  image: string;
+  details: string[];
+  example: string;
 }
 
 export interface Technique {
