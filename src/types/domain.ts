@@ -22,6 +22,7 @@ export interface Species {
   id: string;
   name: string;
   period: string;
+  image: string;
   rangeStartKya: number;
   rangeEndKya: number;
   region: string;

@@ -2,6 +2,7 @@
   "id": "homo-neanderthalensis",
   "name": "Homo neanderthalensis",
   "period": "Environ 430 000 a 40 000 ans avant le present",
+  "image": "/images/species/homo-neanderthalensis.webp",
   "rangeStartKya": 430,
   "rangeEndKya": 40,
   "region": "Europe et Asie occidentale",

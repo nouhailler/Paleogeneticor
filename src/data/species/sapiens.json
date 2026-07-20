@@ -2,6 +2,7 @@
   "id": "homo-sapiens",
   "name": "Homo sapiens",
   "period": "Environ 300 000 ans avant le present a aujourd'hui",
+  "image": "/images/species/homo-sapiens.webp",
   "rangeStartKya": 300,
   "rangeEndKya": 0,
   "region": "Origine africaine puis expansion mondiale",
