@@ -1,5 +1,5 @@
-import { BookOpen, Dna, GitFork, Home, Map, Search, Star } from 'lucide-react';
-import { useEffect } from 'react';
+import { BookOpen, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
+import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation, useMatches } from 'react-router-dom';
 import { useLibraryStore } from '../store/libraryStore';
 
@@ -12,9 +12,17 @@ const navItems = [
   { to: '/glossary', label: 'Glossaire', icon: Search }
 ];
 
+const menuItems = [
+  ...navItems,
+  { to: '/fossils', label: 'Fossiles', icon: Landmark },
+  { to: '/discoveries', label: 'Decouvertes', icon: CalendarDays },
+  { to: '/library', label: 'Favoris et historique', icon: Star }
+];
+
 export function AppLayout() {
   const location = useLocation();
   const matches = useMatches();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const hydrate = useLibraryStore((state) => state.hydrate);
   const recordVisit = useLibraryStore((state) => state.recordVisit);
 
@@ -44,6 +52,7 @@ export function AppLayout() {
               <NavLink
                 key={item.to}
                 to={item.to}
+                onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
                     isActive ? 'bg-lagoon text-white' : 'text-ink/75 hover:bg-lagoon/10 hover:text-ink'
@@ -55,14 +64,55 @@ export function AppLayout() {
               </NavLink>
             ))}
           </nav>
-          <Link
-            to="/library"
-            className="grid h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon"
-            aria-label="Favoris et historique"
-          >
-            <Star className="h-5 w-5" />
-          </Link>
+          <div className="flex items-center gap-2">
+            <Link
+              to="/library"
+              className="hidden h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon sm:grid"
+              aria-label="Favoris et historique"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Star className="h-5 w-5" />
+            </Link>
+            <button
+              type="button"
+              className="grid h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon"
+              aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
+              aria-expanded={isMenuOpen}
+              aria-controls="main-menu"
+              onClick={() => setIsMenuOpen((open) => !open)}
+            >
+              {isMenuOpen ? <X className="h-5 w-5" aria-hidden="true" /> : <Menu className="h-5 w-5" aria-hidden="true" />}
+            </button>
+          </div>
         </div>
+        {isMenuOpen ? (
+          <div id="main-menu" className="border-t border-black/10 bg-paper shadow-soft">
+            <nav
+              className="mx-auto grid max-w-7xl gap-2 px-4 py-4 sm:grid-cols-2 lg:grid-cols-3"
+              aria-label="Toutes les fonctionnalites"
+            >
+              {menuItems.map((item) => (
+                <NavLink
+                  key={item.to}
+                  to={item.to}
+                  onClick={() => setIsMenuOpen(false)}
+                  className={({ isActive }) =>
+                    `flex min-h-14 items-center gap-3 rounded-md border px-3 py-2 text-sm font-semibold transition ${
+                      isActive
+                        ? 'border-lagoon bg-lagoon text-white'
+                        : 'border-black/10 bg-white text-ink/78 hover:border-lagoon/30 hover:bg-lagoon/10 hover:text-ink'
+                    }`
+                  }
+                >
+                  <span className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-bone text-lagoon">
+                    <item.icon className="h-5 w-5" aria-hidden="true" />
+                  </span>
+                  <span>{item.label}</span>
+                </NavLink>
+              ))}
+            </nav>
+          </div>
+        ) : null}
       </header>
       <main
         key={location.pathname}
