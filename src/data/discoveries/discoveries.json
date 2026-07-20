@@ -1,23 +1,197 @@
 [
   {
-    "id": "ancient-dna-pcr",
-    "title": "Premieres amplifications d'ADN ancien",
+    "id": "quagga-ancient-dna",
+    "title": "Premier ADN recupere sur une espece eteinte",
     "year": 1984,
-    "category": "Technique",
-    "summary": "Les premieres etudes demontrent que des fragments d'ADN peuvent persister dans des restes biologiques anciens."
+    "category": "Origine du domaine",
+    "summary": "Des fragments d'ADN mitochondrial sont obtenus a partir d'un specimen de quagga conserve en musee.",
+    "details": [
+      "Cette etude sur le quagga, un equide d'Afrique australe disparu au XIXe siecle, montre que du materiel genetique peut survivre dans des tissus anciens conserves en musee.",
+      "Les sequences obtenues etaient courtes et fragiles, mais elles ont ouvert la voie a l'idee centrale de la paleogenetique: reconstruire une partie de l'histoire evolutive a partir de molecules anciennes.",
+      "Le resultat a aussi rendu visible un probleme qui reste central aujourd'hui: l'ADN ancien est rare, degrade et facilement contamine par de l'ADN moderne."
+    ],
+    "impact": "Cette publication est souvent consideree comme le point de depart de l'ADN ancien moderne. Elle a transforme des collections de musee en archives genetiques exploitables.",
+    "sources": [
+      {
+        "label": "Higuchi et al.",
+        "year": 1984,
+        "source": "DNA sequences from the quagga, an extinct member of the horse family, Nature."
+      },
+      {
+        "label": "Leonard et al.",
+        "year": 2005,
+        "source": "A rapid loss of stripes: the evolutionary history of the extinct quagga, Biology Letters."
+      }
+    ]
+  },
+  {
+    "id": "neanderthal-mtdna",
+    "title": "Premier ADN neandertalien sequence",
+    "year": 1997,
+    "category": "Hominines",
+    "summary": "Un fragment mitochondrial neandertalien est sequence a partir du specimen type de la vallee de Neander.",
+    "details": [
+      "Avant cette etude, les relations entre Neandertaliens et humains modernes reposaient surtout sur les fossiles et l'archeologie. L'ADN a apporte une ligne de preuve independante.",
+      "Le travail s'appuyait sur l'ADN mitochondrial, transmis par la lignee maternelle et present en nombreuses copies dans les cellules, ce qui le rendait plus accessible que le genome nucleaire.",
+      "Les resultats ont montre que la lignee mitochondriale analysee etait distincte de celle des humains modernes echantillonnes, sans encore resoudre toute l'histoire des metissages."
+    ],
+    "impact": "Cette etape a prouve que l'ADN de fossiles humains archaiques pouvait etre etudie directement, preparant les genomes neandertaliens complets des annees suivantes.",
+    "sources": [
+      {
+        "label": "Krings et al.",
+        "year": 1997,
+        "source": "Neandertal DNA sequences and the origin of modern humans, Cell."
+      }
+    ]
   },
   {
     "id": "neanderthal-genome",
     "title": "Publication du genome neandertalien",
     "year": 2010,
     "category": "Genome",
-    "summary": "Le genome neandertalien revele des melanges genetiques avec les ancetres de nombreuses populations actuelles."
+    "summary": "Un brouillon de genome neandertalien revele des melanges genetiques avec les ancetres de nombreuses populations actuelles.",
+    "details": [
+      "L'etude combine des milliards de nucleotides obtenus principalement a partir de fossiles neandertaliens de la grotte de Vindija, en Croatie.",
+      "La comparaison avec des genomes humains actuels montre que les populations non africaines portent une petite proportion d'ascendance neandertalienne.",
+      "Cette conclusion a modifie le modele simple d'un remplacement complet: la sortie d'Afrique de Homo sapiens s'est accompagnee de contacts et de metissages avec des populations archaiques."
+    ],
+    "impact": "Le genome neandertalien a fait de la paleogenetique un outil central pour comprendre l'evolution humaine recente, les migrations et les hybridations.",
+    "sources": [
+      {
+        "label": "Green et al.",
+        "year": 2010,
+        "source": "A Draft Sequence of the Neandertal Genome, Science."
+      }
+    ]
   },
   {
     "id": "denisovan-discovery",
     "title": "Identification des Denisoviens",
     "year": 2010,
     "category": "Espece",
-    "summary": "Un groupe humain est reconnu a partir de donnees genetiques issues d'un petit fragment osseux."
+    "summary": "Un groupe humain est reconnu a partir de donnees genetiques issues d'un petit fragment osseux de Denisova.",
+    "details": [
+      "La decouverte part d'un fragment de phalange trouve dans la grotte de Denisova, en Siberie. La morphologie seule etait insuffisante pour identifier clairement le groupe humain.",
+      "L'ADN mitochondrial puis le genome nucleaire montrent qu'il ne s'agit ni d'un humain moderne ni d'un Neandertalien classique, mais d'une lignee soeur des Neandertaliens.",
+      "Des traces genetiques denisoviennes sont ensuite identifiees chez certaines populations actuelles, notamment en Oceanie et en Asie, ce qui indique des episodes de metissage."
+    ],
+    "impact": "Les Denisoviens ont montre qu'une population humaine disparue pouvait etre decouverte presque entierement par la genetique, meme avec des restes fossiles tres fragmentaires.",
+    "sources": [
+      {
+        "label": "Krause et al.",
+        "year": 2010,
+        "source": "The complete mitochondrial DNA genome of an unknown hominin from southern Siberia, Nature."
+      },
+      {
+        "label": "Reich et al.",
+        "year": 2010,
+        "source": "Genetic history of an archaic hominin group from Denisova Cave in Siberia, Nature."
+      }
+    ]
+  },
+  {
+    "id": "ust-ishim-genome",
+    "title": "Genome de l'homme d'Ust-Ishim",
+    "year": 2014,
+    "category": "Migration",
+    "summary": "Le genome d'un Homo sapiens vieux d'environ 45 000 ans documente les premiers humains modernes d'Eurasie.",
+    "details": [
+      "Le femur d'Ust-Ishim, trouve en Siberie occidentale, a livre un genome ancien de grande qualite pour une periode proche des premieres expansions de Homo sapiens en Eurasie.",
+      "Son genome contient des segments neandertaliens plus longs que ceux observes chez les humains actuels, car le metissage etait plus recent dans son ascendance.",
+      "Cette longueur des segments a permis d'estimer que l'apport neandertalien dans cette lignee remontait a environ 50 000 a 60 000 ans avant le present."
+    ],
+    "impact": "Cette decouverte relie directement un individu ancien a la chronologie des migrations modernes et au moment des contacts avec les Neandertaliens.",
+    "sources": [
+      {
+        "label": "Fu et al.",
+        "year": 2014,
+        "source": "Genome sequence of a 45,000-year-old modern human from western Siberia, Nature."
+      }
+    ]
+  },
+  {
+    "id": "mota-african-genome",
+    "title": "Premier genome ancien africain",
+    "year": 2015,
+    "category": "Population",
+    "summary": "Le genome de Mota, en Ethiopie, aide a distinguer les ancestry africaines anciennes et les retours migratoires depuis l'Eurasie.",
+    "details": [
+      "L'individu de Mota, date d'environ 4 500 ans, a ete conserve dans des conditions favorables a l'ADN ancien dans les hautes terres d'Ethiopie.",
+      "Son genome precede certains apports eurasiens detectes dans des populations africaines plus recentes, ce qui en fait un point de comparaison important.",
+      "Une correction publiee apres l'etude initiale a limite certaines interpretations trop larges, mais le genome reste une reference majeure pour l'ADN ancien africain."
+    ],
+    "impact": "Mota a montre que la paleogenetique africaine etait possible et necessaire pour reconstruire l'histoire des populations sans projeter uniquement des donnees modernes dans le passe.",
+    "sources": [
+      {
+        "label": "Gallego Llorente et al.",
+        "year": 2015,
+        "source": "Ancient Ethiopian genome reveals extensive Eurasian admixture in Eastern Africa, Science."
+      },
+      {
+        "label": "Nature News",
+        "year": 2016,
+        "source": "Error found in study of first ancient African genome."
+      }
+    ]
+  },
+  {
+    "id": "xiahe-mandible",
+    "title": "Un Denisovien identifie sur le plateau tibetain",
+    "year": 2019,
+    "category": "Proteomique",
+    "summary": "La mandibule de Xiahe est attribuee a une population proche des Denisoviens grace a l'analyse de proteines anciennes.",
+    "details": [
+      "La mandibule de Baishiya Karst Cave, sur le plateau tibetain, etait connue avant que son attribution puisse etre resolue par la morphologie seule.",
+      "L'analyse paleoproteomique de proteines conservees dans les dents a relie ce fossile aux Denisoviens de Denisova Cave.",
+      "Cette identification montre que les Denisoviens n'etaient pas limites a la Siberie et qu'ils occupaient aussi des environnements de haute altitude."
+    ],
+    "impact": "La decouverte a elargi la geographie denisovienne et montre que les proteines anciennes peuvent aider quand l'ADN n'est pas conserve.",
+    "sources": [
+      {
+        "label": "Chen et al.",
+        "year": 2019,
+        "source": "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau, Nature."
+      }
+    ]
+  },
+  {
+    "id": "paabo-nobel",
+    "title": "Nobel pour les genomes d'hominines eteints",
+    "year": 2022,
+    "category": "Reconnaissance",
+    "summary": "Le prix Nobel de physiologie ou medecine distingue les travaux de Svante Paabo sur les genomes d'hominines disparus.",
+    "details": [
+      "Le prix reconnait un ensemble de travaux qui ont rendu possible l'etude genetique directe des Neandertaliens, des Denisoviens et de leurs liens avec Homo sapiens.",
+      "Ces recherches ont etabli que des populations humaines disparues ont contribue a l'ascendance de populations actuelles.",
+      "La reconnaissance marque aussi l'installation de la paleogenomique comme discipline majeure entre biologie evolutive, archeologie et medecine."
+    ],
+    "impact": "Ce jalon institutionnel montre que l'ADN ancien n'est plus seulement une technique de laboratoire, mais un cadre majeur pour comprendre l'histoire humaine.",
+    "sources": [
+      {
+        "label": "Nobel Prize",
+        "year": 2022,
+        "source": "The Nobel Prize in Physiology or Medicine 2022: discoveries concerning the genomes of extinct hominins and human evolution."
+      }
+    ]
+  },
+  {
+    "id": "baishiya-rib",
+    "title": "Nouveaux restes denisoviens a Baishiya",
+    "year": 2024,
+    "category": "Proteomique",
+    "summary": "Une cote hominine identifiee par proteomique confirme une presence denisovienne tardive dans la grotte de Baishiya.",
+    "details": [
+      "Les chercheurs ont combine zooarcheologie et analyse proteomique pour trier des fragments osseux difficiles a identifier visuellement.",
+      "Une cote hominine datee d'environ 48 000 a 32 000 ans a ete attribuee aux Denisoviens, dans le meme site tibetain que la mandibule de Xiahe.",
+      "Le contexte archeologique associe des restes animaux et des activites de subsistance, ce qui donne une image plus concrete de la vie denisovienne en haute altitude."
+    ],
+    "impact": "Cette decouverte renforce l'idee que les Denisoviens ont occupe durablement le plateau tibetain et que la proteomique peut reveler des fossiles invisibles dans des lots fragmentaires.",
+    "sources": [
+      {
+        "label": "Zhang et al.",
+        "year": 2024,
+        "source": "Middle and Late Pleistocene Denisovan subsistence at Baishiya Karst Cave, Nature."
+      }
+    ]
   }
 ]

@@ -52,6 +52,9 @@ export interface Discovery {
   year: number;
   category: string;
   summary: string;
+  details: string[];
+  impact: string;
+  sources: BibliographyEntry[];
 }
 
 export interface GlossaryTerm {

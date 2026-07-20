@@ -1,6 +1,6 @@
-import { BookOpen, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
+import { ArrowLeft, BookOpen, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
-import { Link, NavLink, Outlet, useLocation, useMatches } from 'react-router-dom';
+import { Link, NavLink, Outlet, useLocation, useMatches, useNavigate } from 'react-router-dom';
 import { useLibraryStore } from '../store/libraryStore';
 
 const navItems = [
@@ -22,6 +22,7 @@ const menuItems = [
 export function AppLayout() {
   const location = useLocation();
   const matches = useMatches();
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const hydrate = useLibraryStore((state) => state.hydrate);
   const recordVisit = useLibraryStore((state) => state.recordVisit);
@@ -39,14 +40,33 @@ export function AppLayout() {
     void recordVisit(location.pathname, title);
   }, [location.pathname, matches, recordVisit]);
 
+  const goBack = () => {
+    setIsMenuOpen(false);
+    if (location.key === 'default') {
+      void navigate('/');
+      return;
+    }
+    void navigate(-1);
+  };
+
   return (
     <div className="min-h-screen bg-bone text-ink">
       <header className="sticky top-0 z-40 border-b border-black/10 bg-paper/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3">
-          <Link to="/" className="flex min-w-0 items-center gap-3 font-bold text-ink">
-            <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-lagoon text-lg text-white">PG</span>
-            <span className="truncate">Paleogeneticor</span>
-          </Link>
+          <div className="flex min-w-0 items-center gap-2">
+            <button
+              type="button"
+              className="grid h-10 w-10 shrink-0 place-items-center rounded-md border border-black/10 bg-white text-lagoon"
+              aria-label="Retour en arriere"
+              onClick={goBack}
+            >
+              <ArrowLeft className="h-5 w-5" aria-hidden="true" />
+            </button>
+            <Link to="/" className="flex min-w-0 items-center gap-3 font-bold text-ink">
+              <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-lagoon text-lg text-white">PG</span>
+              <span className="truncate">Paleogeneticor</span>
+            </Link>
+          </div>
           <nav className="hidden items-center gap-1 md:flex" aria-label="Navigation principale">
             {navItems.map((item) => (
               <NavLink

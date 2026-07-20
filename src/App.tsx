@@ -15,6 +15,9 @@ const FossilsPage = lazy(() => import('./pages/FossilsPage').then((module) => ({
 const DiscoveriesPage = lazy(() =>
   import('./pages/DiscoveriesPage').then((module) => ({ default: module.DiscoveriesPage }))
 );
+const DiscoveryDetailPage = lazy(() =>
+  import('./pages/DiscoveryDetailPage').then((module) => ({ default: module.DiscoveryDetailPage }))
+);
 const LibraryPage = lazy(() => import('./pages/LibraryPage').then((module) => ({ default: module.LibraryPage })));
 
 function Loading() {
@@ -74,6 +77,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'Decouvertes' }
+      },
+      {
+        path: 'discoveries/:id',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <DiscoveryDetailPage />
+          </Suspense>
+        ),
+        handle: { title: 'Fiche decouverte' }
       },
       {
         path: 'dna',

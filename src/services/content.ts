@@ -35,6 +35,10 @@ export function getDiscoveryOfTheDay(date = new Date()): Discovery {
   return discoveries[index];
 }
 
+export function getDiscoveryById(id: string): Discovery | undefined {
+  return discoveries.find((item) => item.id === id);
+}
+
 export function buildSearchDocuments(): SearchDocument[] {
   return [
     ...species.map((item) => ({
@@ -58,8 +62,8 @@ export function buildSearchDocuments(): SearchDocument[] {
       kind: 'discovery' as const,
       title: item.title,
       subtitle: String(item.year),
-      body: `${item.category} ${item.summary}`,
-      path: '/discoveries'
+      body: `${item.category} ${item.summary} ${item.details.join(' ')} ${item.impact}`,
+      path: `/discoveries/${item.id}`
     })),
     ...glossary.map((item) => ({
       id: item.id,
