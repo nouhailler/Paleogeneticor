@@ -13,6 +13,7 @@ export function entityLabel(kind: string): string {
     researcher: 'Chercheur',
     laboratory: 'Laboratoire',
     migration: 'Migration',
+    skull: 'Crane',
     timeline: 'Frise',
     discovery: 'Decouverte',
     glossary: 'Glossaire',

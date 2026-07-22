@@ -6,6 +6,7 @@ import type {
   MapSite,
   MigrationDataset,
   SearchDocument,
+  SkullProfile,
   Species,
   Technique,
   TimePeriod,
@@ -17,6 +18,7 @@ import glossaryData from '../data/glossary/core.json';
 import laboratoriesData from '../data/laboratories/laboratories.json';
 import mapSitesData from '../data/maps/sites.json';
 import migrationsData from '../data/migrations/migrations.json';
+import skullsData from '../data/skulls/skulls.json';
 import { speciesCatalog } from '../data/species/catalog';
 import techniquesData from '../data/techniques/techniques.json';
 import timePeriodsData from '../data/time-periods/periods.json';
@@ -29,6 +31,7 @@ export const glossary = glossaryData as GlossaryTerm[];
 export const laboratories = laboratoriesData as LaboratoryProfile[];
 export const mapSites = mapSitesData as MapSite[];
 export const migrations = migrationsData as MigrationDataset;
+export const skulls = skullsData as SkullProfile[];
 export const techniques = techniquesData as Technique[];
 export const timePeriods = timePeriodsData as TimePeriod[];
 export const timelineEvents = timelineData as TimelineEvent[];
@@ -113,6 +116,16 @@ export function buildSearchDocuments(): SearchDocument[] {
       subtitle: `${item.startKya} a ${item.endKya} ka`,
       body: `${item.summary} ${item.context.join(' ')} ${item.keyExamples.join(' ')}`,
       path: '/timeline'
+    })),
+    ...skulls.map((item) => ({
+      id: item.id,
+      kind: 'skull' as const,
+      title: item.name,
+      subtitle: item.period,
+      body: `${item.region} ${item.summary} ${item.annotations
+        .map((annotation) => `${annotation.label} ${annotation.region} ${annotation.description}`)
+        .join(' ')} ${item.metrics.map((metric) => `${metric.label} ${metric.value} ${metric.note}`).join(' ')}`,
+      path: '/skulls'
     })),
     ...timelineEvents.map((item) => ({
       id: item.id,

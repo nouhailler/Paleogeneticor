@@ -15,6 +15,7 @@ const MapPage = lazy(() => import('./pages/MapPage').then((module) => ({ default
 const MigrationsPage = lazy(() => import('./pages/MigrationsPage').then((module) => ({ default: module.MigrationsPage })));
 const TreePage = lazy(() => import('./pages/TreePage').then((module) => ({ default: module.TreePage })));
 const TimelinePage = lazy(() => import('./pages/TimelinePage').then((module) => ({ default: module.TimelinePage })));
+const SkullsPage = lazy(() => import('./pages/SkullsPage').then((module) => ({ default: module.SkullsPage })));
 const GlossaryPage = lazy(() => import('./pages/GlossaryPage').then((module) => ({ default: module.GlossaryPage })));
 const GlossaryDetailPage = lazy(() =>
   import('./pages/GlossaryDetailPage').then((module) => ({ default: module.GlossaryDetailPage }))
@@ -160,6 +161,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'Frise du temps' }
+      },
+      {
+        path: 'skulls',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <SkullsPage />
+          </Suspense>
+        ),
+        handle: { title: 'Comparaison de cranes' }
       },
       {
         path: 'glossary',

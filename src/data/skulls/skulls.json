@@ -1,0 +1,134 @@
+[
+  {
+    "id": "sapiens",
+    "name": "Homo sapiens",
+    "speciesId": "homo-sapiens",
+    "period": "Depuis environ 300 000 ans",
+    "region": "Origine africaine puis expansion mondiale",
+    "summary": "Crane globalement haut et globulaire, face plus reduite et menton marque. Les differences representees ici sont pedagogiques et simplifiees.",
+    "model": {
+      "cranialScale": [1.02, 1.16, 0.96],
+      "browRidge": 0.08,
+      "faceProjection": 0.16,
+      "jawProjection": 0.12,
+      "cranialHeight": 0.32,
+      "color": "#c3542f"
+    },
+    "annotations": [
+      {
+        "id": "globular-vault",
+        "label": "Voute cranienne haute",
+        "region": "Neurocrane",
+        "description": "La boite cranienne de Sapiens est plus globulaire, avec une voute plus haute et arrondie.",
+        "position": [0, 1.2, 0.05]
+      },
+      {
+        "id": "reduced-brow",
+        "label": "Arcades sourcilieres reduites",
+        "region": "Front",
+        "description": "Les reliefs sus-orbitaires sont moins developpes que chez Neandertal.",
+        "position": [0, 0.42, 0.82]
+      },
+      {
+        "id": "chin",
+        "label": "Menton marque",
+        "region": "Mandibule",
+        "description": "Le menton osseux est un trait caracteristique de Homo sapiens moderne.",
+        "position": [0, -0.9, 0.9]
+      }
+    ],
+    "metrics": [
+      { "label": "Capacite cranienne", "value": "Environ 1 200 a 1 600 cm3", "note": "Grande variabilite individuelle" },
+      { "label": "Face", "value": "Plus courte", "note": "Projection faciale reduite" },
+      { "label": "Menton", "value": "Present", "note": "Trait diagnostique important" }
+    ]
+  },
+  {
+    "id": "neanderthal",
+    "name": "Homo neanderthalensis",
+    "speciesId": "homo-neanderthalensis",
+    "period": "Environ 430 000 a 40 000 ans",
+    "region": "Europe et Asie occidentale",
+    "summary": "Crane long et bas, arcades sourcilieres fortes, face projetee et region occipitale allongee. Le modele accentue ces traits pour les rendre lisibles.",
+    "model": {
+      "cranialScale": [1.12, 0.92, 1.22],
+      "browRidge": 0.22,
+      "faceProjection": 0.34,
+      "jawProjection": 0.22,
+      "cranialHeight": 0.1,
+      "color": "#0f6f73"
+    },
+    "annotations": [
+      {
+        "id": "brow-ridge",
+        "label": "Bourrelet sus-orbitaire",
+        "region": "Front",
+        "description": "Les arcades sourcilieres forment un relief continu et robuste au-dessus des orbites.",
+        "position": [0, 0.34, 0.95]
+      },
+      {
+        "id": "midface",
+        "label": "Face projetee",
+        "region": "Milieu facial",
+        "description": "La region nasale et le milieu du visage sont plus projetes vers l'avant que chez Sapiens.",
+        "position": [0, -0.1, 1.15]
+      },
+      {
+        "id": "occipital",
+        "label": "Crane allonge",
+        "region": "Occipital",
+        "description": "Le neurocrane est plus allonge et plus bas, avec une arriere-crane developpe.",
+        "position": [0, 0.35, -1.15]
+      }
+    ],
+    "metrics": [
+      { "label": "Capacite cranienne", "value": "Souvent 1 200 a 1 750 cm3", "note": "Moyenne elevee, mais forme differente" },
+      { "label": "Arcades", "value": "Tres marquees", "note": "Relief frontal robuste" },
+      { "label": "Face", "value": "Projetee", "note": "Adaptation et histoire evolutive discutees" }
+    ]
+  },
+  {
+    "id": "denisovan",
+    "name": "Denisoviens",
+    "speciesId": "denisovans",
+    "period": "Pleistocene moyen et superieur",
+    "region": "Asie centrale, plateau tibetain et traces genetiques plus larges",
+    "summary": "Les Denisoviens sont surtout connus par l'ADN, des dents et une mandibule. Le crane complet reste inconnu; le modele signale donc une reconstruction prudente.",
+    "model": {
+      "cranialScale": [1.08, 1.0, 1.08],
+      "browRidge": 0.15,
+      "faceProjection": 0.28,
+      "jawProjection": 0.34,
+      "cranialHeight": 0.18,
+      "color": "#7b4d2a"
+    },
+    "annotations": [
+      {
+        "id": "unknown-skull",
+        "label": "Crane complet inconnu",
+        "region": "Neurocrane",
+        "description": "La forme cranienne denisovienne reste largement hypothetique faute de crane complet publie.",
+        "position": [0, 1.05, 0.05]
+      },
+      {
+        "id": "large-teeth",
+        "label": "Dents robustes",
+        "region": "Denture",
+        "description": "Plusieurs dents associees aux Denisoviens sont grandes et robustes par rapport a beaucoup de formes recentes.",
+        "position": [0.32, -0.55, 1.06]
+      },
+      {
+        "id": "mandible",
+        "label": "Mandibule de Xiahe",
+        "region": "Machoire",
+        "description": "La mandibule de Xiahe, attribuee par proteines anciennes, suggere une morphologie robuste.",
+        "position": [0, -0.82, 0.96]
+      }
+    ],
+    "metrics": [
+      { "label": "Capacite cranienne", "value": "Inconnue", "note": "Pas de crane complet attribue" },
+      { "label": "Dents", "value": "Robustes", "note": "Signal fossile important" },
+      { "label": "ADN", "value": "Central", "note": "Groupe d'abord defini par la genetique" }
+    ]
+  }
+]

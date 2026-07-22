@@ -1,4 +1,4 @@
-import { ArrowLeft, BookOpen, Bone, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
+import { ArrowLeft, BookOpen, Bone, Box, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation, useMatches, useNavigate } from 'react-router-dom';
 import { useLibraryStore } from '../store/libraryStore';
@@ -17,6 +17,7 @@ const menuItems = [
   { to: '/bone-to-dna', label: "De l'os a l'ADN", icon: Bone },
   { to: '/migrations', label: 'Migrations', icon: Map },
   { to: '/timeline', label: 'Frise du temps', icon: CalendarDays },
+  { to: '/skulls', label: 'Cranes 3D', icon: Box },
   { to: '/fossils', label: 'Fossiles', icon: Landmark },
   { to: '/laboratories', label: 'Laboratoires', icon: Dna },
   { to: '/discoveries', label: 'Decouvertes', icon: CalendarDays },

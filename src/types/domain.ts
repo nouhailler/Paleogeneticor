@@ -4,6 +4,7 @@ export type EntityKind =
   | 'researcher'
   | 'laboratory'
   | 'migration'
+  | 'skull'
   | 'timeline'
   | 'discovery'
   | 'glossary'
@@ -228,6 +229,35 @@ export interface TimePeriod {
   summary: string;
   context: string[];
   keyExamples: string[];
+}
+
+export interface SkullProfile {
+  id: string;
+  name: string;
+  speciesId: string;
+  period: string;
+  region: string;
+  summary: string;
+  model: {
+    cranialScale: [number, number, number];
+    browRidge: number;
+    faceProjection: number;
+    jawProjection: number;
+    cranialHeight: number;
+    color: string;
+  };
+  annotations: {
+    id: string;
+    label: string;
+    region: string;
+    description: string;
+    position: [number, number, number];
+  }[];
+  metrics: {
+    label: string;
+    value: string;
+    note: string;
+  }[];
 }
 
 export interface TimelineEvent {
