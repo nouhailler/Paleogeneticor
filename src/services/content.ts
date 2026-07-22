@@ -2,6 +2,7 @@ import type {
   Discovery,
   Fossil,
   GlossaryTerm,
+  LaboratoryProfile,
   MapSite,
   SearchDocument,
   Species,
@@ -11,6 +12,7 @@ import type {
 import discoveriesData from '../data/discoveries/discoveries.json';
 import fossilsData from '../data/fossils/fossils.json';
 import glossaryData from '../data/glossary/core.json';
+import laboratoriesData from '../data/laboratories/laboratories.json';
 import mapSitesData from '../data/maps/sites.json';
 import { speciesCatalog } from '../data/species/catalog';
 import techniquesData from '../data/techniques/techniques.json';
@@ -20,6 +22,7 @@ export const species = speciesCatalog as Species[];
 export const fossils = fossilsData as Fossil[];
 export const discoveries = discoveriesData as Discovery[];
 export const glossary = glossaryData as GlossaryTerm[];
+export const laboratories = laboratoriesData as LaboratoryProfile[];
 export const mapSites = mapSitesData as MapSite[];
 export const techniques = techniquesData as Technique[];
 export const timelineEvents = timelineData as TimelineEvent[];
@@ -68,6 +71,18 @@ export function buildSearchDocuments(): SearchDocument[] {
       subtitle: String(item.year),
       body: `${item.category} ${item.summary} ${item.details.join(' ')} ${item.impact}`,
       path: `/discoveries/${item.id}`
+    })),
+    ...laboratories.map((item) => ({
+      id: item.id,
+      kind: 'laboratory' as const,
+      title: item.name,
+      subtitle: `${item.city}, ${item.country}`,
+      body: `${item.shortName} ${item.specialty} ${item.summary} ${item.teamModel} ${item.researchers
+        .map((researcher) => `${researcher.name} ${researcher.role} ${researcher.contribution}`)
+        .join(' ')} ${item.discoveries
+        .map((discovery) => `${discovery.title} ${discovery.year} ${discovery.explanation}`)
+        .join(' ')} ${item.publications.map((publication) => `${publication.label} ${publication.year}`).join(' ')}`,
+      path: '/laboratories'
     })),
     ...glossary.map((item) => ({
       id: item.id,

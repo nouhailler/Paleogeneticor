@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import {
   BookOpen,
   Brain,
@@ -17,10 +17,12 @@ import {
   X
 } from 'lucide-react';
 import { Navigate, useParams } from 'react-router-dom';
+import 'leaflet/dist/leaflet.css';
+import { Circle, CircleMarker, MapContainer, Popup, TileLayer, ZoomControl, useMap } from 'react-leaflet';
 import { PageHeader } from '../components/PageHeader';
 import { getSpeciesById } from '../services/content';
 import { useLibraryStore } from '../store/libraryStore';
-import type { Species, SpeciesDetailedSection, SpeciesSectionMedia } from '../types/domain';
+import type { Coordinates, Species, SpeciesDetailedSection, SpeciesSectionMedia } from '../types/domain';
 
 type SectionKey = keyof Species['detailedSections'];
 
@@ -249,8 +251,8 @@ function RangePanel({ species }: { species: Species }) {
         <h2 className="text-2xl font-bold">Carte et repartition</h2>
       </div>
       <p className="mt-3 leading-7 text-ink/75">{species.region}</p>
-      <div className="mt-5 rounded-lg border border-black/10 bg-bone p-3">
-        <RangeSketch species={species} />
+      <div className="mt-5 overflow-hidden rounded-lg border border-black/10 bg-bone">
+        <SpeciesRangeMap species={species} />
       </div>
       <div className="mt-4 grid gap-2 text-sm">
         {species.coordinates.map((coordinate) => (
@@ -347,29 +349,135 @@ function TimelineSketch({ species }: { species: Species }) {
   );
 }
 
-function RangeSketch({ species }: { species: Species }) {
-  const points = species.coordinates.map((coordinate) => ({
-    x: ((coordinate.lng + 180) / 360) * 300 + 10,
-    y: ((90 - coordinate.lat) / 180) * 150 + 18
-  }));
+function getMapCenter(coordinates: Coordinates[]): [number, number] {
+  if (coordinates.length === 0) {
+    return [20, 20];
+  }
+
+  const totals = coordinates.reduce(
+    (acc, coordinate) => ({
+      lat: acc.lat + coordinate.lat,
+      lng: acc.lng + coordinate.lng
+    }),
+    { lat: 0, lng: 0 }
+  );
+
+  return [totals.lat / coordinates.length, totals.lng / coordinates.length];
+}
+
+function getCoverageRadius(species: Species): number {
+  const spanKya = species.rangeStartKya - species.rangeEndKya;
+
+  if (species.region.includes('Mondiale')) {
+    return 1800000;
+  }
+
+  if (species.region.includes('Asie') || species.region.includes('Europe')) {
+    return spanKya > 500 ? 950000 : 520000;
+  }
+
+  if (species.region.includes('Afrique')) {
+    return spanKya > 800 ? 850000 : 480000;
+  }
+
+  if (species.region.includes('Ile') || species.region.includes('ile')) {
+    return 180000;
+  }
+
+  return 420000;
+}
+
+function RangeMapController({ coordinates }: { coordinates: Coordinates[] }) {
+  const map = useMap();
+
+  useEffect(() => {
+    if (coordinates.length > 1) {
+      const bounds = coordinates.map((coordinate) => [coordinate.lat, coordinate.lng] as [number, number]);
+      map.fitBounds(bounds, { padding: [34, 34], maxZoom: 5 });
+      return;
+    }
+
+    const [center] = coordinates;
+    if (center) {
+      map.setView([center.lat, center.lng], 5);
+    }
+  }, [coordinates, map]);
+
+  return null;
+}
+
+function SpeciesRangeMap({ species }: { species: Species }) {
+  const center = getMapCenter(species.coordinates);
+  const coverageRadius = getCoverageRadius(species);
 
   return (
-    <svg viewBox="0 0 320 210" className="h-64 w-full" role="img" aria-label={`Carte simplifiee de ${species.name}`}>
-      <rect x="14" y="24" width="292" height="154" rx="8" fill="#d9e8e6" />
-      <path d="M44 86 C76 44 123 54 141 83 C157 110 117 131 75 124 C49 120 29 105 44 86Z" fill="#48635b" opacity="0.34" />
-      <path d="M133 75 C178 36 237 51 274 88 C245 108 226 136 187 129 C154 124 126 105 133 75Z" fill="#48635b" opacity="0.34" />
-      <path d="M105 134 C139 125 165 143 151 164 C121 171 96 160 105 134Z" fill="#48635b" opacity="0.25" />
-      <path d="M208 140 C235 130 267 139 276 158 C247 174 220 166 208 140Z" fill="#48635b" opacity="0.22" />
-      {points.map((point) => (
-        <g key={`${point.x}-${point.y}`}>
-          <circle cx={point.x} cy={point.y} r="15" fill="#0f6f73" opacity="0.18" />
-          <circle cx={point.x} cy={point.y} r="6" fill="#b65f25" stroke="#0f6f73" strokeWidth="2" />
-        </g>
-      ))}
-      <text x="22" y="199" className="fill-ink text-[11px] font-semibold">
-        {species.region}
-      </text>
-    </svg>
+    <div className="h-80 w-full">
+      <MapContainer
+        key={species.id}
+        center={center}
+        zoom={species.coordinates.length > 1 ? 3 : 5}
+        minZoom={2}
+        maxZoom={8}
+        className="h-full w-full"
+        scrollWheelZoom={false}
+        zoomControl={false}
+        worldCopyJump
+      >
+        <TileLayer
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        />
+        <ZoomControl position="bottomright" />
+        <RangeMapController coordinates={species.coordinates} />
+        {species.coordinates.map((coordinate) => (
+          <Circle
+            key={`${species.id}-range-${coordinate.lat}-${coordinate.lng}`}
+            center={[coordinate.lat, coordinate.lng]}
+            radius={coverageRadius}
+            pathOptions={{
+              color: '#0f6f73',
+              fillColor: '#0f6f73',
+              fillOpacity: 0.12,
+              opacity: 0.34,
+              weight: 2
+            }}
+          >
+            <Popup>
+              <div className="max-w-60">
+                <strong className="block text-base text-ink">{species.name}</strong>
+                <p className="mt-1 text-sm font-semibold text-lagoon">{species.region}</p>
+                <p className="mt-2 text-sm leading-5 text-ink/70">
+                  Zone indicative autour d'un point fossile ou archeologique de reference.
+                </p>
+              </div>
+            </Popup>
+          </Circle>
+        ))}
+        {species.coordinates.map((coordinate, index) => (
+          <CircleMarker
+            key={`${species.id}-point-${coordinate.lat}-${coordinate.lng}`}
+            center={[coordinate.lat, coordinate.lng]}
+            radius={8}
+            pathOptions={{
+              color: '#0f6f73',
+              fillColor: '#c3542f',
+              fillOpacity: 0.95,
+              weight: 3
+            }}
+          >
+            <Popup>
+              <div className="max-w-60">
+                <p className="text-xs font-bold uppercase text-ochre">Point de reference {index + 1}</p>
+                <strong className="mt-1 block text-base text-ink">{species.name}</strong>
+                <p className="mt-1 font-mono text-xs text-ink/60">
+                  {coordinate.lat.toFixed(3)}, {coordinate.lng.toFixed(3)}
+                </p>
+              </div>
+            </Popup>
+          </CircleMarker>
+        ))}
+      </MapContainer>
+    </div>
   );
 }
 

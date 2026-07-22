@@ -18,6 +18,9 @@ const GlossaryDetailPage = lazy(() =>
   import('./pages/GlossaryDetailPage').then((module) => ({ default: module.GlossaryDetailPage }))
 );
 const FossilsPage = lazy(() => import('./pages/FossilsPage').then((module) => ({ default: module.FossilsPage })));
+const LaboratoriesPage = lazy(() =>
+  import('./pages/LaboratoriesPage').then((module) => ({ default: module.LaboratoriesPage }))
+);
 const DiscoveriesPage = lazy(() =>
   import('./pages/DiscoveriesPage').then((module) => ({ default: module.DiscoveriesPage }))
 );
@@ -74,6 +77,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'Fossiles' }
+      },
+      {
+        path: 'laboratories',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <LaboratoriesPage />
+          </Suspense>
+        ),
+        handle: { title: 'Laboratoires' }
       },
       {
         path: 'discoveries',

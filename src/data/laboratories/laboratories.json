@@ -1,9 +1,267 @@
 [
   {
-    "id": "lab-mpi-eva",
-    "name": "Max Planck Institute for Evolutionary Anthropology",
+    "id": "max-planck-eva",
+    "name": "Institut Max Planck d'anthropologie evolutive",
+    "shortName": "Max Planck",
     "city": "Leipzig",
     "country": "Allemagne",
-    "summary": "Centre majeur pour la paleogenomique humaine et l'evolution des hominines."
+    "coordinates": { "lat": 51.3207, "lng": 12.3910 },
+    "officialUrl": "https://www.eva.mpg.de/genetics/",
+    "period": "Annees 1990 a aujourd'hui",
+    "specialty": "Genomes d'hominines disparus, methodes d'ADN ancien, Neandertal et Denisova",
+    "summary": "Le departement de genetique evolutive de Leipzig a transforme l'ADN ancien humain en discipline genomique. Ses equipes ont developpe des protocoles de salle blanche, de capture et de sequencage capables de lire des fragments tres courts issus de fossiles neandertaliens et denisoviens.",
+    "teamModel": "Equipe interdisciplinaire associant biologistes moleculaires, bioinformaticiens, statisticiens, archeologues et conservateurs de collections.",
+    "researchers": [
+      {
+        "name": "Svante Paabo",
+        "role": "Fondateur du champ moderne de la paleogenomique humaine",
+        "contribution": "A pilote les travaux sur les genomes neandertaliens et denisoviens; prix Nobel de physiologie ou medecine 2022."
+      },
+      {
+        "name": "Janet Kelso",
+        "role": "Bioinformatique et genomique comparative",
+        "contribution": "A contribue aux analyses de genomes anciens, aux catalogues de variants archaiques et a l'etude de leur impact chez les humains actuels."
+      },
+      {
+        "name": "Matthias Meyer",
+        "role": "Methodes moleculaires",
+        "contribution": "A developpe des approches de preparation de bibliotheques et de recuperation d'ADN tres degrade."
+      }
+    ],
+    "discoveries": [
+      {
+        "title": "Premier genome neandertalien de reference",
+        "year": 2010,
+        "explanation": "Le sequencage du genome neandertalien a montre que des populations non africaines actuelles portent une fraction d'ADN neandertalien."
+      },
+      {
+        "title": "Identification des Denisoviens par l'ADN",
+        "year": 2010,
+        "explanation": "Un petit fragment de phalange de Denisova a revele une lignee humaine inconnue principalement par la paleogenomique."
+      },
+      {
+        "title": "Genomes anciens a haute couverture",
+        "year": 2012,
+        "explanation": "Les genomes denisoviens et neandertaliens de haute qualite ont permis de comparer finement mutations, hybridations et parentes."
+      }
+    ],
+    "publications": [
+      { "label": "A Draft Sequence of the Neandertal Genome", "year": 2010, "source": "https://doi.org/10.1126/science.1188021" },
+      { "label": "A High-Coverage Genome Sequence from an Archaic Denisovan Individual", "year": 2012, "source": "https://doi.org/10.1126/science.1224344" },
+      { "label": "The complete genome sequence of a Neanderthal from the Altai Mountains", "year": 2014, "source": "https://doi.org/10.1038/nature12886" }
+    ]
+  },
+  {
+    "id": "harvard-reich-lab",
+    "name": "Harvard Medical School - David Reich Lab",
+    "shortName": "Harvard",
+    "city": "Boston",
+    "country": "Etats-Unis",
+    "coordinates": { "lat": 42.3369, "lng": -71.1056 },
+    "officialUrl": "https://reich.hms.harvard.edu/home",
+    "period": "Annees 2010 a aujourd'hui",
+    "specialty": "Paleogenomique des populations humaines, migrations, bases de donnees anciennes",
+    "summary": "Le laboratoire de David Reich a industrialise l'analyse comparative de milliers de genomes anciens. Son apport majeur est de relier echantillons archeologiques, modeles statistiques et grandes cartes de migrations humaines.",
+    "teamModel": "Equipe a grande echelle fondee sur des partenariats avec musees, archeologues, anthropologues et laboratoires locaux; le laboratoire publie aussi des outils et compendiums de donnees.",
+    "researchers": [
+      {
+        "name": "David Reich",
+        "role": "Responsable du laboratoire",
+        "contribution": "A structure l'analyse des migrations anciennes par genomes a grande echelle et modeles d'admixture."
+      },
+      {
+        "name": "Nick Patterson",
+        "role": "Statistique des populations",
+        "contribution": "A contribue aux methodes d'analyse de structure genetique, admixture et tests formels de parente."
+      },
+      {
+        "name": "Iosif Lazaridis",
+        "role": "Paleogenomique humaine",
+        "contribution": "A travaille sur l'histoire genetique de l'Europe, du Proche-Orient et de l'Asie occidentale."
+      },
+      {
+        "name": "Swapan Mallick",
+        "role": "Donnees genomiques et pipelines",
+        "contribution": "A contribue a la production, au controle et a la diffusion de grandes matrices de donnees anciennes."
+      }
+    ],
+    "discoveries": [
+      {
+        "title": "Trois sources ancestrales majeures pour l'Europe recente",
+        "year": 2014,
+        "explanation": "Les genomes anciens ont distingue chasseurs-cueilleurs, premiers agriculteurs et composantes liees aux steppes."
+      },
+      {
+        "title": "Expansion liee aux steppes au Bronze ancien",
+        "year": 2015,
+        "explanation": "Les donnees ont documente un changement genetique massif en Europe associe aux populations des steppes."
+      },
+      {
+        "title": "Compendiums de genomes anciens",
+        "year": 2019,
+        "explanation": "Les grands jeux de donnees publies permettent de comparer des milliers d'individus anciens dans un cadre commun."
+      }
+    ],
+    "publications": [
+      { "label": "Ancient human genomes suggest three ancestral populations for present-day Europeans", "year": 2014, "source": "https://doi.org/10.1038/nature13673" },
+      { "label": "Massive migration from the steppe was a source for Indo-European languages in Europe", "year": 2015, "source": "https://doi.org/10.1038/nature14317" },
+      { "label": "The formation of human populations in South and Central Asia", "year": 2019, "source": "https://doi.org/10.1126/science.aat7487" }
+    ]
+  },
+  {
+    "id": "oxford-palaeogenomics",
+    "name": "Oxford Palaeogenomics and Bio-Archaeology Research Network",
+    "shortName": "Oxford",
+    "city": "Oxford",
+    "country": "Royaume-Uni",
+    "coordinates": { "lat": 51.7548, "lng": -1.2544 },
+    "officialUrl": "https://www.arch.ox.ac.uk/people/larson-greger",
+    "period": "Annees 2000 a aujourd'hui",
+    "specialty": "Domestication animale, genomes anciens de chiens, porcs, poulets et especes associees aux humains",
+    "summary": "Oxford occupe une place centrale dans la paleogenomique de la domestication. Ses travaux montrent comment animaux, humains, microbes et pratiques culturelles se deplacent ensemble dans le temps.",
+    "teamModel": "Reseau reliant archeologie, zoologie, genomique evolutive, bioinformatique et collections osteologiques.",
+    "researchers": [
+      {
+        "name": "Greger Larson",
+        "role": "Directeur du reseau de paleogenomique et bio-archeologie",
+        "contribution": "A developpe une approche integrant ADN ancien, archeologie et evolution des especes domestiques."
+      },
+      {
+        "name": "Laurent Frantz",
+        "role": "Genomique evolutive",
+        "contribution": "A contribue aux travaux sur l'histoire genomique des chiens, porcs et autres animaux domestiques."
+      },
+      {
+        "name": "Keith Dobney",
+        "role": "Bio-archeologie",
+        "contribution": "A relie les donnees osteologiques et archeologiques aux scenarios de domestication."
+      }
+    ],
+    "discoveries": [
+      {
+        "title": "Domestication complexe du chien",
+        "year": 2016,
+        "explanation": "Les genomes anciens ont montre une histoire plus ramifiee que le simple modele d'une origine unique."
+      },
+      {
+        "title": "Multiples centres de domestication du porc",
+        "year": 2005,
+        "explanation": "Les donnees genetiques ont documente plusieurs foyers de domestication et des remplacements ulterieurs."
+      },
+      {
+        "title": "Circulation des animaux avec les societes humaines",
+        "year": 2010,
+        "explanation": "L'equipe a contribue a faire des animaux domestiques des traceurs de mobilites, d'economie et d'echanges."
+      }
+    ],
+    "publications": [
+      { "label": "Worldwide Phylogeography of Wild Boar Reveals Multiple Centers of Pig Domestication", "year": 2005, "source": "https://doi.org/10.1126/science.1116927" },
+      { "label": "Genomic and archaeological evidence of a dual origin of domestic dogs", "year": 2016, "source": "https://doi.org/10.1126/science.aaf3161" },
+      { "label": "The palaeogenetics of cat dispersal in the ancient world", "year": 2017, "source": "https://doi.org/10.1038/s41559-017-0139" }
+    ]
+  },
+  {
+    "id": "cnrs-cagt",
+    "name": "CNRS - Centre d'anthropobiologie et de genomique de Toulouse",
+    "shortName": "CNRS",
+    "city": "Toulouse",
+    "country": "France",
+    "coordinates": { "lat": 43.5615, "lng": 1.4633 },
+    "officialUrl": "https://cagt.cnrs.fr/",
+    "period": "Annees 2010 a aujourd'hui",
+    "specialty": "Paleogenomique, evolution des chevaux, societes anciennes, methodes d'ADN degrade",
+    "summary": "Les equipes CNRS associees a Toulouse ont fortement marque la paleogenomique par l'etude de l'evolution des chevaux, de la domestication et des interactions entre societes humaines et animaux.",
+    "teamModel": "Unite mixte associant CNRS, universite, anthropologie biologique, archeologie, genomique, statistique et plateformes techniques.",
+    "researchers": [
+      {
+        "name": "Ludovic Orlando",
+        "role": "Directeur de recherche CNRS",
+        "contribution": "Specialiste de paleogenomique, connu pour les genomes anciens de chevaux et l'histoire de leur domestication."
+      },
+      {
+        "name": "Pablo Librado",
+        "role": "Genomique des populations anciennes",
+        "contribution": "A contribue aux analyses de diffusion des chevaux domestiques et aux grands jeux de donnees equins."
+      },
+      {
+        "name": "Eva-Maria Geigl",
+        "role": "ADN ancien et archeogenetique",
+        "contribution": "A contribue au developpement de l'ADN ancien en France, notamment sur les populations et especes du passe."
+      }
+    ],
+    "discoveries": [
+      {
+        "title": "Genome de cheval vieux d'environ 700 000 ans",
+        "year": 2013,
+        "explanation": "Ce jalon a montre que l'ADN pouvait parfois etre recupere beaucoup plus loin dans le temps que prevu dans des contextes favorables."
+      },
+      {
+        "title": "Origine et diffusion des chevaux domestiques modernes",
+        "year": 2021,
+        "explanation": "Les genomes anciens ont relie l'expansion majeure des chevaux domestiques a des populations de steppes d'Eurasie occidentale."
+      },
+      {
+        "title": "Integration paleogenomique et histoire des societes",
+        "year": 2020,
+        "explanation": "Les travaux CNRS placent l'ADN ancien dans une lecture conjointe des mobilites, pratiques d'elevage et transformations sociales."
+      }
+    ],
+    "publications": [
+      { "label": "Recalibrating Equus evolution using the genome sequence of an early Middle Pleistocene horse", "year": 2013, "source": "https://doi.org/10.1038/nature12323" },
+      { "label": "The origins and spread of domestic horses from the Western Eurasian steppes", "year": 2021, "source": "https://doi.org/10.1038/s41586-021-04018-9" },
+      { "label": "Ancient DNA analysis", "year": 2021, "source": "https://hal.science/hal-03143766" }
+    ]
+  },
+  {
+    "id": "pasteur-microbial-paleogenomics",
+    "name": "Institut Pasteur - Unite de paleogenomique microbienne",
+    "shortName": "Institut Pasteur",
+    "city": "Paris",
+    "country": "France",
+    "coordinates": { "lat": 48.8409, "lng": 2.3118 },
+    "officialUrl": "https://research.pasteur.fr/en/team/microbial-paleogenomics/",
+    "period": "Annees 2010 a aujourd'hui",
+    "specialty": "Pathogenes anciens, microbiomes, histoire des maladies infectieuses",
+    "summary": "L'Institut Pasteur applique les methodes d'ADN ancien aux microbes: pathogenes, microbiomes oraux et circulation historique des maladies. Cette approche relie paleogenomique, epidemiologie et histoire.",
+    "teamModel": "Equipe centree sur les pathogenes anciens, combinant extraction d'ADN degrade, metagenomique, phylogenie et collaborations archeologiques.",
+    "researchers": [
+      {
+        "name": "Nicolas Rascovan",
+        "role": "Responsable d'unite",
+        "contribution": "Travaille sur les pathogenes anciens et les microbiomes pour reconstruire leur histoire evolutive."
+      },
+      {
+        "name": "Maria Spyrou",
+        "role": "Paleogenomique des pathogenes",
+        "contribution": "A contribue a des travaux majeurs sur l'histoire genomique de Yersinia pestis et des pandemies de peste."
+      },
+      {
+        "name": "Equipes de microbiologie evolutive",
+        "role": "Analyse comparative",
+        "contribution": "Relient genomes anciens, genomes modernes et contextes archeologiques pour suivre l'emergence de pathogenes."
+      }
+    ],
+    "discoveries": [
+      {
+        "title": "Peste prehistorique et declins neolithiques",
+        "year": 2019,
+        "explanation": "Des genomes anciens de Yersinia pestis ont documente des lignees basales circulant en Eurasie prehistorique."
+      },
+      {
+        "title": "Phylogeographie de la seconde pandemie de peste",
+        "year": 2019,
+        "explanation": "Les genomes historiques ont permis de suivre la diversification de la peste au cours et apres la peste noire."
+      },
+      {
+        "title": "Microbiomes anciens",
+        "year": 2020,
+        "explanation": "Les echantillons dentaires et oraux anciens servent a reconstruire regimes, infections et changements microbiens."
+      }
+    ],
+    "publications": [
+      { "label": "Emergence and Spread of Basal Lineages of Yersinia pestis during the Neolithic Decline", "year": 2019, "source": "https://doi.org/10.1016/j.cell.2018.11.005" },
+      { "label": "Phylogeography of the second plague pandemic revealed through analysis of historical Yersinia pestis genomes", "year": 2019, "source": "https://doi.org/10.1038/s41467-019-12154-0" },
+      { "label": "Microbial Paleogenomics Unit", "year": 2026, "source": "https://research.pasteur.fr/en/team/microbial-paleogenomics/" }
+    ]
   }
 ]

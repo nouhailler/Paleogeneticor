@@ -1,5 +1,7 @@
 import { useMemo, useState } from 'react';
 import { ArrowRight, Building2, ExternalLink, FlaskConical, Landmark, MapPin, X } from 'lucide-react';
+import 'leaflet/dist/leaflet.css';
+import { CircleMarker, MapContainer, Popup, TileLayer, ZoomControl } from 'react-leaflet';
 import { Link } from 'react-router-dom';
 import { PageHeader } from '../components/PageHeader';
 import { WorldMap } from '../components/WorldMap';
@@ -163,6 +165,7 @@ function MapSiteDialog({ site, onClose }: { site: MapSite; onClose: () => void }
               {site.coordinates.lat.toFixed(3)}, {site.coordinates.lng.toFixed(3)}
             </p>
           </div>
+          <PreciseSiteMap site={site} />
           {relatedPath ? (
             <Link
               className="inline-flex w-fit items-center gap-2 rounded-md bg-lagoon px-4 py-3 text-sm font-bold text-paper"
@@ -176,6 +179,64 @@ function MapSiteDialog({ site, onClose }: { site: MapSite; onClose: () => void }
         </div>
       </article>
     </div>
+  );
+}
+
+function PreciseSiteMap({ site }: { site: MapSite }) {
+  const color = kindColors[site.kind];
+  const zoom = site.kind === 'laboratory' || site.kind === 'museum' ? 11 : 8;
+
+  return (
+    <section className="overflow-hidden rounded-lg border border-black/10 bg-bone">
+      <div className="border-b border-black/10 bg-paper px-4 py-3">
+        <div className="flex items-center gap-2">
+          <MapPin className="h-5 w-5" style={{ color }} aria-hidden="true" />
+          <div>
+            <h4 className="font-bold">Carte de localisation precise</h4>
+            <p className="text-sm text-ink/65">{site.region}</p>
+          </div>
+        </div>
+      </div>
+      <div className="h-72 w-full bg-[#d9e8e6]">
+        <MapContainer
+          key={site.id}
+          center={[site.coordinates.lat, site.coordinates.lng]}
+          zoom={zoom}
+          minZoom={2}
+          maxZoom={15}
+          className="h-full w-full"
+          scrollWheelZoom={false}
+          zoomControl={false}
+        >
+          <TileLayer
+            attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          />
+          <ZoomControl position="bottomright" />
+          <CircleMarker
+            center={[site.coordinates.lat, site.coordinates.lng]}
+            radius={10}
+            pathOptions={{
+              color,
+              fillColor: site.kind === 'museum' ? '#f7f4ed' : '#c9835a',
+              fillOpacity: 0.95,
+              weight: 4
+            }}
+          >
+            <Popup>
+              <div className="max-w-64">
+                <p className="text-xs font-bold uppercase text-ochre">{kindLabels[site.kind]}</p>
+                <strong className="mt-1 block text-base text-ink">{site.name}</strong>
+                <p className="mt-1 text-sm font-semibold text-lagoon">{site.region}</p>
+                <p className="mt-2 font-mono text-xs text-ink/60">
+                  {site.coordinates.lat.toFixed(5)}, {site.coordinates.lng.toFixed(5)}
+                </p>
+              </div>
+            </Popup>
+          </CircleMarker>
+        </MapContainer>
+      </div>
+    </section>
   );
 }
 

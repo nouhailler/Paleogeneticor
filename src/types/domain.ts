@@ -148,6 +148,31 @@ export interface Technique {
   keyFigures: string[];
 }
 
+export interface LaboratoryProfile {
+  id: string;
+  name: string;
+  shortName: string;
+  city: string;
+  country: string;
+  coordinates: Coordinates;
+  officialUrl: string;
+  period: string;
+  specialty: string;
+  summary: string;
+  teamModel: string;
+  researchers: {
+    name: string;
+    role: string;
+    contribution: string;
+  }[];
+  discoveries: {
+    title: string;
+    year: number;
+    explanation: string;
+  }[];
+  publications: BibliographyEntry[];
+}
+
 export interface MapSite {
   id: string;
   name: string;
