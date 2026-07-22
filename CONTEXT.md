@@ -40,7 +40,7 @@ src/
   data/             contenu JSON local
 public/
   icons/            icones PWA
-  images/           captures et futurs visuels libres
+  images/           captures et visuels libres locaux
 ```
 
 ## Etat Fonctionnel
@@ -49,8 +49,9 @@ La base actuelle contient :
 
 - accueil interactif ;
 - recherche globale Fuse.js ;
-- fiches especes et fiche detail ;
-- page ADN ancien avec graphique Recharts ;
+- fiches especes et fiches detail enrichies par sections ;
+- medias locaux dedies aux especes dans `public/images/species/details` ;
+- page ADN ancien avec dossiers de methodes cliquables et graphique Recharts ;
 - carte Leaflet offline-friendly ;
 - arbre evolutif ReactFlow ;
 - glossaire filtrable ;
@@ -60,19 +61,18 @@ La base actuelle contient :
 
 ## Point d'Arret
 
-Derniere mise a jour de contexte : 19 juillet 2026, 22:42 CEST.
+Derniere mise a jour de contexte : 22 juillet 2026.
 
-Le projet est pousse sur `main` vers `https://github.com/nouhailler/Paleogeneticor`. Le dernier commit fonctionnel avant cette note est `378c672` (`Fix mobile timeline layout`).
+Le projet est pousse sur `main` vers `https://github.com/nouhailler/Paleogeneticor`.
 
 Ce qui vient d'etre termine :
 
-- creation de la base PWA React/TypeScript/Vite ;
-- ajout de la documentation visuelle README, de `CONTEXT.md` et de `CHANGELOG.md` ;
-- ajout des icones PWA pour installation mobile ;
-- ajout de captures d'ecran desktop et mobile ;
-- correction de l'accueil mobile pour eviter les debordements horizontaux ;
-- correction de la frise rapide mobile ;
-- traduction de la categorie `climate` en `Climat` dans l'affichage de la frise.
+- enrichissement des fiches especes avec sections detaillees `ADN et parentes`, `Culture`, `Reperes` et `Outils` ;
+- ajout de fenetres de detail ouvrables depuis chaque fiche espece ;
+- ajout de medias Wikimedia Commons locaux pour differencier Neandertal, Denisoviens et Homo sapiens ;
+- enrichissement de la page `ADN ancien` avec 13 dossiers cliquables couvrant les jalons 1983-2024 ;
+- ajout de contenus structures pour PCR, extraction, salles blanches, authentification, sequencage, capture, bioinformatique, introgression, bibliotheques simple brin, os petreux, ADN sedimentaire, ADN nucleaire sedimentaire et criblage haut debit ;
+- mise a jour des contrats TypeScript pour les nouvelles sections detaillees et les dossiers techniques.
 
 Validation realisee :
 
@@ -94,6 +94,14 @@ Pour ajouter une espece :
 2. Importer le fichier dans `src/services/content.ts`.
 3. Verifier que la recherche globale expose bien la nouvelle entree.
 4. Ajouter au besoin des sites associes dans `src/data/maps/sites.json`.
+5. Renseigner `detailedSections` avec une entree `media`, des points forts, des sujets de detail et des indicateurs.
+
+Pour ajouter un dossier ADN :
+
+1. Ajouter une entree dans `src/data/techniques/techniques.json`.
+2. Renseigner `image`, `category`, `whyItMatters`, `steps`, `ancientDnaRole`, `contaminationRisks`, `safeguards`, `comparison` et `keyFigures`.
+3. Verifier que l'image est locale ou deja disponible dans `public/images`.
+4. Lancer `npm run build`, `npm run lint` et `npm run test`.
 
 ## Priorites Suivantes
 
@@ -101,6 +109,7 @@ Pour ajouter une espece :
 - Ajouter une vraie chronologie interactive complete.
 - Ajouter des pages chercheurs et laboratoires dediees.
 - Etendre les donnees bibliographiques.
+- Ajouter des credits/sources plus visibles pour les medias Wikimedia Commons et les jalons ADN.
 - Ajouter des tests de rendu pour les routes principales.
 - Ajouter un audit Lighthouse PWA dans le workflow de validation.
 
@@ -111,3 +120,5 @@ Pour ajouter une espece :
 - Les libelles de categories de frise sont traduits cote composant via `categoryLabels`.
 - Les captures README sont dans `public/images/screenshots`.
 - Les icones d'installation sont dans `public/icons`.
+- Les visuels d'especes ajoutes pendant l'enrichissement sont dans `public/images/species/details`.
+- Si `localhost:5173` affiche une ancienne app, vider le service worker PWA et les donnees du site dans les DevTools.

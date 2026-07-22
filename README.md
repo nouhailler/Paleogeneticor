@@ -24,9 +24,9 @@ Paleogeneticor est une application educative concue pour le grand public, les et
   <img src="public/images/screenshots/home-desktop.png" alt="Accueil Paleogeneticor desktop" width="900" />
 </p>
 
-## Etat au 19 juillet 2026
+## Etat au 22 juillet 2026
 
-La session s'arrete sur une base applicative compilee, documentee et poussee sur GitHub. Le dernier commit de travail avant cette note est `378c672`, qui corrige la frise rapide mobile et traduit la categorie `climate` en `Climat`.
+La session s'arrete sur une base applicative compilee, documentee et enrichie sur les ecrans `Especes humaines` et `ADN ancien`.
 
 Etat valide :
 
@@ -34,6 +34,8 @@ Etat valide :
 - PWA configuree avec icones mobile et service worker ;
 - README, CONTEXT et CHANGELOG presents ;
 - captures d'ecran generees dans `public/images/screenshots` ;
+- fiches especes detaillees avec sections pedagogiques, graphiques, fenetres de detail et visuels Wikimedia Commons locaux ;
+- page ADN ancien enrichie avec 13 dossiers cliquables, de la PCR au criblage haut debit des sediments ;
 - accueil mobile corrige, dont la frise rapide responsive ;
 - depot distant configure sur `https://github.com/nouhailler/Paleogeneticor`.
 
@@ -54,7 +56,9 @@ npm run build
 ## Fonctionnalites
 
 - Recherche globale instantanee avec Fuse.js dans les especes, fossiles, decouvertes, techniques et termes du glossaire.
-- Fiches d'especes humaines avec periode, repartition, ADN, culture, outils et hybridations.
+- Fiches d'especes humaines avec periode, repartition, ADN, culture, outils, hybridations et dossiers explicatifs ouvrables.
+- Illustrations locales pour les especes, dont visuels Wikimedia Commons dedies a Neandertal, Denisoviens et Homo sapiens.
+- Page ADN ancien composee de dossiers cliquables : PCR, extraction, salles blanches, authentification, sequencage, capture, bioinformatique, introgression, bibliotheques simple brin, os petreux, ADN sedimentaire et criblage recent.
 - Carte interactive Leaflet compatible offline-first, sans appel obligatoire a des tuiles externes.
 - Arbre evolutif interactif avec ReactFlow.
 - Graphiques de melanges genetiques avec Recharts.
@@ -115,11 +119,15 @@ public/
   icons/            icones PWA et application
   images/
     screenshots/    captures d'ecran documentaires
+    species/
+      details/       visuels Wikimedia Commons locaux pour les fiches especes
 ```
 
 ## Donnees
 
 Toutes les donnees applicatives sont locales et stockees en JSON dans `src/data`. Le projet ne depend pas d'un backend. Chaque domaine peut etre enrichi progressivement avec de nouveaux fichiers ou collections JSON.
+
+Les donnees d'especes utilisent maintenant des sections detaillees dans `src/data/species`, avec medias, points pedagogiques, sujets ouvrables et indicateurs visuels. Les dossiers de methodes paleogenetiques sont dans `src/data/techniques/techniques.json`.
 
 ## PWA Android
 
@@ -141,5 +149,6 @@ Le manifest est genere par `vite-plugin-pwa` depuis `vite.config.ts`. Le service
 
 1. Lancer `npm install` si les dependances ne sont pas presentes.
 2. Lancer `npm run dev` puis verifier l'accueil mobile et desktop.
-3. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
-4. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.
+3. Si le navigateur affiche une ancienne PWA sur `localhost:5173`, vider le service worker et les donnees du site, ou lancer Vite sur un autre port.
+4. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
+5. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.

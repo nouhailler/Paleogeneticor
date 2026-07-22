@@ -11,6 +11,204 @@
   "culture": ["Mousterien", "Utilisation du feu", "Soin aux individus fragiles", "Parures possibles"],
   "tools": ["Racloirs", "Pointes Levallois", "Outils sur eclats"],
   "hybridations": ["Homo sapiens", "Denisoviens"],
+  "detailedSections": {
+    "genetics": {
+      "intro": "L'ADN neandertalien montre une lignee soeur de la notre, separee depuis plusieurs centaines de milliers d'annees mais pas totalement isolee.",
+      "media": {
+        "image": "/images/species/details/neanderthal-dna-extraction.jpg",
+        "alt": "Chercheur travaillant en salle propre sur un echantillon d'ADN neandertalien",
+        "caption": "Extraction d'ADN neandertalien en salle propre: l'image montre pourquoi contamination et protocole comptent autant que le fossile.",
+        "credit": "NHGRI / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neanderthal_DNA_extraction.jpg"
+      },
+      "highlights": [
+        "Genomes complets obtenus sur plusieurs individus d'Europe et d'Asie",
+        "Segments neandertaliens encore presents chez de nombreux humains actuels",
+        "Diversite parfois faible dans les groupes tardifs, signe de petites populations"
+      ],
+      "topics": [
+        {
+          "title": "Parente avec Homo sapiens",
+          "summary": "Neandertaliens et Sapiens partagent un ancetre commun recent a l'echelle de l'evolution humaine.",
+          "details": [
+            "Les genomes placent Neandertal comme groupe frere de Denisova, les deux etant plus proches entre eux que de Sapiens.",
+            "Cette parente explique pourquoi des croisements fertiles ont laisse des traces genetiques mesurables."
+          ],
+          "evidence": "Genomes nucleaires de Vindija, Altai et Chagyrskaya"
+        },
+        {
+          "title": "Introgressions",
+          "summary": "Des rencontres avec Homo sapiens ont transmis des fragments d'ADN neandertalien.",
+          "details": [
+            "Chez beaucoup de populations non africaines actuelles, une petite fraction du genome provient de Neandertaliens.",
+            "Ces fragments ne forment pas un bloc unique: ils sont disperses, car les recombinaisons les ont fragmente au fil des generations."
+          ],
+          "evidence": "Comparaison entre genomes anciens et genomes actuels"
+        },
+        {
+          "title": "Population",
+          "summary": "Certains groupes etaient peu nombreux et relativement isoles.",
+          "details": [
+            "Des genomes tardifs montrent des signes de consanguinite locale.",
+            "Cela ne signifie pas que toute l'espece etait identique: le registre genetique reste geographiquement incomplet."
+          ],
+          "evidence": "Longues regions homozygotes dans des genomes individuels"
+        }
+      ],
+      "metrics": [
+        { "label": "Parente avec Sapiens", "value": 82, "note": "Lignee soeur proche" },
+        { "label": "ADN conserve", "value": 76, "note": "Plusieurs genomes exploitables" },
+        { "label": "Melanges connus", "value": 68, "note": "Introgression documentee" }
+      ]
+    },
+    "culture": {
+      "intro": "La culture neandertalienne n'est pas un simple inventaire d'objets: elle traduit des choix techniques, sociaux et symboliques.",
+      "media": {
+        "image": "/images/species/details/neanderthal-scratches.jpg",
+        "alt": "Eclat de silex moustérien avec incisions possiblement symboliques",
+        "caption": "Eclat incise de Kiik-Koba: un support utile pour expliquer les indices symboliques attribues a Neandertal.",
+        "credit": "Gerbil / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Neandertal_scratches.jpg"
+      },
+      "highlights": [
+        "Maitrise du feu et occupation recurrente de grottes et abris",
+        "Chasse organisee adaptee aux milieux froids et temperes",
+        "Indices de soins, de pigments et de comportements symboliques debattus"
+      ],
+      "topics": [
+        {
+          "title": "Habiter les climats instables",
+          "summary": "Les groupes neandertaliens alternaient entre refuges, campements et territoires de chasse.",
+          "details": [
+            "Les sites montrent une bonne lecture des ressources locales: silex, gibier, bois, eau et abris.",
+            "Les occupations pouvaient etre breves ou repetees selon les saisons et les cycles climatiques."
+          ],
+          "evidence": "Stratigraphies d'abris sous roche et grottes europeennes"
+        },
+        {
+          "title": "Vie sociale",
+          "summary": "Des individus blesses ou ages ont survecu longtemps, ce qui suggere une assistance par le groupe.",
+          "details": [
+            "Les traces pathologiques ne prouvent pas une societe identique a la notre, mais elles indiquent une cooperation durable.",
+            "Les sepultures possibles restent discutees site par site."
+          ],
+          "evidence": "Fossiles avec lesions cicatrisees et contextes funeraires possibles"
+        },
+        {
+          "title": "Symboles possibles",
+          "summary": "Pigments, serres d'oiseaux et parures possibles montrent des comportements plus varies qu'on ne l'a longtemps imagine.",
+          "details": [
+            "Chaque indice demande prudence: un objet colore ou perce n'est pas automatiquement un symbole.",
+            "L'ensemble du dossier rend toutefois l'image d'une culture pauvre tres difficile a maintenir."
+          ],
+          "evidence": "Pigments, coquillages et objets modifies"
+        }
+      ],
+      "metrics": [
+        { "label": "Organisation sociale", "value": 72, "note": "Soins et cooperation" },
+        { "label": "Mobilite", "value": 58, "note": "Territoires regionaux" },
+        { "label": "Symboles", "value": 44, "note": "Indices discutes" }
+      ]
+    },
+    "landmarks": {
+      "intro": "Les reperes de Neandertal combinent une longue duree, une large repartition et une disparition progressive autour de 40 ka.",
+      "media": {
+        "image": "/images/species/details/neanderthal-range-adna.webp",
+        "alt": "Carte et graphique de distribution de sites et d'ADN neandertalien",
+        "caption": "Carte de repartition et segments d'ADN neandertalien dans des genomes humains anciens.",
+        "credit": "Hajdinjak et al. / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geographical_distribution_of_Neanderthal_archaeological_sites_and_genome-wide_distribution_of_Neanderthal_alleles_in_the_genomes_of_ancient_modern_humans.webp"
+      },
+      "highlights": [
+        "Presence majeure en Europe et en Asie occidentale",
+        "Fossiles abondants par rapport aux autres humains archaiques",
+        "Dernieres traces proches de l'arrivee de Sapiens en Europe"
+      ],
+      "topics": [
+        {
+          "title": "Chronologie",
+          "summary": "La lignee est visible pendant plusieurs centaines de milliers d'annees.",
+          "details": [
+            "Les premiers traits neandertaliens apparaissent progressivement dans des fossiles du Pleistocene moyen.",
+            "La disparition n'est pas un evenement instantane: elle varie selon les regions et les types de preuves."
+          ],
+          "evidence": "Datations radiometriques et comparaisons morphologiques"
+        },
+        {
+          "title": "Geographie",
+          "summary": "Le coeur du registre se situe en Europe, avec des extensions vers le Proche-Orient et l'Asie centrale.",
+          "details": [
+            "Les sites du Levant montrent des alternances ou chevauchements possibles avec Homo sapiens.",
+            "La carte genetique est moins dense que la carte fossile, car l'ADN se conserve mal dans de nombreuses regions."
+          ],
+          "evidence": "Fossiles europeens, levantins et asiatiques"
+        },
+        {
+          "title": "Lecture prudente",
+          "summary": "Un site ne represente jamais toute l'espece.",
+          "details": [
+            "Les fossiles preservent surtout certains milieux, pas tous les lieux habites.",
+            "Les absences sur la carte peuvent refleter la conservation, les fouilles ou les datations disponibles."
+          ],
+          "evidence": "Biais de conservation et d'echantillonnage"
+        }
+      ],
+      "metrics": [
+        { "label": "Duree connue", "value": 90, "note": "Environ 390 000 ans" },
+        { "label": "Registre fossile", "value": 84, "note": "Tres abondant" },
+        { "label": "Carte genetique", "value": 62, "note": "ADN surtout temperes/froids" }
+      ]
+    },
+    "tools": {
+      "intro": "Les outils neandertaliens reposent sur une chaine operatoire maitrisee: choisir la pierre, preparer le bloc, detacher l'eclat, retoucher le tranchant.",
+      "media": {
+        "image": "/images/species/details/neanderthal-mousterian-point.png",
+        "alt": "Pointe moustérienne en pierre taillee",
+        "caption": "Pointe moustérienne: une piece simple en apparence, mais produite par une preparation technique controlee.",
+        "credit": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mousterian_point.png"
+      },
+      "highlights": [
+        "Debitages Levallois pour anticiper la forme des eclats",
+        "Racloirs et pointes adaptes au travail des peaux, du bois et de la viande",
+        "Utilisation possible d'emmanchements avec colles naturelles"
+      ],
+      "topics": [
+        {
+          "title": "Levallois",
+          "summary": "La methode prepare le nucleus avant de detacher un eclat de forme controlee.",
+          "details": [
+            "Elle demande une representation mentale de la piece finale avant le dernier geste.",
+            "Ce n'est pas une technique unique: elle comprend plusieurs variantes regionales."
+          ],
+          "evidence": "Nucleus prepares et eclats diagnostiques"
+        },
+        {
+          "title": "Racloirs",
+          "summary": "Les racloirs servent a couper, gratter ou preparer des matieres animales et vegetales.",
+          "details": [
+            "Leur bord retouche peut etre ravive plusieurs fois.",
+            "La forme depend autant de l'usage que de la matiere premiere disponible."
+          ],
+          "evidence": "Traces microscopiques d'usure"
+        },
+        {
+          "title": "Emmanchement",
+          "summary": "Certaines pieces etaient probablement fixees sur des manches ou des hampes.",
+          "details": [
+            "Un manche transforme un eclat en outil composite plus puissant et plus precis.",
+            "Les colles vegetales ou bitumineuses sont rarement conservees, donc les preuves restent ponctuelles."
+          ],
+          "evidence": "Residus, fractures d'impact et experimentations"
+        }
+      ],
+      "metrics": [
+        { "label": "Controle du debit", "value": 82, "note": "Preparation avancee" },
+        { "label": "Outils composites", "value": 54, "note": "Preuves ponctuelles" },
+        { "label": "Variete", "value": 66, "note": "Industries regionales" }
+      ]
+    }
+  },
   "coordinates": [
     { "lat": 49.974, "lng": 7.95 },
     { "lat": 43.35, "lng": 5.53 }

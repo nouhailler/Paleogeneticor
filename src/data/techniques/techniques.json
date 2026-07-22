@@ -3,21 +3,651 @@
     "id": "pcr",
     "name": "PCR",
     "year": 1983,
-    "summary": "Amplification ciblee de fragments d'ADN.",
-    "impact": "A rendu possible les premieres analyses d'ADN ancien, tout en augmentant les exigences contre la contamination."
+    "summary": "Amplification ciblee de fragments d'ADN par cycles thermiques.",
+    "impact": "A rendu possibles les premieres analyses d'ADN ancien, tout en imposant une lutte stricte contre la contamination.",
+    "image": "/images/glossary/adn-ancien.webp",
+    "category": "Amplification",
+    "whyItMatters": "La PCR transforme quelques molecules presque invisibles en milliards de copies analysables. Pour la paleogenetique, elle a ete l'outil qui a permis de passer du fossile muet au fragment genetique lisible.",
+    "steps": [
+      {
+        "title": "Denaturation",
+        "description": "Vers 95 degC, les deux brins de l'ADN se separent. Le fragment ancien devient accessible aux amorces."
+      },
+      {
+        "title": "Hybridation",
+        "description": "Vers 55-65 degC, de courtes amorces synthetiques se fixent aux extremites de la zone que l'on veut copier."
+      },
+      {
+        "title": "Elongation",
+        "description": "Vers 72 degC, une polymerase reconstruit le brin complementaire. A chaque cycle, le nombre de copies double en theorie."
+      },
+      {
+        "title": "Taq polymerase",
+        "description": "L'enzyme issue de Thermus aquaticus resiste a la chaleur. C'est ce qui a rendu la PCR automatisable sans rajouter l'enzyme a chaque cycle."
+      }
+    ],
+    "ancientDnaRole": [
+      "Amplifier des fragments tres courts, souvent inferieurs a 100 bases.",
+      "Tester rapidement si un os, une dent ou un sediment conserve une cible genetique.",
+      "Ouvrir les premieres analyses de faune disparue, puis d'hominines anciens."
+    ],
+    "contaminationRisks": [
+      "Une seule cellule humaine moderne peut etre amplifiee avec plus d'efficacite qu'un fragment ancien degrade.",
+      "Les reactifs, poussieres et manipulations peuvent introduire de l'ADN recent.",
+      "La PCR cible une region precise: elle peut donner une impression de certitude sur un signal en realite contamine."
+    ],
+    "safeguards": [
+      "Preparer les echantillons en salle blanche separee des laboratoires post-PCR.",
+      "Utiliser des controles a blanc qui suivent toutes les etapes sans echantillon.",
+      "Repeter les resultats sur plusieurs extraits ou dans un laboratoire independant.",
+      "Verifier les dommages caracteristiques de l'ADN ancien."
+    ],
+    "comparison": [
+      { "label": "Quantite d'ADN requise", "before": "Grande quantite ou culture prealable", "after": "Infime, parfois une molecule cible" },
+      { "label": "Temps d'obtention", "before": "Semaines ou mois", "after": "Quelques heures" },
+      { "label": "Fossiles", "before": "ADN souvent trop rare", "after": "Fragments ciblables et copiables" },
+      { "label": "Risque principal", "before": "Echec par manque de materiel", "after": "Faux positif par contamination" }
+    ],
+    "keyFigures": ["Kary Mullis", "Svante Paabo", "Thermus aquaticus"]
+  },
+  {
+    "id": "extraction-adn-ancien",
+    "name": "Extraction d'ADN ancien",
+    "year": 1984,
+    "summary": "Liberation et purification de fragments d'ADN conserves dans l'os, la dent, les cheveux ou les sediments.",
+    "impact": "Determine souvent la qualite de toute l'analyse: un bon sequencage ne peut pas sauver un extrait contamine ou trop pauvre.",
+    "image": "/images/glossary/adn-ancien.webp",
+    "category": "Preparation",
+    "whyItMatters": "L'extraction est le moment ou le fossile devient echantillon biologique. Elle doit recuperer des molecules tres courtes sans ajouter d'ADN moderne.",
+    "steps": [
+      {
+        "title": "Nettoyer la surface",
+        "description": "La surface externe est poncee, irradiee ou retiree, car elle a souvent ete touchee et contaminee."
+      },
+      {
+        "title": "Prelever la partie dense",
+        "description": "L'os petreux de l'oreille interne et les dents donnent souvent de meilleurs rendements que des os spongieux."
+      },
+      {
+        "title": "Dissoudre la matrice",
+        "description": "Des solutions chimiques liberent les fragments d'ADN prisonniers du mineral osseux."
+      },
+      {
+        "title": "Fixer et laver",
+        "description": "Les fragments sont captures sur silice ou billes, puis laves pour retirer inhibiteurs et impuretes."
+      }
+    ],
+    "ancientDnaRole": [
+      "Maximiser l'ADN endogene, c'est-a-dire l'ADN de l'organisme etudie.",
+      "Travailler sur des fragments abimes, courts et chimiquement modifies.",
+      "Comparer plusieurs tissus ou zones d'un fossile pour choisir le meilleur extrait."
+    ],
+    "contaminationRisks": [
+      "Manipulations anciennes du fossile par fouilleurs, conservateurs ou chercheurs.",
+      "ADN microbien du sol beaucoup plus abondant que l'ADN de l'individu.",
+      "Melange accidentel entre poudres d'os, tubes ou reactifs."
+    ],
+    "safeguards": [
+      "Porter combinaison, masque, double gants et charlotte.",
+      "Separations physiques entre extraction, amplification et analyse post-PCR.",
+      "Tracer chaque tube, chaque lot de reactif et chaque blanc d'extraction.",
+      "Privilegier des zones internes denses et peu manipulees."
+    ],
+    "comparison": [
+      { "label": "Support ideal", "before": "Os disponible au hasard", "after": "Petreux, dent ou zone dense ciblee" },
+      { "label": "Signal utile", "before": "ADN ancien noye", "after": "Fragments enrichis et purifies" },
+      { "label": "Controle", "before": "Verification tardive", "after": "Blancs des le depart" }
+    ],
+    "keyFigures": ["Matthias Meyer", "Svante Paabo", "Laboratoires d'ADN ancien"]
+  },
+  {
+    "id": "salles-blanches",
+    "name": "Salles blanches et controles",
+    "year": 1990,
+    "summary": "Organisation du laboratoire pour eviter que l'ADN moderne n'entre dans les echantillons anciens.",
+    "impact": "A transforme l'ADN ancien en discipline fiable, capable de distinguer signal authentique et pollution moderne.",
+    "image": "/images/glossary/contamination.webp",
+    "category": "Controle qualite",
+    "whyItMatters": "L'ADN ancien est rare, alors que l'ADN moderne est partout. La salle blanche sert a rendre les faux positifs detectables et rares.",
+    "steps": [
+      {
+        "title": "Flux separe",
+        "description": "Les echantillons anciens entrent dans une zone pre-PCR qui ne doit jamais recevoir de produits amplifies."
+      },
+      {
+        "title": "Air filtre",
+        "description": "Surpression, filtres HEPA et surfaces faciles a nettoyer limitent les poussieres porteuses d'ADN."
+      },
+      {
+        "title": "UV et decontamination",
+        "description": "Les UV fragmentent l'ADN de surface; eau de Javel et agents chimiques nettoient plans de travail et instruments."
+      },
+      {
+        "title": "Blancs",
+        "description": "Des tubes sans echantillon traversent les memes etapes. S'ils donnent un signal, la serie est suspecte."
+      }
+    ],
+    "ancientDnaRole": [
+      "Reduire le bruit de fond moderne avant extraction.",
+      "Rendre la contamination visible grace aux controles.",
+      "Permettre l'etude de fossiles humains, les plus sensibles car l'ADN contaminant peut etre humain."
+    ],
+    "contaminationRisks": [
+      "ADN du personnel de laboratoire.",
+      "Aerosols produits apres PCR, contenant des milliards de copies.",
+      "Reactifs commerciaux contenant des traces biologiques."
+    ],
+    "safeguards": [
+      "Interdire tout retour de materiel post-PCR vers la salle ancienne.",
+      "Multiplier les blancs d'extraction et de bibliotheque.",
+      "Comparer les profils genetiques avec ceux des manipulateurs quand c'est necessaire.",
+      "Publier les taux de contamination estimes."
+    ],
+    "comparison": [
+      { "label": "Laboratoire standard", "before": "ADN moderne omnipresent", "after": "Zone ancienne separee" },
+      { "label": "Erreur invisible", "before": "Signal accepte trop vite", "after": "Blancs et repetition" },
+      { "label": "Fossiles humains", "before": "Tres risques", "after": "Analysables sous contraintes" }
+    ],
+    "keyFigures": ["Salles pre-PCR", "Controles a blanc", "HEPA", "UV"]
+  },
+  {
+    "id": "authentification",
+    "name": "Authentification des dommages",
+    "year": 2001,
+    "summary": "Lecture des signatures chimiques qui prouvent qu'un fragment est ancien plutot que moderne.",
+    "impact": "A donne un critere objectif pour separer ADN ancien, contamination recente et artefacts techniques.",
+    "image": "/images/glossary/contamination.webp",
+    "category": "Validation",
+    "whyItMatters": "Un fragment ancien porte des cicatrices: cassures courtes, extremites abimees et substitutions typiques. Ces marques deviennent une preuve d'authenticite.",
+    "steps": [
+      {
+        "title": "Fragments courts",
+        "description": "Apres la mort, l'ADN se casse. Les lectures anciennes sont donc beaucoup plus courtes que l'ADN moderne intact."
+      },
+      {
+        "title": "Deamination",
+        "description": "Les cytosines se transforment souvent en uraciles, lus comme des thymine lors du sequencage."
+      },
+      {
+        "title": "Profil d'extremite",
+        "description": "Les dommages sont plus frequents aux extremites des fragments, ce qui cree une signature statistique."
+      },
+      {
+        "title": "Estimation de contamination",
+        "description": "Le chromosome X chez les individus masculins ou l'ADN mitochondrial peuvent aider a mesurer les melanges modernes."
+      }
+    ],
+    "ancientDnaRole": [
+      "Confirmer que les sequences ne viennent pas seulement d'un contaminant recent.",
+      "Filtrer ou modeliser les erreurs induites par les dommages.",
+      "Comparer des echantillons de conservation differente."
+    ],
+    "contaminationRisks": [
+      "ADN moderne sans dommages imitant une sequence humaine plausible.",
+      "Dommages confondus avec mutations si le modele bioinformatique est trop simple.",
+      "Echantillons chauds ou humides avec peu de signature conservee."
+    ],
+    "safeguards": [
+      "Mesurer la longueur des fragments et les substitutions aux extremites.",
+      "Utiliser des logiciels dedies aux profils de dommages.",
+      "Comparer les resultats bruts, filtres et traites enzymatiquement.",
+      "Croiser avec contexte archeologique et datation."
+    ],
+    "comparison": [
+      { "label": "ADN moderne", "before": "Long et peu endommage", "after": "Signal suspect dans un fossile ancien" },
+      { "label": "ADN ancien", "before": "Fragmente et modifie", "after": "Signature exploitable" },
+      { "label": "Interpretation", "before": "Sequence seule", "after": "Sequence plus profil de dommages" }
+    ],
+    "keyFigures": ["Deamination", "C vers T", "Profils de dommages", "Contamination"]
   },
   {
     "id": "ngs",
     "name": "Sequencage haut debit",
     "year": 2005,
-    "summary": "Lecture massive et parallele de fragments d'ADN.",
-    "impact": "A permis de reconstruire des genomes anciens complets ou partiels."
+    "summary": "Lecture massive et parallele de millions de fragments d'ADN.",
+    "impact": "A permis de reconstruire des genomes anciens complets ou partiels, au lieu de quelques marqueurs isoles.",
+    "image": "/images/glossary/ngs.webp",
+    "category": "Sequencage",
+    "whyItMatters": "Le sequencage haut debit correspond mieux a l'ADN ancien que les approches classiques: l'echantillon contient une poussiere de fragments courts que l'on lit en masse.",
+    "steps": [
+      {
+        "title": "Bibliotheque",
+        "description": "Des adaptateurs sont ajoutes aux fragments pour les rendre lisibles par la machine."
+      },
+      {
+        "title": "Lecture parallele",
+        "description": "Des millions de molecules sont lues simultanement, chacune produisant une courte sequence."
+      },
+      {
+        "title": "Alignement",
+        "description": "Les lectures sont replacees sur un genome de reference ou assemblees selon le projet."
+      },
+      {
+        "title": "Couverture",
+        "description": "Plus un site du genome est lu de nombreuses fois, plus l'appel de base devient fiable."
+      }
+    ],
+    "ancientDnaRole": [
+      "Lire aussi les fragments non cibles par une PCR.",
+      "Reconstruire des genomes nucleaires, mitochondriaux ou microbiens.",
+      "Estimer proportions de melange, sexe genetique, parente et traits adaptatifs."
+    ],
+    "contaminationRisks": [
+      "Un grand volume de donnees peut masquer un faible taux de contamination si les controles sont absents.",
+      "Les erreurs de mapping sont plus frequentes avec des fragments courts.",
+      "Les bibliotheques peuvent introduire des biais de representation."
+    ],
+    "safeguards": [
+      "Controler les blancs de bibliotheque.",
+      "Filtrer les lectures trop courtes ou mal alignees.",
+      "Rapporter couverture, taux endogene et dommages.",
+      "Comparer les resultats a plusieurs seuils de qualite."
+    ],
+    "comparison": [
+      { "label": "Portee", "before": "Un fragment cible", "after": "Millions de fragments" },
+      { "label": "Question possible", "before": "Presence/absence", "after": "Genome, melanges, populations" },
+      { "label": "Risque", "before": "PCR contaminee", "after": "Biais de mapping et bibliotheque" }
+    ],
+    "keyFigures": ["Illumina", "Bibliotheque ADN", "Couverture", "Genome ancien"]
   },
   {
     "id": "capture-hybridation",
     "name": "Capture par hybridation",
     "year": 2007,
     "summary": "Enrichissement de fragments d'interet avant sequencage.",
-    "impact": "Utile pour travailler sur des echantillons pauvres en ADN endogene."
+    "impact": "Utile pour travailler sur des echantillons pauvres en ADN endogene ou pour cibler des regions informatives.",
+    "image": "/images/glossary/couverture.webp",
+    "category": "Enrichissement",
+    "whyItMatters": "Dans beaucoup d'os, l'ADN de l'individu represente moins de 1% des molecules. La capture sert a recuperer les fragments qui repondent a la question.",
+    "steps": [
+      {
+        "title": "Sondes",
+        "description": "Des fragments synthetiques complementaires des regions recherchees sont prepares."
+      },
+      {
+        "title": "Hybridation",
+        "description": "Les molecules anciennes qui correspondent aux sondes s'y accrochent."
+      },
+      {
+        "title": "Lavage",
+        "description": "Les molecules non ciblees sont eliminees, ce qui augmente la proportion de lectures utiles."
+      },
+      {
+        "title": "Sequencage",
+        "description": "La bibliotheque enrichie est lue par sequencage haut debit."
+      }
+    ],
+    "ancientDnaRole": [
+      "Recuperer l'ADN mitochondrial complet dans des echantillons pauvres.",
+      "Cibler des centaines de milliers de positions informatives pour la population.",
+      "Comparer plus d'individus avec un cout plus faible qu'un genome complet profond."
+    ],
+    "contaminationRisks": [
+      "Capture possible de molecules contaminantes proches de la cible.",
+      "Biais vers les variants deja connus dans les sondes.",
+      "Perte d'information hors des regions ciblees."
+    ],
+    "safeguards": [
+      "Conserver des controles non captures quand c'est utile.",
+      "Documenter le panel de sondes et ses limites.",
+      "Verifier dommages et contamination apres capture.",
+      "Ne pas sur-interpreter les regions non ciblees."
+    ],
+    "comparison": [
+      { "label": "Echantillon pauvre", "before": "Trop peu d'ADN utile", "after": "Cibles enrichies" },
+      { "label": "Cout", "before": "Sequencer beaucoup de bruit", "after": "Lire surtout l'informatif" },
+      { "label": "Limite", "before": "Vision large", "after": "Vision ciblee" }
+    ],
+    "keyFigures": ["Sondes", "ADN mitochondrial", "Panels SNP", "Enrichissement"]
+  },
+  {
+    "id": "bioinformatique",
+    "name": "Bioinformatique des genomes anciens",
+    "year": 2010,
+    "summary": "Traitement des lectures courtes pour reconstruire des genomes, estimer les dommages et comparer les populations.",
+    "impact": "Transforme des millions de lectures brutes en hypotheses testables sur parente, migration et adaptation.",
+    "image": "/images/glossary/genomique-comparative.webp",
+    "category": "Analyse",
+    "whyItMatters": "La decouverte ne se termine pas au sequencage. Les fichiers bruts contiennent erreurs, duplicats, microbes, contamination et fragments mal alignes.",
+    "steps": [
+      {
+        "title": "Nettoyage",
+        "description": "Les adaptateurs sont retires et les lectures trop courtes ou trop mauvaises sont filtrees."
+      },
+      {
+        "title": "Mapping",
+        "description": "Les fragments sont alignes sur un genome de reference avec des parametres adaptes aux dommages."
+      },
+      {
+        "title": "Deduplication",
+        "description": "Les copies PCR d'une meme molecule sont regroupees pour eviter de compter plusieurs fois le meme fragment."
+      },
+      {
+        "title": "Modelisation",
+        "description": "Les profils de dommages, la couverture et les statistiques de population sont combines."
+      }
+    ],
+    "ancientDnaRole": [
+      "Distinguer lecture unique, duplicat et contaminant.",
+      "Estimer la parente entre individus anciens.",
+      "Tester des modeles de melange entre populations."
+    ],
+    "contaminationRisks": [
+      "Mauvais alignement de fragments tres courts.",
+      "Reference bias: les lectures proches du genome de reference sont mieux conservees.",
+      "Duplicats PCR pris a tort pour une forte couverture."
+    ],
+    "safeguards": [
+      "Utiliser des seuils de qualite explicites.",
+      "Mesurer la duplication et la longueur des fragments.",
+      "Tester les resultats avec plusieurs parametres.",
+      "Publier pipelines, versions et donnees quand c'est possible."
+    ],
+    "comparison": [
+      { "label": "Donnee brute", "before": "Lectures en vrac", "after": "Genome interpretable" },
+      { "label": "Erreur", "before": "Invisible", "after": "Quantifiee" },
+      { "label": "Histoire", "before": "Fossile isole", "after": "Population et modele" }
+    ],
+    "keyFigures": ["Mapping", "Deduplication", "Reference bias", "Statistiques f"]
+  },
+  {
+    "id": "introgression",
+    "name": "Introgression et melanges genetiques",
+    "year": 2010,
+    "summary": "Detection des fragments d'ADN transmis par croisements anciens entre populations ou especes humaines.",
+    "impact": "A remplace l'idee d'une evolution humaine lineaire par une histoire reticulee faite de separations et de rencontres.",
+    "image": "/images/glossary/introgression.webp",
+    "category": "Interpretation",
+    "whyItMatters": "Les genomes anciens montrent que Sapiens, Neandertaliens et Denisoviens ne sont pas des branches totalement etanches. Certains fragments ont traverse les frontieres de population.",
+    "steps": [
+      {
+        "title": "Comparer",
+        "description": "On compare des genomes anciens et actuels pour reperer des segments plus proches d'une lignee archaique."
+      },
+      {
+        "title": "Dater approximativement",
+        "description": "La longueur des segments aide a estimer depuis combien de generations le melange a eu lieu."
+      },
+      {
+        "title": "Tester",
+        "description": "Des statistiques verifient si le partage d'alleles depasse ce qu'un arbre simple expliquerait."
+      },
+      {
+        "title": "Interpreter",
+        "description": "Un fragment transmis n'est pas forcement avantageux: il peut etre neutre, utile ou progressivement elimine."
+      }
+    ],
+    "ancientDnaRole": [
+      "Identifier les contacts entre Sapiens, Neandertaliens et Denisoviens.",
+      "Mesurer les proportions d'ascendance archaique.",
+      "Suivre la disparition ou la conservation de certains fragments au fil du temps."
+    ],
+    "contaminationRisks": [
+      "Confondre contamination moderne et melange ancien si les dommages ne sont pas verifies.",
+      "Confondre structure de population ancienne et introgression directe.",
+      "Sur-interpreter une moyenne globale qui cache des differences regionales."
+    ],
+    "safeguards": [
+      "Utiliser des genomes anciens dates comme points de comparaison.",
+      "Tester plusieurs modeles demographiques.",
+      "Verifier que les segments portent des signatures compatibles avec leur anciennete.",
+      "Presenter les proportions comme des estimations avec incertitude."
+    ],
+    "comparison": [
+      { "label": "Modele simple", "before": "Branches separees", "after": "Reseau de rencontres" },
+      { "label": "Indice", "before": "Ressemblance morphologique", "after": "Segments d'ADN mesurables" },
+      { "label": "Question", "before": "Qui remplace qui ?", "after": "Qui rencontre qui, quand, et avec quelle trace ?" }
+    ],
+    "keyFigures": ["Neandertal", "Denisoviens", "Segments archaiques", "D-statistics"]
+  },
+  {
+    "id": "bibliotheques-simple-brin",
+    "name": "Bibliotheques simple brin",
+    "year": 2013,
+    "summary": "Preparation de bibliotheques a partir de brins individuels pour recuperer davantage de fragments tres abimes.",
+    "impact": "A augmente le rendement sur les echantillons les plus precieux, notamment des restes denisoviens et neandertaliens tres pauvres.",
+    "image": "/images/glossary/couverture.webp",
+    "category": "Preparation avancee",
+    "whyItMatters": "Les methodes classiques perdent une partie des fragments les plus courts ou casses. La preparation simple brin traite chaque brin separement, ce qui sauve des molecules que l'on aurait ignorees.",
+    "steps": [
+      {
+        "title": "Denaturer les fragments",
+        "description": "Les fragments double brin sont separes pour travailler sur chaque brin comme une molecule independante."
+      },
+      {
+        "title": "Lier un adaptateur",
+        "description": "Un premier adaptateur est ajoute a une extremite du brin afin de pouvoir le copier ensuite."
+      },
+      {
+        "title": "Copier le brin",
+        "description": "Le brin ancien est transforme en molecule compatible avec le sequencage Illumina."
+      },
+      {
+        "title": "Indexer",
+        "description": "Des codes moleculaires permettent de suivre les echantillons et de detecter les melanges accidentels."
+      }
+    ],
+    "ancientDnaRole": [
+      "Recuperer des fragments ultra-courts perdus par les protocoles double brin.",
+      "Travailler sur quelques milligrammes de poudre osseuse seulement.",
+      "Augmenter la profondeur de genomes anciens difficiles."
+    ],
+    "contaminationRisks": [
+      "La sensibilite accrue recupere aussi mieux certains contaminants.",
+      "Les faibles quantites de depart amplifient l'effet des erreurs de manipulation.",
+      "La multiplication des etapes peut introduire des biais si les controles sont insuffisants."
+    ],
+    "safeguards": [
+      "Utiliser des doubles index pour reperer les erreurs d'assignation.",
+      "Conserver des blancs de bibliotheque a chaque serie.",
+      "Mesurer les profils de dommages apres sequencage.",
+      "Comparer le rendement simple brin et double brin quand la matiere le permet."
+    ],
+    "comparison": [
+      { "label": "Fragments courts", "before": "Souvent perdus", "after": "Mieux recuperes" },
+      { "label": "Poudre necessaire", "before": "Quantite plus elevee", "after": "Quelques milligrammes possibles" },
+      { "label": "Echantillons rares", "before": "Analyse parfois impossible", "after": "Genome partiel ou profond envisageable" }
+    ],
+    "keyFigures": ["Matthias Meyer", "Marie-Theres Gansauge", "Denisova", "Fragments ultra-courts"]
+  },
+  {
+    "id": "os-petreux",
+    "name": "Os petreux et dents",
+    "year": 2015,
+    "summary": "Ciblage de zones anatomiques qui preservent beaucoup mieux l'ADN endogene.",
+    "impact": "A multiplie le nombre d'individus anciens analysables, en particulier dans les contextes chauds ou mal conserves.",
+    "image": "/images/glossary/adn-ancien.webp",
+    "category": "Echantillonnage",
+    "whyItMatters": "Une revolution n'est pas toujours une machine: parfois, c'est choisir la bonne partie du squelette. La portion petreuse de l'os temporal peut conserver beaucoup plus d'ADN que d'autres os.",
+    "steps": [
+      {
+        "title": "Diagnostiquer le squelette",
+        "description": "Les chercheurs identifient les dents, l'os petreux ou les zones denses disponibles sans detruire inutilement le specimen."
+      },
+      {
+        "title": "Prelever localement",
+        "description": "Le prelevement vise la zone interne dense, souvent mieux protegee des microbes et manipulations."
+      },
+      {
+        "title": "Comparer le rendement",
+        "description": "Le taux d'ADN endogene est mesure pour savoir si l'echantillon merite un sequencage plus profond."
+      },
+      {
+        "title": "Limiter la destruction",
+        "description": "Les protocoles modernes cherchent a extraire plus d'information avec moins de matiere osseuse."
+      }
+    ],
+    "ancientDnaRole": [
+      "Augmenter fortement les chances d'obtenir un genome humain ancien.",
+      "Ouvrir l'etude de periodes et regions auparavant trop pauvres en ADN.",
+      "Permettre des series de population plus grandes et mieux datees."
+    ],
+    "contaminationRisks": [
+      "Le prelevement reste destructif et doit etre justifie.",
+      "Une zone dense peut quand meme contenir peu d'ADN dans les climats defavorables.",
+      "La demande scientifique peut entrer en tension avec la conservation patrimoniale."
+    ],
+    "safeguards": [
+      "Documenter la strategie de prelevement et la quantite detruite.",
+      "Favoriser micro-prelevements et zones deja endommagees quand c'est possible.",
+      "Associer conservateurs, archeologues et communautes concernees.",
+      "Tester d'abord le rendement avant de lancer un sequencage massif."
+    ],
+    "comparison": [
+      { "label": "Choix du tissu", "before": "Os quelconque", "after": "Petreux, dent, cementum" },
+      { "label": "ADN endogene", "before": "Souvent tres faible", "after": "Souvent nettement meilleur" },
+      { "label": "Echelle d'etude", "before": "Quelques individus", "after": "Grandes series possibles" }
+    ],
+    "keyFigures": ["Os petreux", "Dents", "ADN endogene", "Pinhasi"]
+  },
+  {
+    "id": "adn-sedimentaire",
+    "name": "ADN sedimentaire",
+    "year": 2017,
+    "summary": "Extraction d'ADN ancien directement depuis les sediments, meme sans os identifiable.",
+    "impact": "A transforme les grottes et sols archeologiques en archives genetiques, capables de signaler des presences humaines ou animales invisibles.",
+    "image": "/images/glossary/paleoproteomique.webp",
+    "category": "Archive environnementale",
+    "whyItMatters": "Un site archeologique peut conserver de l'ADN dans ses couches de sediment. Cela permet d'etudier des presences biologiques quand les fossiles sont absents, fragmentaires ou non attribuables.",
+    "steps": [
+      {
+        "title": "Echantillonner la couche",
+        "description": "Le sediment est preleve selon la stratigraphie afin de conserver le lien avec une periode ou une occupation."
+      },
+      {
+        "title": "Extraire les molecules",
+        "description": "Les fragments d'ADN lies aux mineraux ou a la matiere organique sont liberes puis purifies."
+      },
+      {
+        "title": "Capturer des cibles",
+        "description": "Des sondes peuvent enrichir l'ADN mitochondrial humain, animal ou, plus recemment, nucleaire."
+      },
+      {
+        "title": "Relier au contexte",
+        "description": "Le signal genetique est interprete avec datation, stratigraphie, outils et restes fauniques."
+      }
+    ],
+    "ancientDnaRole": [
+      "Detecter Neandertaliens, Denisoviens ou Sapiens sans os humain.",
+      "Reconstruire les environnements, faunes et successions d'occupation.",
+      "Revisiter d'anciens sites fouilles avant les protocoles ADN modernes."
+    ],
+    "contaminationRisks": [
+      "Le sediment peut etre remanie par eau, animaux, racines ou fouilles anciennes.",
+      "Un signal genetique ne signifie pas toujours presence directe dans la couche exacte.",
+      "Les faibles quantites rendent les blancs et repetitions indispensables."
+    ],
+    "safeguards": [
+      "Multiplier les points de prelevement dans la stratigraphie.",
+      "Comparer ADN, datations et archeologie couche par couche.",
+      "Utiliser controles d'extraction et de capture.",
+      "Distinguer ADN mitochondrial, ADN nucleaire et signaux environnementaux."
+    ],
+    "comparison": [
+      { "label": "Besoin d'un fossile", "before": "Oui, souvent", "after": "Pas toujours" },
+      { "label": "Information", "before": "Individu ou os isole", "after": "Couche, site, environnement" },
+      { "label": "Risque", "before": "Mauvaise attribution fossile", "after": "Remaniement sedimentaire" }
+    ],
+    "keyFigures": ["Sediments", "Stratigraphie", "ADN mitochondrial", "ADN nucleaire"]
+  },
+  {
+    "id": "adn-nucleaire-sediments",
+    "name": "ADN nucleaire depuis les sediments",
+    "year": 2021,
+    "summary": "Analyse de fragments chromosomiques humains preserves dans les sediments de grotte.",
+    "impact": "A permis d'etudier l'histoire de populations neandertaliennes meme lorsque les couches ne livrent pas de restes humains exploitables.",
+    "image": "/images/glossary/genomique-comparative.webp",
+    "category": "Paleogenomique de site",
+    "whyItMatters": "L'ADN mitochondrial dit qu'une presence humaine est probable; l'ADN nucleaire peut aller plus loin, vers la parente, le sexe genetique et les changements de population.",
+    "steps": [
+      {
+        "title": "Prelever finement",
+        "description": "Les sediments sont selectionnes dans des couches datees et documentees archeologiquement."
+      },
+      {
+        "title": "Enrichir l'humain",
+        "description": "Des methodes de capture ciblent des regions chromosomiques informatives."
+      },
+      {
+        "title": "Filtrer les fragments",
+        "description": "Les lectures courtes sont triees pour limiter les erreurs de mapping et les contaminations."
+      },
+      {
+        "title": "Comparer les populations",
+        "description": "Les signaux sont compares a des genomes de Neandertaliens, Denisoviens et Sapiens connus."
+      }
+    ],
+    "ancientDnaRole": [
+      "Suivre des changements de population dans un meme site.",
+      "Relier occupations archeologiques et lignages genetiques.",
+      "Etudier des sites pauvres en restes humains."
+    ],
+    "contaminationRisks": [
+      "ADN humain moderne introduit pendant les fouilles.",
+      "ADN ancien melange entre micro-couches proches.",
+      "Fragments nucleaires tres courts et difficiles a assigner."
+    ],
+    "safeguards": [
+      "S'appuyer sur profils de dommages et controles stricts.",
+      "Repeter les extractions depuis plusieurs sous-echantillons.",
+      "Comparer avec ADN mitochondrial et donnees archeologiques.",
+      "Eviter de conclure au niveau individuel quand le signal vient d'une couche."
+    ],
+    "comparison": [
+      { "label": "Sediment ancien", "before": "Presence generale", "after": "Signal chromosomique" },
+      { "label": "Question", "before": "Qui etait la ?", "after": "Quelle population et quel changement ?" },
+      { "label": "Resolution", "before": "Taxon ou lignee large", "after": "Histoire de population plus fine" }
+    ],
+    "keyFigures": ["Neandertaliens", "ADN nucleaire", "Galeria de las Estatuas", "Max Planck"]
+  },
+  {
+    "id": "criblage-haut-debit-sediments",
+    "name": "Criblage haut debit des sediments",
+    "year": 2024,
+    "summary": "Methodes de test groupe et parallele pour analyser rapidement de grands ensembles de sediments.",
+    "impact": "Fait passer l'ADN sedimentaire d'une approche ponctuelle a une strategie de prospection plus systematique.",
+    "image": "/images/glossary/ngs.webp",
+    "category": "Industrialisation",
+    "whyItMatters": "Les sites produisent beaucoup d'echantillons et tous ne contiennent pas un signal exploitable. Le criblage haut debit aide a identifier vite les couches prometteuses.",
+    "steps": [
+      {
+        "title": "Regrouper",
+        "description": "Plusieurs extraits peuvent etre testes ensemble pour accelerer le tri initial."
+      },
+      {
+        "title": "Detecter",
+        "description": "Les pools positifs sont identifies par capture ou sequencage cible."
+      },
+      {
+        "title": "Deconvoluer",
+        "description": "Les pools prometteurs sont repris echantillon par echantillon."
+      },
+      {
+        "title": "Prioriser",
+        "description": "Le laboratoire concentre le sequencage couteux sur les couches avec signal ancien."
+      }
+    ],
+    "ancientDnaRole": [
+      "Explorer plus de niveaux stratigraphiques.",
+      "Economiser temps et budget avant les analyses profondes.",
+      "Reperer rapidement les sites ou couches les plus informatifs."
+    ],
+    "contaminationRisks": [
+      "Un pool positif peut cacher la source exacte du signal.",
+      "Le regroupement impose une tracabilite stricte des echantillons.",
+      "Les signaux faibles peuvent etre dilues si le protocole est mal calibre."
+    ],
+    "safeguards": [
+      "Conserver une matrice claire entre pool et echantillons sources.",
+      "Reanalyser individuellement tout pool positif.",
+      "Maintenir des blancs a chaque niveau du workflow.",
+      "Valider le protocole sur des sediments de conservation connue."
+    ],
+    "comparison": [
+      { "label": "Nombre d'echantillons", "before": "Analyse lente un par un", "after": "Tri parallele" },
+      { "label": "Budget", "before": "Sequencage de nombreux vides", "after": "Priorisation des positifs" },
+      { "label": "Usage", "before": "Etude ponctuelle", "after": "Prospection systematique" }
+    ],
+    "keyFigures": ["Pooled testing", "Sediments", "Criblage", "Workflow haut debit"]
   }
 ]

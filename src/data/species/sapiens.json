@@ -11,6 +11,204 @@
   "culture": ["Industries lithiques variees", "Art mobilier et parietal", "Navigation", "Agriculture tardive"],
   "tools": ["Lames", "Aiguilles", "Propulseurs", "Microlithes"],
   "hybridations": ["Homo neanderthalensis", "Denisoviens"],
+  "detailedSections": {
+    "genetics": {
+      "intro": "Chez Homo sapiens, l'ADN ancien raconte une histoire de migrations, de melanges et de transformations regionales sur une longue duree.",
+      "media": {
+        "image": "/images/species/details/homo-hybridation.png",
+        "alt": "Schema de phylogenie et d'hybridations entre Homo sapiens, Neandertaliens et Denisoviens",
+        "caption": "Schema d'hybridations du genre Homo: un bon support pour lire les apports neandertaliens et denisoviens chez Sapiens.",
+        "credit": "Dbachmann / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Filogenia_Homo_Hibrida%C3%A7%C3%A3o.png"
+      },
+      "highlights": [
+        "Origine africaine documentee par fossiles et genomes",
+        "Melanges avec Neandertaliens et Denisoviens hors d'Afrique",
+        "Remaniements majeurs au Paleolithique superieur, au Neolithique et aux ages des metaux"
+      ],
+      "topics": [
+        {
+          "title": "Origine et expansion",
+          "summary": "Les premiers Sapiens connus apparaissent en Afrique avant les grandes expansions mondiales.",
+          "details": [
+            "Le peuplement hors d'Afrique ne correspond pas a une vague unique simple.",
+            "Les genomes anciens revelent des expansions, disparitions locales et remplacements partiels."
+          ],
+          "evidence": "Fossiles africains, genomes anciens eurasiens et africains"
+        },
+        {
+          "title": "Heritages archaiques",
+          "summary": "Les contacts avec d'autres humains ont laisse des fragments genetiques mesurables.",
+          "details": [
+            "L'ADN neandertalien est frequent hors d'Afrique a faible proportion moyenne.",
+            "L'ADN denisovien est particulierement visible en Oceanie et dans certaines populations asiatiques."
+          ],
+          "evidence": "Segments archaiques detectes par comparaison genomique"
+        },
+        {
+          "title": "Adaptations recentes",
+          "summary": "Des variants lies a l'alimentation, aux pathogenes ou au climat ont change de frequence au cours du temps.",
+          "details": [
+            "La lactase persistante, certaines defenses immunitaires et des adaptations a l'altitude illustrent ces changements.",
+            "L'ADN ancien permet de dater approximativement la montee de ces variants."
+          ],
+          "evidence": "Series temporelles de genomes anciens"
+        }
+      ],
+      "metrics": [
+        { "label": "Parente globale", "value": 96, "note": "Espece actuelle" },
+        { "label": "ADN conserve", "value": 88, "note": "Nombreux genomes" },
+        { "label": "Melanges connus", "value": 72, "note": "Plusieurs sources" }
+      ]
+    },
+    "culture": {
+      "intro": "La culture de Sapiens est tres variable: elle combine innovation technique, transmission sociale, symboles et adaptations locales.",
+      "media": {
+        "image": "/images/species/details/venus-willendorf.jpg",
+        "alt": "Statuette paleolithique de la Venus de Willendorf",
+        "caption": "Venus de Willendorf: une image concrete pour aborder art mobilier, symboles et transmission culturelle.",
+        "credit": "MatthiasKabel / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Venus_von_Willendorf_01.jpg"
+      },
+      "highlights": [
+        "Art parietal, objets graves et parures dans plusieurs regions",
+        "Reseaux d'echange et mobilites a longue distance",
+        "Transitions vers agriculture et elevage beaucoup plus tardives"
+      ],
+      "topics": [
+        {
+          "title": "Symboles et images",
+          "summary": "Les productions graphiques et les parures rendent visibles des formes de communication sociale.",
+          "details": [
+            "L'art n'apparait pas partout au meme moment ni sous la meme forme.",
+            "Les objets symboliques servent probablement a signaler identites, liens sociaux ou savoirs partages."
+          ],
+          "evidence": "Grottes ornees, pigments, coquillages perces et art mobilier"
+        },
+        {
+          "title": "Mobilite",
+          "summary": "Les groupes pouvaient transporter matieres premieres, objets et idees sur de longues distances.",
+          "details": [
+            "Des pierres ou coquillages retrouves loin de leur source indiquent des reseaux et deplacements.",
+            "La mobilite varie selon l'environnement, la saison et la densite de population."
+          ],
+          "evidence": "Provenance des matieres premieres"
+        },
+        {
+          "title": "Neolithique",
+          "summary": "L'agriculture transforme les regimes alimentaires, les habitats et les genomes.",
+          "details": [
+            "Cette transition est tardive par rapport a l'histoire globale de Sapiens.",
+            "Elle s'accompagne souvent de migrations et de melanges avec des chasseurs-cueilleurs locaux."
+          ],
+          "evidence": "Archeobotanique, isotopes et genomes neolithiques"
+        }
+      ],
+      "metrics": [
+        { "label": "Symboles", "value": 92, "note": "Dossier tres riche" },
+        { "label": "Mobilite", "value": 86, "note": "Expansion mondiale" },
+        { "label": "Diversite culturelle", "value": 96, "note": "Tres variable" }
+      ]
+    },
+    "landmarks": {
+      "intro": "Les reperes de Sapiens couvrent l'Afrique ancienne, les expansions eurasiatiques, puis le peuplement progressif de presque tous les continents.",
+      "media": {
+        "image": "/images/species/details/jebel-irhoud-sapiens.jpg",
+        "alt": "Reconstitution composite de fossiles Homo sapiens de Jebel Irhoud",
+        "caption": "Jebel Irhoud: un repere africain majeur pour comprendre les premiers Homo sapiens connus.",
+        "credit": "MPI EVA Leipzig / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Homo_sapiens_from_Jebel_Irhoud.jpg"
+      },
+      "highlights": [
+        "Premiers fossiles africains autour de 300 ka",
+        "Presences hors d'Afrique avant et apres 100 ka selon les regions",
+        "Expansion mondiale acceleree au Paleolithique superieur"
+      ],
+      "topics": [
+        {
+          "title": "Afrique",
+          "summary": "L'origine de Sapiens est africaine, mais probablement structuree en plusieurs populations.",
+          "details": [
+            "Les fossiles anciens ne pointent pas vers un seul berceau simple.",
+            "Les donnees genetiques suggerent des populations africaines longtemps connectees et separees par moments."
+          ],
+          "evidence": "Fossiles de Jebel Irhoud et autres sites africains"
+        },
+        {
+          "title": "Sorties d'Afrique",
+          "summary": "Les dispersions hors d'Afrique ont ete multiples, avec des succes demographiques variables.",
+          "details": [
+            "Certaines presences anciennes n'ont pas necessairement contribue fortement aux populations actuelles.",
+            "Les genomes anciens permettent de distinguer presence archeologique et descendance durable."
+          ],
+          "evidence": "Fossiles levantins, asiatiques et genomes eurasiens"
+        },
+        {
+          "title": "Peuplements recents",
+          "summary": "L'Europe, l'Asie, l'Oceanie et les Ameriques ont connu des histoires regionales distinctes.",
+          "details": [
+            "Les cartes doivent etre lues comme des trajectoires, pas comme des fleches uniques.",
+            "Chaque region combine migrations, adaptations et melanges locaux."
+          ],
+          "evidence": "ADN ancien regional et archeologie"
+        }
+      ],
+      "metrics": [
+        { "label": "Duree connue", "value": 70, "note": "Environ 300 000 ans" },
+        { "label": "Registre fossile", "value": 88, "note": "Tres documente" },
+        { "label": "Carte genetique", "value": 94, "note": "Mondiale" }
+      ]
+    },
+    "tools": {
+      "intro": "Les outils de Sapiens se diversifient fortement: pierre, os, bois animal, fibres et objets composites s'ajoutent aux traditions lithiques.",
+      "media": {
+        "image": "/images/species/details/jebel-irhoud-tools.png",
+        "alt": "Outils en pierre du site de Jebel Irhoud",
+        "caption": "Outils de Jebel Irhoud: l'industrie lithique accompagne les premiers fossiles africains attribues a Sapiens.",
+        "credit": "MPI EVA Leipzig / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stone_tools_from_Jebel_Irhoud.png"
+      },
+      "highlights": [
+        "Lames et lamelles produites en serie",
+        "Aiguilles, harpons, propulseurs et pointes osseuses",
+        "Microlithes et outils composites adaptes a des environnements varies"
+      ],
+      "topics": [
+        {
+          "title": "Lames",
+          "summary": "La production laminaire maximise les tranchants disponibles a partir d'un bloc.",
+          "details": [
+            "Les lames peuvent etre retouchees en grattoirs, burins ou armatures.",
+            "Elles facilitent une production plus standardisee que de nombreux eclats opportunistes."
+          ],
+          "evidence": "Nucleus laminaires et remontages lithiques"
+        },
+        {
+          "title": "Os et bois animal",
+          "summary": "Les matieres dures animales ouvrent des usages impossibles avec la pierre seule.",
+          "details": [
+            "Aiguilles, harpons et lissoirs temoignent d'une chaine technique specifique.",
+            "Ces objets se conservent moins bien que la pierre, donc leur frequence archeologique est sous-estimee."
+          ],
+          "evidence": "Industries osseuses du Paleolithique superieur"
+        },
+        {
+          "title": "Outils composites",
+          "summary": "Microlithes, manches et colles permettent de combiner plusieurs materiaux.",
+          "details": [
+            "Un outil composite est reparable: on remplace une armature sans refaire tout l'objet.",
+            "Cette logique favorise des equipements specialises pour chasse, couture, travail du bois ou peche."
+          ],
+          "evidence": "Residus, traces d'usure et experimentations"
+        }
+      ],
+      "metrics": [
+        { "label": "Controle du debit", "value": 88, "note": "Laminaire et microlithes" },
+        { "label": "Outils composites", "value": 90, "note": "Tres developpes" },
+        { "label": "Variete", "value": 96, "note": "Materiaux multiples" }
+      ]
+    }
+  },
   "coordinates": [
     { "lat": 31.8, "lng": -7.1 },
     { "lat": -24.2, "lng": 29.0 }

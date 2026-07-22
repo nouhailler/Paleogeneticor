@@ -31,8 +31,45 @@ export interface Species {
   culture: string[];
   tools: string[];
   hybridations: string[];
+  detailedSections: SpeciesDetailedSections;
   coordinates: Coordinates[];
   bibliography: BibliographyEntry[];
+}
+
+export interface SpeciesDetailTopic {
+  title: string;
+  summary: string;
+  details: string[];
+  evidence: string;
+}
+
+export interface SpeciesMetric {
+  label: string;
+  value: number;
+  note: string;
+}
+
+export interface SpeciesSectionMedia {
+  image: string;
+  alt: string;
+  caption: string;
+  credit: string;
+  sourceUrl: string;
+}
+
+export interface SpeciesDetailedSection {
+  intro: string;
+  media: SpeciesSectionMedia;
+  highlights: string[];
+  topics: SpeciesDetailTopic[];
+  metrics: SpeciesMetric[];
+}
+
+export interface SpeciesDetailedSections {
+  genetics: SpeciesDetailedSection;
+  culture: SpeciesDetailedSection;
+  landmarks: SpeciesDetailedSection;
+  tools: SpeciesDetailedSection;
 }
 
 export interface Fossil {
@@ -74,6 +111,22 @@ export interface Technique {
   year: number;
   summary: string;
   impact: string;
+  image: string;
+  category: string;
+  whyItMatters: string;
+  steps: {
+    title: string;
+    description: string;
+  }[];
+  ancientDnaRole: string[];
+  contaminationRisks: string[];
+  safeguards: string[];
+  comparison: {
+    label: string;
+    before: string;
+    after: string;
+  }[];
+  keyFigures: string[];
 }
 
 export interface MapSite {

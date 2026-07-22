@@ -11,6 +11,204 @@
   "culture": ["Occupation de grottes", "Adaptation a haute altitude probable", "Interactions avec d'autres humains"],
   "tools": ["Industries lithiques regionales", "Objets de parure associes au site de Denisova"],
   "hybridations": ["Homo sapiens", "Homo neanderthalensis"],
+  "detailedSections": {
+    "genetics": {
+      "intro": "Les Denisoviens sont un cas majeur ou l'ADN a revele un groupe humain avant que les fossiles ne permettent d'en dessiner clairement l'apparence.",
+      "media": {
+        "image": "/images/species/details/denisova-phalanx.jpg",
+        "alt": "Replica d'une phalange denisovienne",
+        "caption": "Phalange de Denisova: un fragment minuscule a suffi a identifier une lignee humaine par l'ADN.",
+        "credit": "Thilo Parg / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denisova_Phalanx_distalis.jpg"
+      },
+      "highlights": [
+        "Identification initiale par l'ADN d'une phalange de Denisova",
+        "Parente etroite avec les Neandertaliens",
+        "Heritage genetique important dans certaines populations d'Oceanie et d'Asie"
+      ],
+      "topics": [
+        {
+          "title": "Une lignee detectee par le genome",
+          "summary": "Le premier signal denisovien ne venait pas d'un squelette complet mais d'un genome inattendu.",
+          "details": [
+            "L'ADN mitochondrial puis nucleaire a montre que l'individu de Denisova n'etait ni Sapiens ni Neandertal classique.",
+            "Ce resultat a force les chercheurs a accepter une diversite humaine invisible dans le seul registre fossile."
+          ],
+          "evidence": "Phalange de Denisova et genomes nucleaires"
+        },
+        {
+          "title": "Melanges en Asie",
+          "summary": "Des segments denisoviens persistent dans plusieurs populations actuelles.",
+          "details": [
+            "Les proportions les plus fortes sont observees en Oceanie, mais des traces existent aussi en Asie du Sud et de l'Est.",
+            "Ces signaux impliquent probablement plusieurs episodes de contact, pas une seule rencontre simple."
+          ],
+          "evidence": "Comparaisons genomiques de populations actuelles"
+        },
+        {
+          "title": "Adaptation en altitude",
+          "summary": "Un variant lie a l'adaptation au manque d'oxygene chez les Tibetains semble venir d'une source denisovienne.",
+          "details": [
+            "L'exemple le plus cite concerne une region autour du gene EPAS1.",
+            "C'est un cas parlant: un fragment archaique peut devenir utile dans un nouvel environnement."
+          ],
+          "evidence": "Association genetique et introgression archaique"
+        }
+      ],
+      "metrics": [
+        { "label": "Parente avec Neandertal", "value": 86, "note": "Lignee soeur" },
+        { "label": "ADN conserve", "value": 48, "note": "Peu d'individus" },
+        { "label": "Melanges connus", "value": 78, "note": "Oceanie et Asie" }
+      ]
+    },
+    "culture": {
+      "intro": "La culture denisovienne reste difficile a isoler, car les fossiles sont rares et les sites ont souvent ete occupes par plusieurs groupes humains.",
+      "media": {
+        "image": "/images/species/details/denisova-pendants.jpg",
+        "alt": "Pendentifs, perles et os coches provenant de la grotte Denisova",
+        "caption": "Parures et os coches de Denisova: des objets parlants, mais a attribuer avec prudence couche par couche.",
+        "credit": "Thilo Parg / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denisova_Cave_pendants_notched_bones.jpg"
+      },
+      "highlights": [
+        "Denisova montre une longue sequence d'occupation",
+        "Les associations entre objets et groupes humains demandent prudence",
+        "Les preuves genetiques indiquent des contacts avec Sapiens et Neandertaliens"
+      ],
+      "topics": [
+        {
+          "title": "Denisova comme carrefour",
+          "summary": "La grotte a conserve des traces de plusieurs populations humaines.",
+          "details": [
+            "Un meme lieu peut contenir des couches attribuables a des periodes et groupes differents.",
+            "Attribuer une parure ou un outil a un groupe precis exige une association stratigraphique solide."
+          ],
+          "evidence": "Stratigraphie, datations et ADN sedimentaire"
+        },
+        {
+          "title": "Interactions",
+          "summary": "Les Denisoviens ont croise d'autres humains archaiques et modernes.",
+          "details": [
+            "Un individu de Denisova avait une mere neandertalienne et un pere denisovien.",
+            "Ce cas direct montre que les frontieres entre groupes etaient biologiquement franchissables."
+          ],
+          "evidence": "Genome de l'individu Denisova 11"
+        },
+        {
+          "title": "Culture encore floue",
+          "summary": "Le terme Denisovien designe une lignee genetique mieux qu'une culture archeologique unique.",
+          "details": [
+            "Plusieurs industries lithiques d'Asie pourraient etre liees a eux, mais rarement de facon certaine.",
+            "La fiche doit donc separer ce qui est observe, probable et encore ouvert."
+          ],
+          "evidence": "Comparaison entre couches archeologiques et restes identifies"
+        }
+      ],
+      "metrics": [
+        { "label": "Contexte culturel", "value": 42, "note": "Attributions prudentes" },
+        { "label": "Interactions", "value": 86, "note": "Preuves genetiques fortes" },
+        { "label": "Sites connus", "value": 38, "note": "Registre rare" }
+      ]
+    },
+    "landmarks": {
+      "intro": "Les reperes denisoviens sont disperses: quelques fossiles identifies, beaucoup de traces genetiques et une geographie probablement tres large.",
+      "media": {
+        "image": "/images/species/details/denisova-cave.jpg",
+        "alt": "Paysage de la vallee pres de la grotte Denisova dans l'Altai",
+        "caption": "Le secteur de Denisova dans l'Altai: un repere geographique central pour une lignee surtout connue par les biomolecules.",
+        "credit": "Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Anui_of_Ust-Kansky_district._Denisova_cave.jpg"
+      },
+      "highlights": [
+        "Grotte de Denisova dans l'Altai",
+        "Mandibule de Xiahe sur le plateau tibetain",
+        "Traces genetiques actuelles au-dela des fossiles connus"
+      ],
+      "topics": [
+        {
+          "title": "Denisova",
+          "summary": "Le site qui a donne son nom au groupe reste une reference centrale.",
+          "details": [
+            "La conservation froide a favorise l'ADN ancien.",
+            "La grotte documente aussi des contacts avec des Neandertaliens."
+          ],
+          "evidence": "ADN osseux et ADN sedimentaire"
+        },
+        {
+          "title": "Plateau tibetain",
+          "summary": "La mandibule de Xiahe a etendu le dossier denisovien hors de l'Altai.",
+          "details": [
+            "L'identification repose sur les proteines anciennes, pas sur un genome complet.",
+            "Elle rend plausible une presence dans des environnements de haute altitude."
+          ],
+          "evidence": "Paleoproteomique de l'email dentaire"
+        },
+        {
+          "title": "Carte incomplete",
+          "summary": "Les genomes actuels suggerent une repartition ancienne plus vaste que les fossiles identifies.",
+          "details": [
+            "Les milieux tropicaux conservent mal l'ADN, ce qui masque probablement une partie du registre.",
+            "Chaque nouvelle dent ou fragment peut changer fortement la carte."
+          ],
+          "evidence": "Discordance entre ADN actuel et fossiles identifies"
+        }
+      ],
+      "metrics": [
+        { "label": "Duree connue", "value": 62, "note": "Bornes incertaines" },
+        { "label": "Registre fossile", "value": 28, "note": "Tres rare" },
+        { "label": "Carte genetique", "value": 74, "note": "Large signal actuel" }
+      ]
+    },
+    "tools": {
+      "intro": "Les outils denisoviens sont difficiles a definir: les objets existent, mais l'association directe avec les Denisoviens est souvent delicate.",
+      "media": {
+        "image": "/images/species/details/denisova-lithic-artifacts.jpg",
+        "alt": "Artefacts lithiques et osseux de la grotte Denisova",
+        "caption": "Artefacts lithiques et osseux de Denisova: la fiche distingue l'objet, la couche et l'attribution biologique.",
+        "credit": "Thilo Parg / Wikimedia Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Denisova_Cave_lithic_and_osseous_artifacts_grey.jpg"
+      },
+      "highlights": [
+        "Industries lithiques du Pleistocene asiatique",
+        "Objets de parure dans des couches de Denisova",
+        "Besoin de croiser stratigraphie, datation et biomolecules"
+      ],
+      "topics": [
+        {
+          "title": "Pierres taillees",
+          "summary": "Les sites asiatiques livrent des assemblages varies qui ne se rangent pas toujours dans les categories europeennes.",
+          "details": [
+            "La diversite regionale rend les comparaisons difficiles.",
+            "Un type d'outil ne suffit pas a identifier une population biologique."
+          ],
+          "evidence": "Assemblages lithiques du Pleistocene moyen et superieur"
+        },
+        {
+          "title": "Parures",
+          "summary": "Certains objets remarquables de Denisova ont ete associes au contexte de la grotte.",
+          "details": [
+            "La question centrale est de savoir quel groupe humain occupait la couche exacte.",
+            "L'illustration doit donc presenter ces objets comme associes au site, pas comme certitude universelle denisovienne."
+          ],
+          "evidence": "Bracelet, perles et contextes stratigraphiques"
+        },
+        {
+          "title": "Identification",
+          "summary": "La meilleure methode combine archeologie et analyses biologiques.",
+          "details": [
+            "L'ADN sedimentaire peut relier une couche a une presence humaine meme sans os identifiable.",
+            "Les proteines anciennes peuvent aider quand l'ADN n'est pas conserve."
+          ],
+          "evidence": "ADN sedimentaire et paleoproteomique"
+        }
+      ],
+      "metrics": [
+        { "label": "Controle du debit", "value": 52, "note": "Variable selon les sites" },
+        { "label": "Outils composites", "value": 34, "note": "Attributions ouvertes" },
+        { "label": "Variete", "value": 70, "note": "Asie tres diverse" }
+      ]
+    }
+  },
   "coordinates": [
     { "lat": 51.397, "lng": 84.68 },
     { "lat": 35.45, "lng": 102.57 }
