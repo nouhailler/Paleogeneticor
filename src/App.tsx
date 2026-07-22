@@ -12,7 +12,9 @@ const BoneToDnaPage = lazy(() =>
   import('./pages/BoneToDnaPage').then((module) => ({ default: module.BoneToDnaPage }))
 );
 const MapPage = lazy(() => import('./pages/MapPage').then((module) => ({ default: module.MapPage })));
+const MigrationsPage = lazy(() => import('./pages/MigrationsPage').then((module) => ({ default: module.MigrationsPage })));
 const TreePage = lazy(() => import('./pages/TreePage').then((module) => ({ default: module.TreePage })));
+const TimelinePage = lazy(() => import('./pages/TimelinePage').then((module) => ({ default: module.TimelinePage })));
 const GlossaryPage = lazy(() => import('./pages/GlossaryPage').then((module) => ({ default: module.GlossaryPage })));
 const GlossaryDetailPage = lazy(() =>
   import('./pages/GlossaryDetailPage').then((module) => ({ default: module.GlossaryDetailPage }))
@@ -133,6 +135,15 @@ const router = createBrowserRouter([
         handle: { title: 'Carte' }
       },
       {
+        path: 'migrations',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <MigrationsPage />
+          </Suspense>
+        ),
+        handle: { title: 'Migrations humaines' }
+      },
+      {
         path: 'tree',
         element: (
           <Suspense fallback={<Loading />}>
@@ -140,6 +151,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'Arbre' }
+      },
+      {
+        path: 'timeline',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <TimelinePage />
+          </Suspense>
+        ),
+        handle: { title: 'Frise du temps' }
       },
       {
         path: 'glossary',

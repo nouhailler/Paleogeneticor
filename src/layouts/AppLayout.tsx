@@ -15,6 +15,8 @@ const navItems = [
 const menuItems = [
   ...navItems,
   { to: '/bone-to-dna', label: "De l'os a l'ADN", icon: Bone },
+  { to: '/migrations', label: 'Migrations', icon: Map },
+  { to: '/timeline', label: 'Frise du temps', icon: CalendarDays },
   { to: '/fossils', label: 'Fossiles', icon: Landmark },
   { to: '/laboratories', label: 'Laboratoires', icon: Dna },
   { to: '/discoveries', label: 'Decouvertes', icon: CalendarDays },

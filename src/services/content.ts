@@ -4,9 +4,11 @@ import type {
   GlossaryTerm,
   LaboratoryProfile,
   MapSite,
+  MigrationDataset,
   SearchDocument,
   Species,
   Technique,
+  TimePeriod,
   TimelineEvent
 } from '../types/domain';
 import discoveriesData from '../data/discoveries/discoveries.json';
@@ -14,8 +16,10 @@ import fossilsData from '../data/fossils/fossils.json';
 import glossaryData from '../data/glossary/core.json';
 import laboratoriesData from '../data/laboratories/laboratories.json';
 import mapSitesData from '../data/maps/sites.json';
+import migrationsData from '../data/migrations/migrations.json';
 import { speciesCatalog } from '../data/species/catalog';
 import techniquesData from '../data/techniques/techniques.json';
+import timePeriodsData from '../data/time-periods/periods.json';
 import timelineData from '../data/timeline/events.json';
 
 export const species = speciesCatalog as Species[];
@@ -24,7 +28,9 @@ export const discoveries = discoveriesData as Discovery[];
 export const glossary = glossaryData as GlossaryTerm[];
 export const laboratories = laboratoriesData as LaboratoryProfile[];
 export const mapSites = mapSitesData as MapSite[];
+export const migrations = migrationsData as MigrationDataset;
 export const techniques = techniquesData as Technique[];
+export const timePeriods = timePeriodsData as TimePeriod[];
 export const timelineEvents = timelineData as TimelineEvent[];
 
 export function getSpeciesById(id: string): Species | undefined {
@@ -83,6 +89,38 @@ export function buildSearchDocuments(): SearchDocument[] {
         .map((discovery) => `${discovery.title} ${discovery.year} ${discovery.explanation}`)
         .join(' ')} ${item.publications.map((publication) => `${publication.label} ${publication.year}`).join(' ')}`,
       path: '/laboratories'
+    })),
+    ...migrations.routes.map((item) => ({
+      id: item.id,
+      kind: 'migration' as const,
+      title: item.title,
+      subtitle: item.period,
+      body: `${item.population} ${item.summary} ${item.explanation} ${item.evidence.join(' ')}`,
+      path: '/migrations'
+    })),
+    ...migrations.sites.map((item) => ({
+      id: item.id,
+      kind: 'migration' as const,
+      title: item.name,
+      subtitle: item.region,
+      body: `${item.population} ${item.period} ${item.summary} ${item.details.join(' ')} ${item.importance}`,
+      path: '/migrations'
+    })),
+    ...timePeriods.map((item) => ({
+      id: item.id,
+      kind: 'timeline' as const,
+      title: item.name,
+      subtitle: `${item.startKya} a ${item.endKya} ka`,
+      body: `${item.summary} ${item.context.join(' ')} ${item.keyExamples.join(' ')}`,
+      path: '/timeline'
+    })),
+    ...timelineEvents.map((item) => ({
+      id: item.id,
+      kind: 'timeline' as const,
+      title: item.title,
+      subtitle: item.dateKya ? `${item.dateKya} ka` : String(item.year),
+      body: `${item.category} ${item.summary} ${item.details.join(' ')} ${item.impact} ${item.evidence}`,
+      path: '/timeline'
     })),
     ...glossary.map((item) => ({
       id: item.id,

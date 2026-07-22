@@ -3,6 +3,8 @@ export type EntityKind =
   | 'fossil'
   | 'researcher'
   | 'laboratory'
+  | 'migration'
+  | 'timeline'
   | 'discovery'
   | 'glossary'
   | 'technique';
@@ -185,6 +187,47 @@ export interface MapSite {
   importance: string;
   evidence: string;
   relatedEntityId?: string;
+}
+
+export type MigrationPopulation = 'sapiens' | 'neanderthal' | 'denisovan';
+
+export interface MigrationRoute {
+  id: string;
+  population: MigrationPopulation;
+  title: string;
+  period: string;
+  summary: string;
+  explanation: string;
+  path: Coordinates[];
+  evidence: string[];
+}
+
+export interface MigrationSite {
+  id: string;
+  name: string;
+  population: MigrationPopulation | 'shared';
+  coordinates: Coordinates;
+  region: string;
+  period: string;
+  summary: string;
+  details: string[];
+  importance: string;
+  relatedPath?: string;
+}
+
+export interface MigrationDataset {
+  routes: MigrationRoute[];
+  sites: MigrationSite[];
+}
+
+export interface TimePeriod {
+  id: string;
+  name: string;
+  startKya: number;
+  endKya: number;
+  summary: string;
+  context: string[];
+  keyExamples: string[];
 }
 
 export interface TimelineEvent {

@@ -12,6 +12,8 @@ export function entityLabel(kind: string): string {
     fossil: 'Fossile',
     researcher: 'Chercheur',
     laboratory: 'Laboratoire',
+    migration: 'Migration',
+    timeline: 'Frise',
     discovery: 'Decouverte',
     glossary: 'Glossaire',
     technique: 'Technique'

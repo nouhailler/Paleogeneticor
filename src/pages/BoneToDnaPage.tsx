@@ -117,8 +117,8 @@ export function BoneToDnaPage() {
         description="Comprendre comment un fragment de dent ou d'os devient une donnee genetique interpretable."
       />
 
-      <section className="grid gap-5 lg:grid-cols-[0.9fr_1.1fr]">
-        <aside className="grid content-start gap-3">
+      <section className="grid min-w-0 gap-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <aside className="grid min-w-0 content-start gap-3">
           {workflowSteps.map((step, index) => {
             const Icon = step.icon;
             const isActive = index === activeIndex;
@@ -133,11 +133,11 @@ export function BoneToDnaPage() {
                 }`}
                 onClick={() => setActiveIndex(index)}
               >
-                <div className="flex items-center gap-3">
+                <div className="flex min-w-0 items-center gap-3">
                   <span className={`grid h-11 w-11 place-items-center rounded-md ${isActive ? 'bg-paper/15' : 'bg-bone text-lagoon'}`}>
                     <Icon className="h-6 w-6" />
                   </span>
-                  <div>
+                  <div className="min-w-0">
                     <h2 className="font-bold">{step.title}</h2>
                     <p className={`mt-1 text-sm ${isActive ? 'text-paper/75' : 'text-ink/65'}`}>{step.subtitle}</p>
                   </div>
@@ -157,21 +157,21 @@ export function BoneToDnaPage() {
           </div>
         </aside>
 
-        <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
-          <div className="flex items-start gap-3">
+        <section className="min-w-0 rounded-lg border border-black/10 bg-paper p-4 shadow-soft sm:p-5">
+          <div className="flex min-w-0 items-start gap-3">
             <span className="grid h-12 w-12 shrink-0 place-items-center rounded-md bg-lagoon/10 text-lagoon">
               <ActiveIcon className="h-7 w-7" />
             </span>
-            <div>
+            <div className="min-w-0">
               <p className="text-sm font-bold uppercase text-ochre">{activeStep.subtitle}</p>
-              <h2 className="mt-1 text-3xl font-bold">{activeStep.title}</h2>
+              <h2 className="mt-1 text-2xl font-bold sm:text-3xl">{activeStep.title}</h2>
               <p className="mt-3 leading-7 text-ink/75">{activeStep.objective}</p>
             </div>
           </div>
 
           <WorkflowVisual stepId={activeStep.id} />
 
-          <div className="mt-5 grid gap-4 lg:grid-cols-3">
+          <div className="mt-5 grid min-w-0 gap-4 lg:grid-cols-3">
             <InfoBlock icon={<FlaskConical className="h-5 w-5 text-lagoon" />} title="Gestes scientifiques" items={activeStep.actions} />
             <InfoBlock icon={<AlertTriangle className="h-5 w-5 text-ochre" />} title="Risque critique" items={[activeStep.risk]} />
             <InfoBlock icon={<ShieldCheck className="h-5 w-5 text-moss" />} title="Controles" items={activeStep.controls} />
@@ -203,12 +203,12 @@ export function BoneToDnaPage() {
         </section>
       </section>
 
-      <section className="mt-6 rounded-lg border border-black/10 bg-ink p-5 text-paper shadow-soft">
+      <section className="mt-6 min-w-0 rounded-lg border border-black/10 bg-ink p-5 text-paper shadow-soft">
         <div className="flex items-center gap-2">
           <Microscope className="h-5 w-5 text-clay" />
           <h2 className="text-2xl font-bold">Ce que le module doit faire comprendre</h2>
         </div>
-        <div className="mt-4 grid gap-4 md:grid-cols-3">
+        <div className="mt-4 grid min-w-0 gap-4 md:grid-cols-3">
           <Takeaway title="L'ADN ancien est rare" text="La plupart des molecules viennent du sol, des microbes ou de contaminations modernes." />
           <Takeaway title="La sequence brute ne suffit pas" text="Il faut verifier longueur, dommages, duplicats, blancs et contamination estimee." />
           <Takeaway title="L'interpretation est croisee" text="Le genome est lu avec l'archeologie, la datation, le site et les limites du protocole." />
@@ -221,8 +221,8 @@ export function BoneToDnaPage() {
 function WorkflowVisual({ stepId }: { stepId: WorkflowStepId }) {
   if (stepId === 'extraction') {
     return (
-      <div className="mt-6 rounded-lg border border-black/10 bg-bone p-4">
-        <div className="grid items-center gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr]">
+      <div className="mt-6 min-w-0 rounded-lg border border-black/10 bg-bone p-3 sm:p-4">
+        <div className="grid min-w-0 items-center gap-4 md:grid-cols-[1fr_auto_1fr_auto_1fr]">
           <VisualCard icon={<Bone className="h-9 w-9" />} title="Dent / petreux" text="Tissu dense et protege" />
           <ArrowRight className="mx-auto hidden h-5 w-5 text-ochre md:block" />
           <VisualCard icon={<ShieldCheck className="h-9 w-9" />} title="Salle blanche" text="Combinaison, UV, blancs" />
@@ -235,21 +235,21 @@ function WorkflowVisual({ stepId }: { stepId: WorkflowStepId }) {
 
   if (stepId === 'sequencing') {
     return (
-      <div className="mt-6 rounded-lg border border-black/10 bg-bone p-4">
-        <div className="grid gap-4 lg:grid-cols-2">
-          <div>
+      <div className="mt-6 min-w-0 rounded-lg border border-black/10 bg-bone p-3 sm:p-4">
+        <div className="grid min-w-0 gap-4 lg:grid-cols-2">
+          <div className="min-w-0">
             <p className="text-sm font-bold uppercase text-ochre">Fragments aDNA</p>
             <div className="mt-3 grid gap-2">
               {sampleFragments.map((fragment) => (
-                <div key={fragment} className="rounded-md bg-white px-3 py-2 font-mono text-sm font-bold text-lagoon">
+                <div key={fragment} className="min-w-0 break-words rounded-md bg-white px-3 py-2 font-mono text-sm font-bold text-lagoon">
                   {fragment.split('').join(' - ')}
                 </div>
               ))}
             </div>
           </div>
-          <div>
+          <div className="min-w-0">
             <p className="text-sm font-bold uppercase text-ochre">Donnees numeriques</p>
-            <div className="mt-3 rounded-md bg-ink p-4 font-mono text-xs leading-6 text-paper/80">
+            <div className="mt-3 overflow-x-auto rounded-md bg-ink p-4 font-mono text-xs leading-6 text-paper/80">
               @read_001<br />
               ATCGA<br />
               +<br />
@@ -266,10 +266,10 @@ function WorkflowVisual({ stepId }: { stepId: WorkflowStepId }) {
   }
 
   return (
-    <div className="mt-6 rounded-lg border border-black/10 bg-bone p-4">
+    <div className="mt-6 min-w-0 rounded-lg border border-black/10 bg-bone p-3 sm:p-4">
       <p className="text-sm font-bold uppercase text-ochre">Alignement simplifie sur genome de reference</p>
       <div className="mt-3 overflow-x-auto rounded-md bg-white p-4">
-        <div className="min-w-[620px] font-mono text-sm">
+        <div className="w-max min-w-full font-mono text-xs sm:text-sm">
           <p className="text-ink/50">REF {alignedRows[0].ref}</p>
           {alignedRows.map((row) => (
             <p key={`${row.read}-${row.offset}`} className="text-lagoon">

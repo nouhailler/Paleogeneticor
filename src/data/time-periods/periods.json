@@ -1,0 +1,54 @@
+[
+  {
+    "id": "early-pleistocene",
+    "name": "Pleistocene inferieur",
+    "startKya": 2580,
+    "endKya": 774,
+    "summary": "Phase ancienne du Quaternaire marquee par l'installation de cycles glaciaires et par les premieres dispersions humaines hors d'Afrique.",
+    "context": [
+      "Les premiers Homo se diversifient et certaines populations quittent l'Afrique.",
+      "Les outils de pierre simples puis acheuleens accompagnent des mobilites croissantes.",
+      "L'ADN est presque toujours absent pour ces ages, surtout dans les regions chaudes."
+    ],
+    "keyExamples": ["Homo habilis", "Homo erectus", "Dmanissi", "premieres sorties d'Afrique"]
+  },
+  {
+    "id": "middle-pleistocene",
+    "name": "Pleistocene moyen",
+    "startKya": 774,
+    "endKya": 129,
+    "summary": "Periode centrale pour les divergences entre Neandertaliens, Denisoviens et les premieres formes proches de Homo sapiens.",
+    "context": [
+      "Les populations humaines deviennent regionalement differenciees.",
+      "Les cycles climatiques modifient refuges, routes et densites de population.",
+      "Les fossiles de Sima de los Huesos, Jebel Irhoud ou Harbin servent a discuter des parentes profondes."
+    ],
+    "keyExamples": ["Sima de los Huesos", "Jebel Irhoud", "Homo heidelbergensis", "Denisoviens anciens"]
+  },
+  {
+    "id": "late-pleistocene",
+    "name": "Pleistocene superieur",
+    "startKya": 129,
+    "endKya": 11.7,
+    "summary": "Moment des grandes dispersions de Sapiens, des contacts avec Neandertal et Denisova, puis de la disparition des autres especes humaines recentes.",
+    "context": [
+      "Homo sapiens se diffuse largement hors d'Afrique.",
+      "Les genomes documentent des introgressions neandertaliennes et denisoviennes.",
+      "Le dernier maximum glaciaire restructure les habitats et les populations."
+    ],
+    "keyExamples": ["sorties d'Afrique", "Oase", "Denisova", "dernier maximum glaciaire"]
+  },
+  {
+    "id": "holocene",
+    "name": "Holocene",
+    "startKya": 11.7,
+    "endKya": 0,
+    "summary": "Periode interglaciaire actuelle, associee a l'agriculture, aux expansions demographiques recentes et a de grandes transformations culturelles.",
+    "context": [
+      "Les populations humaines deviennent plus nombreuses et souvent plus mobiles.",
+      "L'agriculture, l'elevage et les villes transforment les genomes et les environnements.",
+      "L'ADN ancien holocene est souvent mieux conserve et alimente les grandes bases de donnees."
+    ],
+    "keyExamples": ["Neolithique", "Otzi", "domestication", "migrations recentes"]
+  }
+]

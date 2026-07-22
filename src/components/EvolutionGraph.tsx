@@ -37,6 +37,7 @@ const nodeInfo: Record<string, GraphNodeData> = {
     summary: 'Point de depart simplifie des lignees humaines recentes.',
     details: [
       "Ce n'est pas un individu unique connu, mais un repere pour lire les divergences.",
+      "Il represente une population ancestrale partagee, souvent rapprochee de formes plus anciennes comme Homo erectus ou Homo ergaster dans les scenarios pedagogiques.",
       "Les dates de separation varient selon les modeles genetiques et les fossiles inclus.",
       "Un arbre interactif sert a naviguer dans des hypotheses, pas a figer une certitude definitive."
     ]
@@ -49,7 +50,8 @@ const nodeInfo: Record<string, GraphNodeData> = {
     summary: 'Ensemble de populations souvent placees pres de la base des lignees recentes.',
     details: [
       "Le nom recouvre probablement plusieurs populations, pas une espece simple et uniforme.",
-      "Ces formes aident a discuter l'origine de Neandertal, Denisova et Sapiens.",
+      "Ces formes jouent ici le role de carrefour evolutif du Pleistocene moyen.",
+      "Elles aident a discuter l'origine de Neandertal, Denisova et Sapiens.",
       "Leur position exacte depend des fossiles et du cadre taxonomique retenu."
     ]
   },
@@ -97,6 +99,8 @@ const nodeInfo: Record<string, GraphNodeData> = {
     summary: "Population inferee par des signaux genetiques, mais encore mal documentee par les fossiles.",
     details: [
       "Une lignee fantome est proposee lorsque les genomes indiquent un apport non explique.",
+      "On n'a pas encore trouve de fossile ou d'ADN direct clairement attribue a cette population.",
+      "Certains modeles suggerent de faibles signaux archaiques chez des populations humaines, notamment en Afrique subsaharienne.",
       "Elle rappelle que l'arbre connu est incomplet.",
       "Ces hypotheses peuvent changer avec de nouveaux fossiles ou genomes."
     ]
@@ -180,7 +184,8 @@ const baseEdges: Edge<GraphEdgeData>[] = [
       summary: 'Fragments neandertaliens transmis a des ancetres de populations humaines modernes.',
       details: [
         "Les segments sont disperses dans le genome apres recombinaisons.",
-        "Le signal est particulierement visible hors d'Afrique."
+        "Le signal est particulierement visible hors d'Afrique.",
+        "Chez beaucoup de populations non africaines actuelles, il represente environ 1 a 2 % du genome."
       ]
     }
   },
@@ -195,7 +200,8 @@ const baseEdges: Edge<GraphEdgeData>[] = [
       summary: 'Apport denisovien chez certaines populations actuelles, notamment en Oceanie et Asie.',
       details: [
         "Les proportions varient fortement selon les regions.",
-        "Certains fragments ont pu contribuer a des adaptations locales."
+        "Certains fragments ont pu contribuer a des adaptations locales.",
+        "Dans certaines populations d'Oceanie et d'Asie du Sud-Est, les apports denisoviens peuvent atteindre environ 4 a 6 %."
       ]
     }
   },
@@ -210,6 +216,7 @@ const baseEdges: Edge<GraphEdgeData>[] = [
       summary: 'Contacts directs ou indirects entre Neandertaliens et Denisoviens.',
       details: [
         "Un individu de Denisova avait une mere neandertalienne et un pere denisovien.",
+        "Cet individu est souvent surnomme Denny et illustre un hybride de premiere generation.",
         "Ce lien rappelle que les branches ne sont pas des compartiments etanches."
       ]
     }
