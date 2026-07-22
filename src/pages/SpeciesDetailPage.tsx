@@ -1,13 +1,19 @@
 import { useState } from 'react';
 import {
   BookOpen,
+  Brain,
   CalendarDays,
   Dna,
+  Flame,
   Hammer,
   Info,
+  Map,
   MapPinned,
   Palette,
+  Ruler,
+  Scale,
   Star,
+  Utensils,
   X
 } from 'lucide-react';
 import { Navigate, useParams } from 'react-router-dom';
@@ -105,6 +111,11 @@ export function SpeciesDetailPage() {
         </div>
       </section>
 
+      <section className="mt-6 grid gap-5 xl:grid-cols-[1fr_0.9fr]">
+        <IdentityPanel species={item} />
+        <RangePanel species={item} />
+      </section>
+
       <div className="mt-6 grid gap-5 xl:grid-cols-2">
         {sectionOrder.map((sectionKey) => (
           <IllustratedSection
@@ -177,6 +188,81 @@ export function SpeciesDetailPage() {
         </div>
       ) : null}
     </>
+  );
+}
+
+function IdentityPanel({ species }: { species: Species }) {
+  const facts = [
+    { label: 'Periode', value: species.period, icon: CalendarDays },
+    { label: 'Taille', value: species.traits.height, icon: Ruler },
+    { label: 'Poids', value: species.traits.weight, icon: Scale },
+    { label: 'Capacite cranienne', value: species.traits.cranialCapacity, icon: Brain },
+    { label: 'ADN recupere', value: species.traits.dnaRecovered, icon: Dna },
+    { label: 'Alimentation', value: species.traits.diet, icon: Utensils },
+    { label: 'Feu', value: species.traits.fire, icon: Flame },
+    { label: 'Sepultures', value: species.traits.burials, icon: MapPinned }
+  ];
+
+  return (
+    <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
+      <div className="flex items-center gap-2">
+        <Info className="h-5 w-5 text-lagoon" />
+        <h2 className="text-2xl font-bold">Fiche d'identite scientifique</h2>
+      </div>
+      <div className="mt-5 grid gap-3 md:grid-cols-2">
+        {facts.map((fact) => {
+          const Icon = fact.icon;
+          return (
+            <div key={fact.label} className="rounded-lg border border-black/10 bg-white/60 p-4">
+              <div className="flex items-center gap-2">
+                <Icon className="h-4 w-4 text-lagoon" />
+                <p className="text-xs font-bold uppercase text-ink/50">{fact.label}</p>
+              </div>
+              <p className="mt-2 text-sm leading-6 text-ink/75">{fact.value}</p>
+            </div>
+          );
+        })}
+      </div>
+      <div className="mt-4 rounded-lg border border-black/10 bg-bone p-4">
+        <p className="text-xs font-bold uppercase text-ink/50">Parente</p>
+        <p className="mt-2 text-sm leading-6 text-ink/75">{species.traits.parentage}</p>
+      </div>
+      <div className="mt-4 rounded-lg border border-black/10 bg-bone p-4">
+        <p className="text-xs font-bold uppercase text-ink/50">Hybridations ou rapprochements connus</p>
+        <div className="mt-2 flex flex-wrap gap-2">
+          {species.hybridations.map((hybridation) => (
+            <span key={hybridation} className="rounded-md bg-lagoon/10 px-3 py-1 text-sm font-semibold text-lagoon">
+              {hybridation}
+            </span>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function RangePanel({ species }: { species: Species }) {
+  return (
+    <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
+      <div className="flex items-center gap-2">
+        <Map className="h-5 w-5 text-lagoon" />
+        <h2 className="text-2xl font-bold">Carte et repartition</h2>
+      </div>
+      <p className="mt-3 leading-7 text-ink/75">{species.region}</p>
+      <div className="mt-5 rounded-lg border border-black/10 bg-bone p-3">
+        <RangeSketch species={species} />
+      </div>
+      <div className="mt-4 grid gap-2 text-sm">
+        {species.coordinates.map((coordinate) => (
+          <div key={`${coordinate.lat}-${coordinate.lng}`} className="flex items-center justify-between rounded-md bg-white/70 px-3 py-2">
+            <span className="font-medium text-ink/75">Point de reference</span>
+            <span className="font-mono text-ink/65">
+              {coordinate.lat.toFixed(2)}, {coordinate.lng.toFixed(2)}
+            </span>
+          </div>
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -258,6 +344,32 @@ function TimelineSketch({ species }: { species: Species }) {
         <div className="absolute bottom-2 right-4 text-xs text-paper/60">present</div>
       </div>
     </div>
+  );
+}
+
+function RangeSketch({ species }: { species: Species }) {
+  const points = species.coordinates.map((coordinate) => ({
+    x: ((coordinate.lng + 180) / 360) * 300 + 10,
+    y: ((90 - coordinate.lat) / 180) * 150 + 18
+  }));
+
+  return (
+    <svg viewBox="0 0 320 210" className="h-64 w-full" role="img" aria-label={`Carte simplifiee de ${species.name}`}>
+      <rect x="14" y="24" width="292" height="154" rx="8" fill="#d9e8e6" />
+      <path d="M44 86 C76 44 123 54 141 83 C157 110 117 131 75 124 C49 120 29 105 44 86Z" fill="#48635b" opacity="0.34" />
+      <path d="M133 75 C178 36 237 51 274 88 C245 108 226 136 187 129 C154 124 126 105 133 75Z" fill="#48635b" opacity="0.34" />
+      <path d="M105 134 C139 125 165 143 151 164 C121 171 96 160 105 134Z" fill="#48635b" opacity="0.25" />
+      <path d="M208 140 C235 130 267 139 276 158 C247 174 220 166 208 140Z" fill="#48635b" opacity="0.22" />
+      {points.map((point) => (
+        <g key={`${point.x}-${point.y}`}>
+          <circle cx={point.x} cy={point.y} r="15" fill="#0f6f73" opacity="0.18" />
+          <circle cx={point.x} cy={point.y} r="6" fill="#b65f25" stroke="#0f6f73" strokeWidth="2" />
+        </g>
+      ))}
+      <text x="22" y="199" className="fill-ink text-[11px] font-semibold">
+        {species.region}
+      </text>
+    </svg>
   );
 }
 

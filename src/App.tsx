@@ -8,6 +8,9 @@ const SpeciesDetailPage = lazy(() =>
   import('./pages/SpeciesDetailPage').then((module) => ({ default: module.SpeciesDetailPage }))
 );
 const DnaPage = lazy(() => import('./pages/DnaPage').then((module) => ({ default: module.DnaPage })));
+const BoneToDnaPage = lazy(() =>
+  import('./pages/BoneToDnaPage').then((module) => ({ default: module.BoneToDnaPage }))
+);
 const MapPage = lazy(() => import('./pages/MapPage').then((module) => ({ default: module.MapPage })));
 const TreePage = lazy(() => import('./pages/TreePage').then((module) => ({ default: module.TreePage })));
 const GlossaryPage = lazy(() => import('./pages/GlossaryPage').then((module) => ({ default: module.GlossaryPage })));
@@ -98,6 +101,15 @@ const router = createBrowserRouter([
           </Suspense>
         ),
         handle: { title: 'ADN ancien' }
+      },
+      {
+        path: 'bone-to-dna',
+        element: (
+          <Suspense fallback={<Loading />}>
+            <BoneToDnaPage />
+          </Suspense>
+        ),
+        handle: { title: "De l'os a l'ADN" }
       },
       {
         path: 'map',

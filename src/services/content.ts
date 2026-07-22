@@ -12,13 +12,11 @@ import discoveriesData from '../data/discoveries/discoveries.json';
 import fossilsData from '../data/fossils/fossils.json';
 import glossaryData from '../data/glossary/core.json';
 import mapSitesData from '../data/maps/sites.json';
-import denisovansData from '../data/species/denisova.json';
-import neanderthalData from '../data/species/neanderthalensis.json';
-import sapiensData from '../data/species/sapiens.json';
+import { speciesCatalog } from '../data/species/catalog';
 import techniquesData from '../data/techniques/techniques.json';
 import timelineData from '../data/timeline/events.json';
 
-export const species = [neanderthalData, denisovansData, sapiensData] as Species[];
+export const species = speciesCatalog as Species[];
 export const fossils = fossilsData as Fossil[];
 export const discoveries = discoveriesData as Discovery[];
 export const glossary = glossaryData as GlossaryTerm[];
@@ -58,7 +56,9 @@ export function buildSearchDocuments(): SearchDocument[] {
       kind: 'fossil' as const,
       title: item.name,
       subtitle: item.location,
-      body: `${item.importance} ${item.museum}`,
+      body: `${item.period} ${item.importance} ${item.museum} ${item.scan3d} ${item.discoveryStory.join(' ')} ${item.scientificDetails.join(' ')} ${item.publications
+        .map((publication) => `${publication.label} ${publication.year} ${publication.source}`)
+        .join(' ')}`,
       path: '/fossils'
     })),
     ...discoveries.map((item) => ({
@@ -84,6 +84,15 @@ export function buildSearchDocuments(): SearchDocument[] {
       subtitle: String(item.year),
       body: `${item.summary} ${item.impact}`,
       path: '/dna'
-    }))
+    })),
+    {
+      id: 'bone-to-dna',
+      kind: 'technique' as const,
+      title: "De l'os a l'ADN",
+      subtitle: 'Module pas a pas',
+      body:
+        "Extraction dent os petreux salle blanche contamination moderne sequencage fragments ADN ancien aDNA donnees numeriques bioinformatique alignement genome reference dommages controles",
+      path: '/bone-to-dna'
+    }
   ];
 }

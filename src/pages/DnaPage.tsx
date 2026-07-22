@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import type { ReactNode } from 'react';
-import { AlertTriangle, ArrowRight, CheckCircle2, Dna, FlaskConical, ShieldCheck, X } from 'lucide-react';
+import { AlertTriangle, ArrowRight, Bone, CheckCircle2, Dna, FlaskConical, ShieldCheck, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { AdmixtureChart } from '../components/AdmixtureChart';
 import { PageHeader } from '../components/PageHeader';
 import { techniques } from '../services/content';
@@ -53,6 +54,24 @@ export function DnaPage() {
         </div>
 
         <aside className="grid content-start gap-5">
+          <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
+            <div className="flex items-center gap-2">
+              <Bone className="h-5 w-5 text-lagoon" />
+              <h2 className="text-xl font-bold">Module pas a pas</h2>
+            </div>
+            <p className="mt-3 text-sm leading-6 text-ink/70">
+              Suivre le parcours complet: prelevement, salle blanche, sequencage, alignement et controles
+              bioinformatiques.
+            </p>
+            <Link
+              className="mt-4 inline-flex items-center gap-2 rounded-md bg-lagoon px-4 py-3 text-sm font-bold text-paper"
+              to="/bone-to-dna"
+            >
+              Ouvrir De l'os a l'ADN
+              <ArrowRight className="h-4 w-4" />
+            </Link>
+          </section>
+
           <section className="rounded-lg border border-black/10 bg-ink p-5 text-paper shadow-soft">
             <div className="flex items-center gap-2">
               <Dna className="h-5 w-5 text-clay" />

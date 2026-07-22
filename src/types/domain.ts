@@ -31,9 +31,21 @@ export interface Species {
   culture: string[];
   tools: string[];
   hybridations: string[];
+  traits: SpeciesTraits;
   detailedSections: SpeciesDetailedSections;
   coordinates: Coordinates[];
   bibliography: BibliographyEntry[];
+}
+
+export interface SpeciesTraits {
+  height: string;
+  weight: string;
+  cranialCapacity: string;
+  dnaRecovered: string;
+  parentage: string;
+  diet: string;
+  fire: string;
+  burials: string;
 }
 
 export interface SpeciesDetailTopic {
@@ -81,6 +93,13 @@ export interface Fossil {
   coordinates: Coordinates;
   museum: string;
   importance: string;
+  period: string;
+  image: string;
+  imageCredit: string;
+  imageSource: string;
+  scan3d: string;
+  discoveryStory: string[];
+  scientificDetails: string[];
   publications: BibliographyEntry[];
 }
 

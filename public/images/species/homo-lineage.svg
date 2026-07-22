@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-labelledby="title desc">
+  <title id="title">Illustration stylisee du genre Homo</title>
+  <desc id="desc">Silhouette humaine et couches stratigraphiques pour les fiches d'especes du genre Homo.</desc>
+  <rect width="1200" height="900" fill="#f7f4ed"/>
+  <path d="M0 710 C160 660 250 740 390 690 C560 630 680 720 850 670 C990 630 1080 650 1200 610 L1200 900 L0 900 Z" fill="#d8c8aa"/>
+  <path d="M0 785 C190 725 310 805 470 755 C625 708 755 780 930 725 C1040 692 1120 704 1200 682 L1200 900 L0 900 Z" fill="#c9835a" opacity="0.45"/>
+  <circle cx="612" cy="208" r="62" fill="#48635b"/>
+  <path d="M560 294 C558 258 667 258 664 294 L647 515 C644 552 582 552 578 515 Z" fill="#0f6f73"/>
+  <path d="M578 334 L414 452 C396 465 375 438 393 423 L554 303 Z" fill="#0f6f73"/>
+  <path d="M646 334 L807 452 C825 465 846 438 828 423 L668 303 Z" fill="#0f6f73"/>
+  <path d="M586 526 L516 722 C508 746 470 733 479 707 L548 512 Z" fill="#48635b"/>
+  <path d="M638 526 L710 722 C718 746 756 733 747 707 L677 512 Z" fill="#48635b"/>
+  <path d="M164 216 C290 148 447 144 600 216 C760 292 930 286 1040 210" fill="none" stroke="#b65f25" stroke-width="14" stroke-linecap="round" opacity="0.9"/>
+  <path d="M182 324 C330 260 445 322 584 388 C742 462 870 414 1032 336" fill="none" stroke="#182323" stroke-width="8" stroke-linecap="round" stroke-dasharray="18 20" opacity="0.5"/>
+  <g fill="#182323" opacity="0.75">
+    <circle cx="164" cy="216" r="18"/>
+    <circle cx="600" cy="216" r="18"/>
+    <circle cx="1040" cy="210" r="18"/>
+    <circle cx="584" cy="388" r="14"/>
+  </g>
+  <text x="64" y="824" fill="#182323" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">Genre Homo</text>
+  <text x="64" y="866" fill="#48635b" font-family="Inter, Arial, sans-serif" font-size="24">fossiles, outils, migrations et ADN ancien</text>
+</svg>

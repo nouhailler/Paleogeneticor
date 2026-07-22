@@ -1,28 +1,350 @@
 [
   {
+    "id": "lucy-al-288-1",
+    "name": "Lucy (AL 288-1)",
+    "speciesId": "australopithecus-afarensis",
+    "discoveredYear": 1974,
+    "location": "Hadar, Afar, Ethiopie",
+    "coordinates": { "lat": 11.1, "lng": 40.58 },
+    "museum": "National Museum of Ethiopia, Addis-Abeba",
+    "period": "Environ 3,18 millions d'annees",
+    "image": "/images/fossils/lucy.jpg",
+    "imageCredit": "Chiswick Chap / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Lucy_Skeleton_cropped.jpg",
+    "scan3d": "Des moulages et numerisations 3D existent dans plusieurs institutions; l'application indique la disponibilite documentaire sans integrer de modele 3D natif.",
+    "importance": "Lucy a rendu visible une bipedie ancienne associee a un cerveau encore petit, bouleversant les scenarios lineaires de l'evolution humaine.",
+    "discoveryStory": [
+      "Le squelette est decouvert en 1974 par l'equipe de Donald Johanson et Tom Gray dans la region de Hadar.",
+      "Le nom Lucy vient de la chanson Lucy in the Sky with Diamonds, ecoutee par l'equipe au moment de la decouverte.",
+      "Le specimen conserve environ 40% d'un squelette, ce qui est exceptionnel pour une antiquite aussi elevee."
+    ],
+    "scientificDetails": [
+      "Le bassin, le femur et le genou soutiennent une locomotion bipede habituelle.",
+      "Les proportions corporelles montrent encore des adaptations arboricoles partielles.",
+      "Lucy n'appartient pas au genre Homo, mais elle est essentielle pour comprendre les precurseurs de la bipedie humaine."
+    ],
+    "publications": [
+      { "label": "Lucy: The Beginnings of Humankind", "year": 1981, "source": "Simon & Schuster" },
+      { "label": "Pliocene hominids from Hadar, Ethiopia", "year": 1976, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "toumai-tm-266",
+    "name": "Toumai (TM 266-01-060-1)",
+    "speciesId": "sahelanthropus-tchadensis",
+    "discoveredYear": 2001,
+    "location": "Toros-Menalla, desert du Djourab, Tchad",
+    "coordinates": { "lat": 16.25, "lng": 17.48 },
+    "museum": "Collections nationales tchadiennes",
+    "period": "Environ 7 millions d'annees",
+    "image": "/images/fossils/toumai.jpg",
+    "imageCredit": "Archaeodontosaurus / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Sahelanthropus_tchadensis_-_TM_266-01-060-1.jpg",
+    "scan3d": "Le crane a fait l'objet de reconstructions et d'analyses morphometriques; aucun modele 3D interactif local n'est integre.",
+    "importance": "Toumai repousse tres loin la discussion sur les premiers hominines possibles, proche de la divergence avec les chimpanzes.",
+    "discoveryStory": [
+      "Le crane est decouvert au Tchad par la Mission paleoanthropologique franco-tchadienne.",
+      "Sa decouverte deplace le regard vers l'Afrique centrale, et pas seulement l'Afrique orientale.",
+      "Le fossile est deforme, ce qui rend les reconstructions et interpretations techniques indispensables."
+    ],
+    "scientificDetails": [
+      "La position du trou occipital est discutee pour evaluer une possible bipedie.",
+      "La face courte et les canines reduites ont ete interpretees comme des caracteres hominines.",
+      "Son statut reste debattu: hominine basal, branche laterale ou forme proche du dernier ancetre commun."
+    ],
+    "publications": [
+      { "label": "A new hominid from the Upper Miocene of Chad", "year": 2002, "source": "Nature" },
+      { "label": "Virtual cranial reconstruction of Sahelanthropus tchadensis", "year": 2005, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "ardi-ara-vp-6-500",
+    "name": "Ardi (ARA-VP-6/500)",
+    "speciesId": "ardipithecus-ramidus",
+    "discoveredYear": 1994,
+    "location": "Aramis, Afar, Ethiopie",
+    "coordinates": { "lat": 10.5, "lng": 40.5 },
+    "museum": "National Museum of Ethiopia, Addis-Abeba",
+    "period": "Environ 4,4 millions d'annees",
+    "image": "/images/fossils/ardi.jpg",
+    "imageCredit": "T. Michael Keesey / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ardi.jpg",
+    "scan3d": "Le specimen a ete reconstruit a partir de nombreux fragments; la fiche presente l'etat documentaire mais pas de modele 3D embarque.",
+    "importance": "Ardi documente une forme tres ancienne de locomotion mixte, ni chimpanzee moderne, ni humaine au sens strict.",
+    "discoveryStory": [
+      "Les restes sont decouverts dans les annees 1990 dans la region d'Aramis.",
+      "La publication complete arrive en 2009 apres une longue phase de preparation et reconstruction.",
+      "Le fossile est fragile et fragmentaire, ce qui explique le temps necessaire a son etude."
+    ],
+    "scientificDetails": [
+      "Le pied possede un gros orteil opposable, utile pour grimper.",
+      "Le bassin suggere cependant une forme de bipedie terrestre.",
+      "Ardi montre que les premiers hominines ne ressemblaient pas simplement a des chimpanzes modernes."
+    ],
+    "publications": [
+      { "label": "Ardipithecus ramidus and the paleobiology of early hominids", "year": 2009, "source": "Science" },
+      { "label": "The Ardipithecus ramidus Skull and Its Implications", "year": 2009, "source": "Science" }
+    ]
+  },
+  {
     "id": "denisova-3",
-    "name": "Denisova 3",
+    "name": "Enfant de Denisova (Denisova 3)",
     "speciesId": "denisovans",
     "discoveredYear": 2008,
     "location": "Grotte de Denisova, Altai",
     "coordinates": { "lat": 51.397, "lng": 84.68 },
     "museum": "Collections archeologiques russes",
-    "importance": "Fragment de phalange ayant permis d'identifier les Denisoviens par l'ADN.",
+    "period": "Environ 50 000 a 80 000 ans selon contextes de Denisova",
+    "image": "/images/fossils/denisova-3.jpg",
+    "imageCredit": "Thilo Parg / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Denisova_Phalanx_distalis.jpg",
+    "scan3d": "Le fragment est minuscule; son importance vient surtout du sequencage ADN, pas d'une reconstruction 3D spectaculaire.",
+    "importance": "Un fragment de phalange a permis d'identifier une lignee humaine inconnue par l'ADN ancien.",
+    "discoveryStory": [
+      "Le fragment de phalange est trouve dans la grotte de Denisova en Siberie.",
+      "L'analyse genetique montre qu'il ne s'agit ni d'un humain moderne ni d'un Neandertalien classique.",
+      "Cette decouverte fonde les Denisoviens comme groupe humain reconnu par la paleogenomique."
+    ],
+    "scientificDetails": [
+      "L'ADN mitochondrial puis nucleaire revele une lignee soeur des Neandertaliens.",
+      "La decouverte montre que des fossiles tres modestes peuvent avoir une portee majeure.",
+      "Denisova devient un site central pour etudier hybridations et occupations multiples."
+    ],
     "publications": [
-      { "label": "Genetic history of an archaic hominin group from Denisova Cave", "year": 2010, "source": "Nature" }
+      { "label": "Genetic history of an archaic hominin group from Denisova Cave", "year": 2010, "source": "Nature" },
+      { "label": "The complete genome sequence of a Denisovan individual", "year": 2012, "source": "Science" }
     ]
   },
   {
-    "id": "vindija-33-19",
-    "name": "Vindija 33.19",
-    "speciesId": "homo-neanderthalensis",
-    "discoveredYear": 1980,
-    "location": "Grotte de Vindija, Croatie",
-    "coordinates": { "lat": 46.31, "lng": 16.08 },
-    "museum": "Croatian Natural History Museum",
-    "importance": "Un des specimens centraux pour les genomes neandertaliens de haute qualite.",
+    "id": "otzi",
+    "name": "Otzi, l'homme des glaces",
+    "speciesId": "homo-sapiens",
+    "discoveredYear": 1991,
+    "location": "Alpes de l'Otztal, frontiere Italie-Autriche",
+    "coordinates": { "lat": 46.78, "lng": 10.84 },
+    "museum": "Musee archeologique du Haut-Adige, Bolzano",
+    "period": "Environ 5 300 ans",
+    "image": "/images/fossils/otzi.jpg",
+    "imageCredit": "Thilo Parg / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Otzi-Quinson.jpg",
+    "scan3d": "Otzi a ete etudie par imagerie medicale, scanner, radiographie et analyses de surface; ces donnees documentent blessures, equipement et conservation.",
+    "importance": "Otzi offre un instantane exceptionnel du Neolithique final: corps momifie, vetements, outils, pathologies et genome.",
+    "discoveryStory": [
+      "La momie est decouverte par des randonneurs en 1991 dans un glacier alpin.",
+      "Elle est d'abord prise pour un corps recent avant d'etre identifiee comme tres ancienne.",
+      "Sa conservation par le froid livre un ensemble rare: corps, vetements, armes et restes biologiques."
+    ],
+    "scientificDetails": [
+      "Les analyses ont revele une fleche dans l'epaule, des tatouages, des pathologies et un dernier repas.",
+      "Son genome renseigne sur les populations neolithiques europeennes.",
+      "Le cas montre la puissance du croisement entre archeologie, medecine legale et paleogenomique."
+    ],
     "publications": [
-      { "label": "A high-coverage Neandertal genome", "year": 2014, "source": "Nature" }
+      { "label": "New insights into the Tyrolean Iceman's origin and phenotype", "year": 2012, "source": "Nature Communications" },
+      { "label": "The Iceman genome and Neolithic Europe", "year": 2012, "source": "Nature Communications" }
+    ]
+  },
+  {
+    "id": "la-chapelle-aux-saints-1",
+    "name": "Homme de Neandertal de La Chapelle-aux-Saints",
+    "speciesId": "homo-neanderthalensis",
+    "discoveredYear": 1908,
+    "location": "La Chapelle-aux-Saints, Correze, France",
+    "coordinates": { "lat": 45.02, "lng": 1.72 },
+    "museum": "Musee de l'Homme / collections francaises",
+    "period": "Environ 60 000 ans",
+    "image": "/images/fossils/la-chapelle.jpg",
+    "imageCredit": "PLoS / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Neandertal_skull_from_la_chapelle_aux_saints.jpg",
+    "scan3d": "Le crane et le squelette ont ete remesures et reinterpretes avec des methodes modernes; la fiche n'integre pas de scan 3D manipulable.",
+    "importance": "Ce specimen a fortement influence l'image de Neandertal, d'abord caricaturee, puis corrigee par les analyses modernes.",
+    "discoveryStory": [
+      "Le squelette est decouvert en 1908 par les abbes Bouyssonie et Bardon.",
+      "Marcellin Boule en tire une reconstruction longtemps consideree comme primitive et courbee.",
+      "Les revisions ulterieures montrent que cette posture resultait en partie de pathologies et d'une interpretation biaisee."
+    ],
+    "scientificDetails": [
+      "Le specimen est age, pathologique et pourtant a survecu longtemps, ce qui nourrit les discussions sur les soins.",
+      "Le contexte a aussi alimente le debat sur les sepultures neandertaliennes.",
+      "Il illustre comment une interpretation scientifique peut etre corrigee par de nouvelles methodes."
+    ],
+    "publications": [
+      { "label": "L'homme fossile de La Chapelle-aux-Saints", "year": 1911, "source": "Annales de Paleontologie" },
+      { "label": "Neandertals revised", "year": 2004, "source": "PLoS Biology" }
+    ]
+  },
+  {
+    "id": "cro-magnon-1",
+    "name": "Cro-Magnon 1",
+    "speciesId": "homo-sapiens",
+    "discoveredYear": 1868,
+    "location": "Abri de Cro-Magnon, Les Eyzies, France",
+    "coordinates": { "lat": 44.94, "lng": 1.01 },
+    "museum": "Musee de l'Homme / collections francaises",
+    "period": "Environ 28 000 ans",
+    "image": "/images/fossils/cro-magnon.png",
+    "imageCredit": "Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Cro-Magnon-male-skull.png",
+    "scan3d": "Des moulages et numerisations existent dans des collections; l'application presente une base documentaire 2D.",
+    "importance": "Cro-Magnon a donne son nom aux humains modernes europeens du Paleolithique superieur.",
+    "discoveryStory": [
+      "Les restes sont decouverts en 1868 aux Eyzies lors de travaux pres d'un abri.",
+      "Ils deviennent rapidement une reference pour les humains fossiles anatomiquement modernes en Europe.",
+      "Le nom Cro-Magnon designe ensuite un ensemble culturel et biologique plus large dans le langage courant."
+    ],
+    "scientificDetails": [
+      "Le crane montre une anatomie de Homo sapiens robuste du Paleolithique superieur.",
+      "Le site s'inscrit dans un monde d'art, d'outils osseux, de parures et de chasseurs-cueilleurs complexes.",
+      "La fiche rappelle que Cro-Magnon n'est pas une espece distincte: c'est Homo sapiens."
+    ],
+    "publications": [
+      { "label": "Les hommes de Cro-Magnon", "year": 1868, "source": "Comptes rendus historiques" },
+      { "label": "Upper Palaeolithic modern humans in Europe", "year": 2016, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "sima-de-los-huesos-skull-5",
+    "name": "Sima de los Huesos - Crane 5 Miguelon",
+    "speciesId": "homo-heidelbergensis",
+    "discoveredYear": 1992,
+    "location": "Sima de los Huesos, Atapuerca, Espagne",
+    "coordinates": { "lat": 42.35, "lng": -3.52 },
+    "museum": "Museo de la Evolucion Humana, Burgos",
+    "period": "Environ 430 000 ans",
+    "image": "/images/fossils/sima-skull5.jpg",
+    "imageCredit": "UtaUtaNapishtim / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Skull5_complete_right_Sima_de_los_Huesos.jpg",
+    "scan3d": "Les cranes de Sima ont fait l'objet de modelisations et mesures 3D; ces donnees servent a etudier morphologie et blessures.",
+    "importance": "Sima de los Huesos est une accumulation exceptionnelle pour comprendre les origines neandertaliennes.",
+    "discoveryStory": [
+      "Le site livre des milliers de fragments humains dans une cavite profonde d'Atapuerca.",
+      "Le crane 5, surnomme Miguelon, est l'un des cranes les plus complets du Pleistocene moyen.",
+      "La mandibule associee a ete retrouvee separement, renforcant la valeur du specimen."
+    ],
+    "scientificDetails": [
+      "Les fossiles montrent des traits proches des Neandertaliens avant les Neandertaliens classiques.",
+      "Des analyses genetiques anciennes ont relie ces populations a l'histoire neandertalienne-denisovienne.",
+      "Le site pose aussi la question des accumulations intentionnelles ou naturelles."
+    ],
+    "publications": [
+      { "label": "A complete human pelvis from the Middle Pleistocene of Spain", "year": 1999, "source": "Nature" },
+      { "label": "Nuclear DNA sequences from the Middle Pleistocene Sima de los Huesos hominins", "year": 2016, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "turkana-boy-knm-wt-15000",
+    "name": "Turkana Boy (KNM-WT 15000)",
+    "speciesId": "homo-erectus",
+    "discoveredYear": 1984,
+    "location": "Nariokotome, lac Turkana, Kenya",
+    "coordinates": { "lat": 4.12, "lng": 35.86 },
+    "museum": "National Museums of Kenya, Nairobi",
+    "period": "Environ 1,5 a 1,6 million d'annees",
+    "image": "/images/fossils/turkana-boy.jpg",
+    "imageCredit": "Claire Houck / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Turkana_Boy.jpg",
+    "scan3d": "Le squelette KNM-WT 15000 est frequemment etudie par moulages, mesures numeriques et modelisations de croissance; la fiche resume ces donnees sans modele 3D manipulable.",
+    "importance": "Turkana Boy est l'un des squelettes les plus complets attribues a Homo erectus ou Homo ergaster, central pour comprendre la stature, la marche et la croissance des premiers Homo voyageurs.",
+    "discoveryStory": [
+      "Le specimen est decouvert en 1984 par Kamoya Kimeu pres de la riviere Nariokotome, dans la region du lac Turkana.",
+      "La conservation exceptionnelle d'un adolescent permet d'etudier le corps entier, et pas seulement un crane ou une machoire.",
+      "Il devient rapidement une reference pour discuter la sortie d'Afrique et l'adaptation a des milieux ouverts."
+    ],
+    "scientificDetails": [
+      "Le squelette documente une bipede terrestre efficace, avec membres longs et proportions proches d'un corps humain moderne.",
+      "La croissance dentaire et osseuse montre un rythme encore different de celui de Homo sapiens.",
+      "Le specimen aide a evaluer thermoregulation, endurance, taille adulte probable et variabilite de Homo erectus."
+    ],
+    "publications": [
+      { "label": "The Nariokotome Homo erectus Skeleton", "year": 1993, "source": "Harvard University Press" },
+      { "label": "No skeletal dysplasia in the Nariokotome boy KNM-WT 15000", "year": 2013, "source": "American Journal of Physical Anthropology" }
+    ]
+  },
+  {
+    "id": "taung-child",
+    "name": "Enfant de Taung",
+    "speciesId": "australopithecus-africanus",
+    "discoveredYear": 1924,
+    "location": "Taung, Afrique du Sud",
+    "coordinates": { "lat": -27.53, "lng": 24.78 },
+    "museum": "University of the Witwatersrand, Johannesburg",
+    "period": "Environ 2,8 a 2,3 millions d'annees",
+    "image": "/images/fossils/taung-child.jpg",
+    "imageCredit": "Jose-Manuel Benito Alvarez / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Australopithecus_africanus_-_Cast_of_taung_child.jpg",
+    "scan3d": "L'endocrane naturel et les moulages ont ete compares par imagerie et morphometrie; la fiche presente l'interet anatomique sans visionneuse 3D embarquee.",
+    "importance": "L'Enfant de Taung a installe l'Afrique au centre des origines humaines et a servi de piece fondatrice pour Australopithecus africanus.",
+    "discoveryStory": [
+      "Le crane d'enfant est identifie en 1924 par Raymond Dart a partir de blocs provenant d'une carriere de calcaire.",
+      "Dart y voit un primate bipede proche de la lignee humaine, interpretation d'abord fortement contestee.",
+      "Le fossile devient ensuite une reference historique majeure apres la reconnaissance progressive des australopitheques."
+    ],
+    "scientificDetails": [
+      "L'endocrane conserve renseigne sur la forme du cerveau et les discussions anciennes sur son organisation.",
+      "La position du foramen magnum soutient une posture plus verticale que chez les grands singes africains actuels.",
+      "La fiche montre comment une decouverte isolee peut transformer une hypothese d'origine geographique."
+    ],
+    "publications": [
+      { "label": "Australopithecus africanus: The man-ape of South Africa", "year": 1925, "source": "Nature" },
+      { "label": "The Taung endocast and the lunate sulcus", "year": 2007, "source": "PNAS" }
+    ]
+  },
+  {
+    "id": "homo-floresiensis-lb1",
+    "name": "LB1, Homo floresiensis",
+    "speciesId": "homo-floresiensis",
+    "discoveredYear": 2003,
+    "location": "Liang Bua, ile de Flores, Indonesie",
+    "coordinates": { "lat": -8.53, "lng": 120.44 },
+    "museum": "Centre for Archaeology, Jakarta",
+    "period": "Environ 60 000 a 50 000 ans",
+    "image": "/images/fossils/lb1.jpg",
+    "imageCredit": "Ryan Somma / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:LB1_skull.jpg",
+    "scan3d": "Le crane LB1 et les os associes ont ete analyses par imagerie et comparaisons 3D pour tester les hypotheses de pathologie, de nanisme insulaire et de phylogenie.",
+    "importance": "LB1 a revele une espece humaine de tres petite taille ayant survecu tardivement sur Flores, bousculant les modeles simples d'evolution humaine.",
+    "discoveryStory": [
+      "Les restes sont mis au jour en 2003 dans la grotte de Liang Bua par une equipe indonesienne et australienne.",
+      "La taille reduite du crane et du corps surprend immediatement les chercheurs.",
+      "Les debats portent d'abord sur une pathologie possible avant que l'hypothese d'une espece distincte ne s'impose largement."
+    ],
+    "scientificDetails": [
+      "Le specimen associe petit cerveau, petite taille et comportements techniques documentes par l'archeologie du site.",
+      "Le contexte insulaire nourrit l'hypothese d'un nanisme evolutif.",
+      "LB1 montre que plusieurs formes humaines tardives cohabitaient encore avec Homo sapiens dans certaines regions."
+    ],
+    "publications": [
+      { "label": "A new small-bodied hominin from the Late Pleistocene of Flores", "year": 2004, "source": "Nature" },
+      { "label": "Revised stratigraphy and chronology for Homo floresiensis at Liang Bua", "year": 2016, "source": "Nature" }
+    ]
+  },
+  {
+    "id": "dmanisi-skull-5-d4500",
+    "name": "Dmanisi Skull 5 (D4500)",
+    "speciesId": "homo-georgicus",
+    "discoveredYear": 2005,
+    "location": "Dmanisi, Georgie",
+    "coordinates": { "lat": 41.33, "lng": 44.20 },
+    "museum": "Georgian National Museum, Tbilissi",
+    "period": "Environ 1,8 million d'annees",
+    "image": "/images/fossils/dmanisi-skull5.jpg",
+    "imageCredit": "Tea Jorjadze / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Dmanisi_skull.JPG",
+    "scan3d": "Skull 5 est un objet majeur pour la morphometrie 3D: son crane complet et sa mandibule permettent de tester la variabilite des premiers Homo hors d'Afrique.",
+    "importance": "Dmanisi Skull 5 documente une sortie d'Afrique tres ancienne et relance le debat sur la diversite reelle des premieres especes du genre Homo.",
+    "discoveryStory": [
+      "Le crane D4500 est decouvert en 2005 sur le site de Dmanisi, ou plusieurs individus anciens etaient deja connus.",
+      "La mandibule D2600, retrouvee auparavant, est ensuite associee au crane.",
+      "La publication de 2013 attire l'attention car le specimen combine une petite capacite cranienne avec une face robuste."
+    ],
+    "scientificDetails": [
+      "Le site de Dmanisi montre des hominines hors d'Afrique autour de 1,8 million d'annees.",
+      "La variabilite des cranes du meme site interroge la separation entre Homo habilis, Homo rudolfensis, Homo erectus et Homo georgicus.",
+      "Skull 5 sert d'exemple pour expliquer le conflit entre regroupement et multiplication des especes fossiles."
+    ],
+    "publications": [
+      { "label": "A complete skull from Dmanisi, Georgia, and the evolutionary biology of early Homo", "year": 2013, "source": "Science" },
+      { "label": "The earliest toothless hominin skull", "year": 2005, "source": "Nature" }
     ]
   }
 ]
