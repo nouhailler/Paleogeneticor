@@ -1,26 +1,206 @@
 [
   {
-    "id": "denisova-cave",
-    "name": "Grotte de Denisova",
+    "id": "jebel-irhoud",
+    "name": "Jebel Irhoud",
     "kind": "site",
-    "coordinates": { "lat": 51.397, "lng": 84.68 },
-    "summary": "Site cle pour l'identification des Denisoviens et les interactions entre groupes humains.",
-    "relatedEntityId": "denisovans"
+    "coordinates": { "lat": 31.86, "lng": -8.87 },
+    "region": "Maroc, Afrique du Nord",
+    "period": "Environ 300 ka",
+    "summary": "Site marocain majeur pour les premiers Homo sapiens connus, autour de 300 ka.",
+    "details": [
+      "Jebel Irhoud a livre des fossiles associant des traits modernes et des caracteres archaiques.",
+      "Le site rappelle que l'emergence de Homo sapiens est progressive et africaine, mais pas limitee a une seule region.",
+      "Les outils en pierre associes aident a relier anatomie, comportements techniques et chronologie."
+    ],
+    "importance": "Jebel Irhoud deplace tres tot l'histoire de Sapiens et oblige a penser une origine africaine structuree.",
+    "evidence": "Fossiles humains, industrie lithique et datations autour de 300 000 ans.",
+    "relatedEntityId": "homo-sapiens"
   },
   {
-    "id": "max-planck-eva",
-    "name": "Max Planck Institute for Evolutionary Anthropology",
-    "kind": "laboratory",
-    "coordinates": { "lat": 51.327, "lng": 12.373 },
-    "summary": "Laboratoire majeur dans l'etude des genomes anciens.",
-    "relatedEntityId": "lab-mpi-eva"
+    "id": "florisbad",
+    "name": "Florisbad",
+    "kind": "site",
+    "coordinates": { "lat": -28.77, "lng": 26.07 },
+    "region": "Afrique du Sud",
+    "period": "Pleistocene moyen",
+    "summary": "Fossile africain important pour discuter l'emergence progressive de Homo sapiens.",
+    "details": [
+      "Le crane de Florisbad montre une combinaison de traits qui nourrit le debat sur les premiers Sapiens africains.",
+      "Il est utile pour comparer plusieurs regions d'Afrique plutot qu'un scenario d'origine unique.",
+      "Le site illustre les limites d'une classification trop rigide quand les fossiles sont fragmentaires."
+    ],
+    "importance": "Florisbad aide a expliquer que l'histoire de Sapiens est faite de populations africaines variees.",
+    "evidence": "Restes craniens, contexte geologique et comparaisons morphologiques.",
+    "relatedEntityId": "homo-sapiens"
+  },
+  {
+    "id": "oase",
+    "name": "Pestera cu Oase",
+    "kind": "site",
+    "coordinates": { "lat": 45.01, "lng": 21.84 },
+    "region": "Roumanie, Europe du Sud-Est",
+    "period": "Environ 40 ka",
+    "summary": "Humain moderne ancien avec ascendance neandertalienne recente.",
+    "details": [
+      "L'individu d'Oase porte des segments neandertaliens longs, signe d'un ancetre neandertalien proche.",
+      "Le site montre que les contacts entre Sapiens et Neandertaliens n'ont pas ete seulement anciens et abstraits.",
+      "Il rappelle aussi qu'une population ancienne peut ne pas contribuer fortement aux populations actuelles."
+    ],
+    "importance": "Oase rend visible un metissage recent entre Sapiens et Neandertal au debut du peuplement europeen.",
+    "evidence": "Genome ancien, longueur des segments archaiques et datation du fossile.",
+    "relatedEntityId": "homo-sapiens"
   },
   {
     "id": "neander-valley",
     "name": "Vallee de Neander",
     "kind": "site",
     "coordinates": { "lat": 51.226, "lng": 6.951 },
+    "region": "Allemagne, Europe occidentale",
+    "period": "Decouverte en 1856",
     "summary": "Lieu de decouverte historique associe au nom Neandertal.",
+    "details": [
+      "Les fossiles decouverts dans la vallee ont donne leur nom aux Neandertaliens.",
+      "Le site appartient a l'histoire de la paleoanthropologie autant qu'a l'histoire biologique de l'espece.",
+      "Il permet d'expliquer comment les premieres interpretations ont evolue avec les fossiles et l'ADN."
+    ],
+    "importance": "La vallee de Neander est un repere historique pour comprendre la naissance du concept d'humain fossile.",
+    "evidence": "Fossiles historiques, archives de decouverte et comparaisons anatomiques.",
     "relatedEntityId": "homo-neanderthalensis"
+  },
+  {
+    "id": "vindija",
+    "name": "Grotte de Vindija",
+    "kind": "site",
+    "coordinates": { "lat": 46.31, "lng": 16.05 },
+    "region": "Croatie, Balkans",
+    "period": "Pleistocene superieur",
+    "summary": "Site croate ayant livre des genomes neandertaliens de reference.",
+    "details": [
+      "Vindija a fourni des restes neandertaliens essentiels pour les genomes de reference.",
+      "Ces genomes ont servi a mesurer l'ascendance neandertalienne chez des humains actuels et anciens.",
+      "Le site illustre le passage de l'archeologie regionale a une comparaison genetique mondiale."
+    ],
+    "importance": "Vindija est central pour comprendre l'introgression neandertalienne chez Homo sapiens.",
+    "evidence": "Genomes neandertaliens, datations et comparaisons avec genomes humains modernes.",
+    "relatedEntityId": "homo-neanderthalensis"
+  },
+  {
+    "id": "sima-de-los-huesos",
+    "name": "Sima de los Huesos",
+    "kind": "site",
+    "coordinates": { "lat": 42.35, "lng": -3.52 },
+    "region": "Espagne, Atapuerca",
+    "period": "Environ 430 ka",
+    "summary": "Ensemble fossile du Pleistocene moyen essentiel pour les origines neandertaliennes.",
+    "details": [
+      "Sima de los Huesos contient un ensemble exceptionnel de restes humains du Pleistocene moyen.",
+      "Les fossiles montrent des liens avec la lignee neandertalienne avant les Neandertaliens classiques.",
+      "Les analyses biomoleculaires ont rendu le site important pour discuter les relations anciennes entre lignees humaines."
+    ],
+    "importance": "Le site donne de la profondeur chronologique a l'histoire de Neandertal.",
+    "evidence": "Fossiles nombreux, morphologie, datations et analyses genetiques anciennes.",
+    "relatedEntityId": "homo-neanderthalensis"
+  },
+  {
+    "id": "mezmaiskaya",
+    "name": "Grotte de Mezmaiskaya",
+    "kind": "site",
+    "coordinates": { "lat": 44.21, "lng": 40.0 },
+    "region": "Caucase du Nord",
+    "period": "Pleistocene superieur",
+    "summary": "Site caucasien important pour comparer les populations neandertaliennes.",
+    "details": [
+      "Mezmaiskaya documente une presence neandertalienne dans une region charniere entre Europe et Asie.",
+      "Les donnees genetiques aident a comparer les Neandertaliens du Caucase avec ceux d'Europe et de l'Altai.",
+      "Le site montre que Neandertal n'est pas un bloc uniforme mais un ensemble de populations regionales."
+    ],
+    "importance": "Mezmaiskaya aide a cartographier la diversite neandertalienne en Eurasie.",
+    "evidence": "Restes neandertaliens, contexte archeologique et comparaisons genomiques.",
+    "relatedEntityId": "homo-neanderthalensis"
+  },
+  {
+    "id": "denisova-cave",
+    "name": "Grotte de Denisova",
+    "kind": "site",
+    "coordinates": { "lat": 51.397, "lng": 84.68 },
+    "region": "Altai, Siberie",
+    "period": "Pleistocene moyen et superieur",
+    "summary": "Site cle pour l'identification des Denisoviens et les interactions entre groupes humains.",
+    "details": [
+      "La grotte de Denisova a revele une lignee humaine d'abord identifiee par l'ADN.",
+      "Elle contient aussi des traces de Neandertaliens et d'interactions entre groupes.",
+      "Le site montre l'importance des fragments minuscules, des sediments et des methodes biomoleculaires."
+    ],
+    "importance": "Denisova prouve que l'ADN peut reveler des populations presque invisibles dans les fossiles.",
+    "evidence": "Phalange, dents, genome denisovien, genome neandertalien et ADN sedimentaire.",
+    "relatedEntityId": "denisovans"
+  },
+  {
+    "id": "xiahe",
+    "name": "Xiahe / Baishiya Karst Cave",
+    "kind": "site",
+    "coordinates": { "lat": 35.45, "lng": 102.57 },
+    "region": "Plateau tibetain, Chine",
+    "period": "Pleistocene moyen",
+    "summary": "Mandibule denisovienne identifiee par proteines anciennes sur le plateau tibetain.",
+    "details": [
+      "La mandibule de Xiahe a elargi la geographie denisovienne au plateau tibetain.",
+      "L'identification repose sur des proteines anciennes, utiles quand l'ADN n'est pas conserve.",
+      "Le site est important pour discuter l'adaptation aux hautes altitudes et les traces denisoviennes en Asie."
+    ],
+    "importance": "Xiahe montre que les Denisoviens ne se limitent pas a la grotte de Denisova.",
+    "evidence": "Mandibule, paleoproteomique de l'email dentaire et contexte de grotte.",
+    "relatedEntityId": "denisovans"
+  },
+  {
+    "id": "chagyrskaya",
+    "name": "Grotte de Chagyrskaya",
+    "kind": "site",
+    "coordinates": { "lat": 51.44, "lng": 83.16 },
+    "region": "Altai, Siberie",
+    "period": "Pleistocene superieur",
+    "summary": "Site de l'Altai documentant une communaute neandertalienne par les genomes.",
+    "details": [
+      "Chagyrskaya a livre des genomes permettant de discuter la structure sociale d'un groupe neandertalien.",
+      "Le site se situe dans une region ou Neandertaliens et Denisoviens ont ete presents.",
+      "Il aide a comprendre les mobilites et relations entre petites populations."
+    ],
+    "importance": "Chagyrskaya donne une echelle presque communautaire a la paleogenomique neandertalienne.",
+    "evidence": "Genomes de plusieurs individus, parente biologique et contexte archeologique.",
+    "relatedEntityId": "homo-neanderthalensis"
+  },
+  {
+    "id": "max-planck-eva",
+    "name": "Max Planck Institute for Evolutionary Anthropology",
+    "kind": "laboratory",
+    "coordinates": { "lat": 51.327, "lng": 12.373 },
+    "region": "Leipzig, Allemagne",
+    "period": "Paleogenomique contemporaine",
+    "summary": "Laboratoire majeur dans l'etude des genomes anciens.",
+    "details": [
+      "Le laboratoire a joue un role central dans le developpement des methodes d'ADN ancien humain.",
+      "Il est associe a des travaux sur les genomes neandertaliens, denisoviens et l'ADN sedimentaire.",
+      "Il illustre que la carte de la paleogenetique relie sites de fouille et infrastructures de laboratoire."
+    ],
+    "importance": "Ce laboratoire montre que les decouvertes dependent aussi de protocoles, salles blanches et bioinformatique.",
+    "evidence": "Publications de paleogenomique, protocoles de laboratoire et analyses de genomes anciens.",
+    "relatedEntityId": "lab-mpi-eva"
+  },
+  {
+    "id": "natural-history-museum-london",
+    "name": "Natural History Museum, London",
+    "kind": "museum",
+    "coordinates": { "lat": 51.4967, "lng": -0.1764 },
+    "region": "Londres, Royaume-Uni",
+    "period": "Collections et recherche contemporaine",
+    "summary": "Institution de reference pour collections fossiles, paleoanthropologie et diffusion scientifique.",
+    "details": [
+      "Les musees conservent des collections qui peuvent devenir analysables avec de nouvelles methodes.",
+      "Ils jouent aussi un role dans la documentation, l'acces aux specimens et la mediation scientifique.",
+      "La paleogenetique depend donc des collections autant que des fouilles recentes."
+    ],
+    "importance": "Les musees transforment les collections anciennes en archives scientifiques reutilisables.",
+    "evidence": "Collections fossiles, documentation museale et collaborations scientifiques.",
+    "relatedEntityId": "museum-nhm"
   }
 ]

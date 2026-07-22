@@ -62,9 +62,14 @@ export function AppLayout() {
             >
               <ArrowLeft className="h-5 w-5" aria-hidden="true" />
             </button>
-            <Link to="/" className="flex min-w-0 items-center gap-3 font-bold text-ink">
+            <Link
+              to="/"
+              className="flex min-w-0 items-center gap-3 font-bold text-ink transition hover:text-lagoon"
+              aria-label="Retourner a l'accueil Paleogeneticor"
+              onClick={() => setIsMenuOpen(false)}
+            >
               <span className="grid h-10 w-10 shrink-0 place-items-center rounded-lg bg-lagoon text-lg text-white">PG</span>
-              <span className="truncate">Paleogeneticor</span>
+              <span className="truncate underline-offset-4 hover:underline">Paleogeneticor</span>
             </Link>
           </div>
           <nav className="hidden items-center gap-1 md:flex" aria-label="Navigation principale">

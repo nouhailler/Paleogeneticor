@@ -1,23 +1,167 @@
 [
   {
+    "id": "neanderthal-lineage",
+    "title": "Lignee neandertalienne",
+    "dateKya": 430,
+    "category": "species",
+    "summary": "Les premiers traits neandertaliens apparaissent progressivement en Eurasie.",
+    "details": [
+      "Neandertal n'apparait pas en un seul evenement: la lignee se construit dans le Pleistocene moyen.",
+      "Les fossiles europeens montrent une accumulation de traits anatomiques avant les Neandertaliens classiques.",
+      "Cette longue duree aide a comprendre pourquoi les populations neandertaliennes etaient regionalement variees."
+    ],
+    "impact": "Place Neandertal dans une histoire longue, et non comme une espece tardive apparue juste avant Homo sapiens.",
+    "evidence": "Fossiles europeens du Pleistocene moyen, morphologie cranienne et donnees genomiques.",
+    "relatedPath": "/species/homo-neanderthalensis"
+  },
+  {
     "id": "sapiens-origin",
     "title": "Premiers Homo sapiens connus",
     "dateKya": 300,
     "category": "species",
-    "summary": "Les fossiles africains documentent une emergence progressive de notre espece."
+    "summary": "Les fossiles africains documentent une emergence progressive de notre espece.",
+    "details": [
+      "Les fossiles de Sapiens anciens montrent une origine africaine complexe.",
+      "L'emergence de notre espece ne correspond probablement pas a un berceau unique et isole.",
+      "Les genomes anciens et modernes suggerent des populations africaines structurees, connectees par intermittence."
+    ],
+    "impact": "Remplace l'image d'une origine simple par un scenario africain plus reticule et regionalement structure.",
+    "evidence": "Fossiles africains anciens, datations et comparaisons genomiques.",
+    "relatedPath": "/species/homo-sapiens"
+  },
+  {
+    "id": "sapiens-out-of-africa",
+    "title": "Expansions hors d'Afrique",
+    "dateKya": 70,
+    "category": "migration",
+    "summary": "Plusieurs dispersions de Sapiens atteignent l'Eurasie, puis l'Oceanie et l'Europe.",
+    "details": [
+      "Les sorties d'Afrique n'ont pas toutes laisse la meme descendance.",
+      "Certaines presences anciennes semblent avoir ete remplacees ou absorbees par des vagues plus tardives.",
+      "Les rencontres avec Neandertaliens et Denisoviens ont laisse des fragments d'ADN archaique."
+    ],
+    "impact": "Montre que les migrations humaines sont des processus successifs, avec melanges et remplacements partiels.",
+    "evidence": "Genomes anciens eurasiens, fossiles levantins et traces d'introgression archaique.",
+    "relatedPath": "/species/homo-sapiens"
   },
   {
     "id": "last-glacial-maximum",
     "title": "Dernier maximum glaciaire",
     "dateKya": 21,
     "category": "climate",
-    "summary": "Periode froide majeure ayant influence les refuges et migrations humaines."
+    "summary": "Periode froide majeure ayant influence refuges, routes et densites humaines.",
+    "details": [
+      "Les calottes glaciaires et environnements froids contraignent les zones habitables.",
+      "Des populations se replient dans des refuges, puis se redeploient lors du rechauffement.",
+      "Les genomes anciens permettent de suivre ces ruptures et reprises demographiques."
+    ],
+    "impact": "Explique pourquoi climat, archeologie et genetique doivent etre lus ensemble.",
+    "evidence": "Archives climatiques, repartition des sites paleolithiques et genomes d'Eurasie glaciaire.",
+    "relatedPath": "/discoveries"
+  },
+  {
+    "id": "pcr-invention",
+    "title": "Invention de la PCR",
+    "year": 1983,
+    "category": "innovation",
+    "summary": "La PCR rend possible l'amplification rapide de fragments d'ADN infimes.",
+    "details": [
+      "La reaction alterne denaturation, hybridation des amorces et elongation.",
+      "La Taq polymerase permet d'automatiser les cycles de chauffe.",
+      "Cette sensibilite ouvre l'ADN ancien, mais rend la contamination beaucoup plus dangereuse."
+    ],
+    "impact": "Donne a la paleogenetique son premier moteur technique, avant l'ere des genomes complets.",
+    "evidence": "Amplification ciblee, controles a blanc et protocoles pre-PCR.",
+    "relatedPath": "/dna"
+  },
+  {
+    "id": "first-neanderthal-dna",
+    "title": "Premier ADN neandertalien",
+    "year": 1997,
+    "category": "publication",
+    "summary": "L'ADN mitochondrial neandertalien prouve que des fossiles humains archaiques peuvent etre lus genetiquement.",
+    "details": [
+      "Les premieres sequences concernent l'ADN mitochondrial, plus abondant que le genome nucleaire.",
+      "Elles montrent une difference nette avec les humains modernes analyses a l'epoque.",
+      "Ce jalon prepare les genomes neandertaliens complets des annees 2010."
+    ],
+    "impact": "Fait basculer Neandertal du seul registre fossile vers une histoire aussi genetique.",
+    "evidence": "Fragments d'ADN mitochondrial extraits de restes neandertaliens.",
+    "relatedPath": "/discoveries/first-neanderthal-dna"
   },
   {
     "id": "ngs-human-evolution",
     "title": "Acceleration du sequencage ancien",
     "year": 2010,
     "category": "innovation",
-    "summary": "Le haut debit transforme l'etude des populations anciennes."
+    "summary": "Le haut debit transforme l'etude des populations anciennes.",
+    "details": [
+      "Au lieu de lire une cible, les machines lisent des millions de fragments en parallele.",
+      "Cette approche correspond bien a l'ADN ancien, fragmente et melange a de l'ADN microbien.",
+      "Elle rend possibles les genomes neandertaliens, denisoviens et les grandes series de populations anciennes."
+    ],
+    "impact": "Change l'echelle de la discipline: on passe du marqueur isole au genome et aux populations.",
+    "evidence": "Bibliotheques de sequencage, couverture genomique et profils de dommages.",
+    "relatedPath": "/dna"
+  },
+  {
+    "id": "denisovans-identified",
+    "title": "Identification des Denisoviens",
+    "year": 2010,
+    "category": "species",
+    "summary": "Un fragment de phalange revele par l'ADN une lignee humaine inconnue.",
+    "details": [
+      "Les Denisoviens sont d'abord identifies par leur genome, non par un squelette complet.",
+      "Ils sont proches des Neandertaliens, mais distincts.",
+      "Des traces denisoviennes persistent aujourd'hui dans plusieurs populations d'Asie et d'Oceanie."
+    ],
+    "impact": "Prouve que l'ADN peut reveler des populations presque invisibles dans le registre fossile.",
+    "evidence": "Phalange de Denisova, genome mitochondrial puis nucleaire.",
+    "relatedPath": "/species/denisovans"
+  },
+  {
+    "id": "petrous-bone",
+    "title": "Os petreux et meilleurs rendements",
+    "year": 2015,
+    "category": "innovation",
+    "summary": "Le ciblage de l'os petreux multiplie les chances d'obtenir de l'ADN endogene.",
+    "details": [
+      "La portion petreuse de l'os temporal preserve souvent beaucoup mieux l'ADN.",
+      "Cette strategie augmente le nombre d'individus anciens analysables.",
+      "Elle oblige aussi a arbitrer entre rendement scientifique et conservation patrimoniale."
+    ],
+    "impact": "Permet de construire de grandes series genomiques au lieu d'etudes limitees a quelques individus exceptionnels.",
+    "evidence": "Comparaison de rendements ADN entre os, dents et portion petreuse.",
+    "relatedPath": "/dna"
+  },
+  {
+    "id": "sedimentary-dna",
+    "title": "ADN sedimentaire",
+    "year": 2017,
+    "category": "innovation",
+    "summary": "Les sediments de grotte deviennent des archives genetiques meme sans os humain.",
+    "details": [
+      "L'ADN peut rester piege dans les couches sedimentaires.",
+      "Cette approche detecte presences humaines, faunes et environnements.",
+      "L'interpretation doit rester prudente, car les sediments peuvent etre remanies."
+    ],
+    "impact": "Ouvre l'analyse genetique de sites ou aucun fossile humain exploitable n'est conserve.",
+    "evidence": "ADN mitochondrial et nucleaire extrait de sediments stratifies.",
+    "relatedPath": "/dna"
+  },
+  {
+    "id": "nobel-paabo",
+    "title": "Nobel de medecine a Svante Paabo",
+    "year": 2022,
+    "category": "publication",
+    "summary": "La paleogenomique humaine est reconnue comme une discipline majeure.",
+    "details": [
+      "Le prix reconnait les genomes d'hominines disparus et l'evolution humaine.",
+      "Il consacre aussi des decennies de methodes contre la contamination.",
+      "La discipline devient centrale pour comprendre hybridations, migrations et adaptations."
+    ],
+    "impact": "Rend visible le role de l'ADN ancien dans la biologie moderne et l'histoire humaine.",
+    "evidence": "Reconnaissance Nobel 2022 pour les decouvertes sur les genomes d'hominines disparus.",
+    "relatedPath": "/dna"
   }
 ]

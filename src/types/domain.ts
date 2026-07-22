@@ -134,7 +134,12 @@ export interface MapSite {
   name: string;
   kind: 'site' | 'museum' | 'laboratory';
   coordinates: Coordinates;
+  region: string;
+  period: string;
   summary: string;
+  details: string[];
+  importance: string;
+  evidence: string;
   relatedEntityId?: string;
 }
 
@@ -145,6 +150,10 @@ export interface TimelineEvent {
   year?: number;
   category: 'species' | 'climate' | 'migration' | 'innovation' | 'publication';
   summary: string;
+  details: string[];
+  impact: string;
+  evidence: string;
+  relatedPath: string;
 }
 
 export interface SearchDocument {

@@ -39,7 +39,13 @@ export function HomePage() {
       </section>
 
       <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
-        <h2 className="mb-4 text-2xl font-bold">Frise rapide</h2>
+        <div className="mb-4">
+          <p className="text-sm font-semibold uppercase text-ochre">Chronologie expliquee</p>
+          <h2 className="mt-1 text-2xl font-bold">Frise rapide</h2>
+          <p className="mt-2 max-w-3xl leading-7 text-ink/70">
+            Lire ensemble le temps profond des especes humaines et l'acceleration recente des methodes ADN.
+          </p>
+        </div>
         <TimelineStrip />
       </section>
     </div>
