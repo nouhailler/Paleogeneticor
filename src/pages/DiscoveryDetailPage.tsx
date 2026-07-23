@@ -16,6 +16,15 @@ export function DiscoveryDetailPage() {
       <PageHeader eyebrow={`${discovery.year} · ${discovery.category}`} title={discovery.title} description={discovery.summary} />
       <div className="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
         <Card>
+          <figure className="mb-5 overflow-hidden rounded-lg border border-black/10 bg-bone">
+            <img src={discovery.image} alt={discovery.imageAlt} className="max-h-[460px] w-full object-cover" />
+            <figcaption className="flex flex-wrap items-center justify-between gap-2 bg-paper px-4 py-3 text-xs text-ink/60">
+              <span>{discovery.imageCredit}</span>
+              <a className="font-semibold text-lagoon underline-offset-4 hover:underline" href={discovery.imageSource} target="_blank" rel="noreferrer">
+                Source Wikimedia
+              </a>
+            </figcaption>
+          </figure>
           <h2 className="text-xl font-bold">Explication</h2>
           <div className="mt-4 grid gap-4 leading-7 text-ink/75">
             {discovery.details.map((paragraph) => (

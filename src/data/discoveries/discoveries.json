@@ -5,6 +5,10 @@
     "year": 1984,
     "category": "Origine du domaine",
     "summary": "Des fragments d'ADN mitochondrial sont obtenus a partir d'un specimen de quagga conserve en musee.",
+    "image": "/images/discoveries/quagga-photo.jpg",
+    "imageAlt": "Photographie historique d'un quagga vivant au zoo de Londres",
+    "imageCredit": "F. York / Biodiversity Heritage Library / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Quagga_photo.jpg",
     "details": [
       "Cette etude sur le quagga, un equide d'Afrique australe disparu au XIXe siecle, montre que du materiel genetique peut survivre dans des tissus anciens conserves en musee.",
       "Les sequences obtenues etaient courtes et fragiles, mais elles ont ouvert la voie a l'idee centrale de la paleogenetique: reconstruire une partie de l'histoire evolutive a partir de molecules anciennes.",
@@ -30,6 +34,10 @@
     "year": 1997,
     "category": "Hominines",
     "summary": "Un fragment mitochondrial neandertalien est sequence a partir du specimen type de la vallee de Neander.",
+    "image": "/images/species/details/neanderthal-dna-extraction.jpg",
+    "imageAlt": "Preparation d'echantillons neandertaliens en salle propre",
+    "imageCredit": "NHGRI / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Neanderthal_DNA_extraction.jpg",
     "details": [
       "Avant cette etude, les relations entre Neandertaliens et humains modernes reposaient surtout sur les fossiles et l'archeologie. L'ADN a apporte une ligne de preuve independante.",
       "Le travail s'appuyait sur l'ADN mitochondrial, transmis par la lignee maternelle et present en nombreuses copies dans les cellules, ce qui le rendait plus accessible que le genome nucleaire.",
@@ -50,6 +58,10 @@
     "year": 2010,
     "category": "Genome",
     "summary": "Un brouillon de genome neandertalien revele des melanges genetiques avec les ancetres de nombreuses populations actuelles.",
+    "image": "/images/species/details/homo-hybridation.png",
+    "imageAlt": "Schema de phylogenie et d'hybridations du genre Homo",
+    "imageCredit": "Dbachmann / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Filogenia_Homo_Hibrida%C3%A7%C3%A3o.png",
     "details": [
       "L'etude combine des milliards de nucleotides obtenus principalement a partir de fossiles neandertaliens de la grotte de Vindija, en Croatie.",
       "La comparaison avec des genomes humains actuels montre que les populations non africaines portent une petite proportion d'ascendance neandertalienne.",
@@ -70,6 +82,10 @@
     "year": 2010,
     "category": "Espece",
     "summary": "Un groupe humain est reconnu a partir de donnees genetiques issues d'un petit fragment osseux de Denisova.",
+    "image": "/images/species/details/denisova-phalanx.jpg",
+    "imageAlt": "Replique d'une phalange denisovienne conservee au Museum des sciences naturelles de Bruxelles",
+    "imageCredit": "Thilo Parg / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Denisova_Phalanx_distalis.jpg",
     "details": [
       "La decouverte part d'un fragment de phalange trouve dans la grotte de Denisova, en Siberie. La morphologie seule etait insuffisante pour identifier clairement le groupe humain.",
       "L'ADN mitochondrial puis le genome nucleaire montrent qu'il ne s'agit ni d'un humain moderne ni d'un Neandertalien classique, mais d'une lignee soeur des Neandertaliens.",
@@ -95,6 +111,10 @@
     "year": 2014,
     "category": "Migration",
     "summary": "Le genome d'un Homo sapiens vieux d'environ 45 000 ans documente les premiers humains modernes d'Eurasie.",
+    "image": "/images/discoveries/ust-ishim-femur.jpg",
+    "imageAlt": "Femur de l'individu d'Ust-Ishim",
+    "imageCredit": "CRamosAcosta / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Femur_ust-ishim_2.jpg",
     "details": [
       "Le femur d'Ust-Ishim, trouve en Siberie occidentale, a livre un genome ancien de grande qualite pour une periode proche des premieres expansions de Homo sapiens en Eurasie.",
       "Son genome contient des segments neandertaliens plus longs que ceux observes chez les humains actuels, car le metissage etait plus recent dans son ascendance.",
@@ -115,6 +135,10 @@
     "year": 2015,
     "category": "Population",
     "summary": "Le genome de Mota, en Ethiopie, aide a distinguer les ancestry africaines anciennes et les retours migratoires depuis l'Eurasie.",
+    "image": "/images/discoveries/dna-extraction.jpg",
+    "imageAlt": "Extraction d'ADN visible dans un tube de laboratoire",
+    "imageCredit": "Joo Nath / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:DNA_Extraction.jpg",
     "details": [
       "L'individu de Mota, date d'environ 4 500 ans, a ete conserve dans des conditions favorables a l'ADN ancien dans les hautes terres d'Ethiopie.",
       "Son genome precede certains apports eurasiens detectes dans des populations africaines plus recentes, ce qui en fait un point de comparaison important.",
@@ -140,6 +164,10 @@
     "year": 2019,
     "category": "Proteomique",
     "summary": "La mandibule de Xiahe est attribuee a une population proche des Denisoviens grace a l'analyse de proteines anciennes.",
+    "image": "/images/discoveries/xiahe-mandible.jpg",
+    "imageAlt": "Mandibule de Xiahe avec deux molaires attachees",
+    "imageCredit": "Dongju Zhang / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Xiahe_mandible.jpg",
     "details": [
       "La mandibule de Baishiya Karst Cave, sur le plateau tibetain, etait connue avant que son attribution puisse etre resolue par la morphologie seule.",
       "L'analyse paleoproteomique de proteines conservees dans les dents a relie ce fossile aux Denisoviens de Denisova Cave.",
@@ -160,6 +188,10 @@
     "year": 2022,
     "category": "Reconnaissance",
     "summary": "Le prix Nobel de physiologie ou medecine distingue les travaux de Svante Paabo sur les genomes d'hominines disparus.",
+    "image": "/images/discoveries/svante-paabo.jpg",
+    "imageAlt": "Portrait de Svante Paabo",
+    "imageCredit": "Royal Society / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Professor_Svante_Paabo_ForMemRS_(cropped).jpg",
     "details": [
       "Le prix reconnait un ensemble de travaux qui ont rendu possible l'etude genetique directe des Neandertaliens, des Denisoviens et de leurs liens avec Homo sapiens.",
       "Ces recherches ont etabli que des populations humaines disparues ont contribue a l'ascendance de populations actuelles.",
@@ -180,6 +212,10 @@
     "year": 2024,
     "category": "Proteomique",
     "summary": "Une cote hominine identifiee par proteomique confirme une presence denisovienne tardive dans la grotte de Baishiya.",
+    "image": "/images/discoveries/xiahe-mandible.jpg",
+    "imageAlt": "Mandibule de Xiahe, fossile denisovien du plateau tibetain",
+    "imageCredit": "Dongju Zhang / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Xiahe_mandible.jpg",
     "details": [
       "Les chercheurs ont combine zooarcheologie et analyse proteomique pour trier des fragments osseux difficiles a identifier visuellement.",
       "Une cote hominine datee d'environ 48 000 a 32 000 ans a ete attribuee aux Denisoviens, dans le meme site tibetain que la mandibule de Xiahe.",
@@ -191,6 +227,111 @@
         "label": "Zhang et al.",
         "year": 2024,
         "source": "Middle and Late Pleistocene Denisovan subsistence at Baishiya Karst Cave, Nature."
+      }
+    ]
+  },
+  {
+    "id": "archaic-human-hybridation",
+    "title": "Hybridations avec Neandertaliens et Denisoviens",
+    "year": 2010,
+    "category": "Hybridation",
+    "summary": "Les genomes anciens montrent que Homo sapiens s'est metisse avec des Neandertaliens et des Denisoviens, avec des effets encore visibles aujourd'hui.",
+    "image": "/images/discoveries/human-archaic-interbreeding.jpg",
+    "imageAlt": "Schema des apports genetiques neandertaliens et denisoviens chez Homo sapiens",
+    "imageCredit": "Guilhem B. / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Human_and_Neanderthal_and_Denisovan_interbreeding._2026.jpg",
+    "details": [
+      "Les premieres comparaisons genomiques ont montre qu'une partie de l'ascendance de nombreuses populations actuelles vient de contacts anciens avec des groupes humains disparus.",
+      "L'apport neandertalien est observe chez beaucoup de populations hors d'Afrique, tandis que l'apport denisovien est particulierement marque dans certaines populations d'Oceanie et d'Asie.",
+      "Ces fragments ne sont pas seulement des marqueurs historiques. Certains variants ont influence des traits biologiques actuels, notamment la reponse immunitaire, le metabolisme et l'adaptation a certains environnements.",
+      "Un exemple celebre concerne le gene EPAS1, associe a l'adaptation a l'altitude chez des populations tibetaines et relie a une ascendance denisovienne."
+    ],
+    "impact": "Cette decouverte a remplace l'image d'une evolution humaine en branches isolees par un modele reticule, fait de migrations, de rencontres et de contributions genetiques durables.",
+    "sources": [
+      {
+        "label": "Green et al.",
+        "year": 2010,
+        "source": "A Draft Sequence of the Neandertal Genome, Science."
+      },
+      {
+        "label": "Huerta-Sanchez et al.",
+        "year": 2014,
+        "source": "Altitude adaptation in Tibetans caused by introgression of Denisovan-like DNA, Nature."
+      },
+      {
+        "label": "Dannemann et al.",
+        "year": 2016,
+        "source": "Introgression of Neandertal- and Denisovan-like haplotypes contributes to adaptive variation in human Toll-like receptors, American Journal of Human Genetics."
+      }
+    ]
+  },
+  {
+    "id": "animal-domestication-adna",
+    "title": "Domestication animale suivie par ADN ancien",
+    "year": 2021,
+    "category": "Domestication",
+    "summary": "Les genomes anciens retracent les domestications et les remplacements de lignees chez les chevaux, chiens et bovins.",
+    "image": "/images/discoveries/ancient-horse-genomics.png",
+    "imageAlt": "Carte de restes anciens de chevaux et de leurs affinites genomiques",
+    "imageCredit": "Librado et al. / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Ancient_horse_remains_and_their_genomic_affinities.webp",
+    "details": [
+      "L'ADN ancien permet de comparer directement les animaux archeologiques aux races et populations actuelles, au lieu de reconstruire leur histoire seulement a partir de formes osseuses ou de donnees modernes.",
+      "Chez le cheval, les genomes anciens ont montre que la lignee dominante des chevaux domestiques s'est fortement diffusee depuis les steppes ouest-eurasiennes au cours de l'age du Bronze.",
+      "Chez le chien, les genomes anciens revelent une diversite deja importante avant le Neolithique, indiquant une relation ancienne et complexe avec les societes humaines.",
+      "Chez les bovins, l'ADN ancien aide a suivre les croisements, les migrations pastorales et l'apport d'aurochs locaux dans certaines regions."
+    ],
+    "impact": "La domestication devient lisible comme une histoire dynamique: selection, mobilite humaine, remplacement de lignees et adaptations locales peuvent etre suivis dans le temps.",
+    "sources": [
+      {
+        "label": "Librado et al.",
+        "year": 2021,
+        "source": "The origins and spread of domestic horses from the Western Eurasian steppes, Nature."
+      },
+      {
+        "label": "Perri et al.",
+        "year": 2021,
+        "source": "Dog domestication and the dual dispersal of people and dogs into the Americas, Science."
+      },
+      {
+        "label": "Verdugo et al.",
+        "year": 2019,
+        "source": "Ancient cattle genomics, origins, and rapid turnover in the Fertile Crescent, Science."
+      }
+    ]
+  },
+  {
+    "id": "ancient-pathogens",
+    "title": "Pathogenes anciens et evolution des maladies",
+    "year": 2011,
+    "category": "Paleopathologie",
+    "summary": "L'ADN ancien permet de reconstruire l'histoire evolutive de pathogenes comme la peste et la lepre.",
+    "image": "/images/discoveries/yersinia-pestis.jpg",
+    "imageAlt": "Micrographie electronique de Yersinia pestis",
+    "imageCredit": "Rocky Mountain Laboratories, NIAID, NIH / Wikimedia Commons",
+    "imageSource": "https://commons.wikimedia.org/wiki/File:Yersinia_pestis.jpg",
+    "details": [
+      "Les dents et les os peuvent conserver des traces d'ADN microbien. Ces fragments permettent d'identifier les agents infectieux presents chez des individus morts il y a des siecles ou des millenaires.",
+      "Pour la peste, le sequencage de Yersinia pestis a confirme le role de la bacterie dans de grandes epidemies historiques et a permis de suivre l'acquisition de traits de virulence.",
+      "Pour la lepre, les genomes anciens de Mycobacterium leprae montrent une diversite ancienne et une evolution lente, utile pour replacer la maladie dans les circulations humaines.",
+      "Ces recherches relient archeologie, histoire et epidemiologie: elles montrent comment les pathogenes evoluent avec les densites de population, les mobilites et les environnements."
+    ],
+    "impact": "La paleogenetique des pathogenes transforme les epidemies anciennes en archives evolutives et aide a comprendre l'emergence, la diffusion et la persistance des maladies infectieuses.",
+    "sources": [
+      {
+        "label": "Bos et al.",
+        "year": 2011,
+        "source": "A draft genome of Yersinia pestis from victims of the Black Death, Nature."
+      },
+      {
+        "label": "Schuenemann et al.",
+        "year": 2013,
+        "source": "Genome-wide comparison of medieval and modern Mycobacterium leprae, Science."
+      },
+      {
+        "label": "Spyrou et al.",
+        "year": 2018,
+        "source": "Analysis of 3800-year-old Yersinia pestis genomes suggests Bronze Age origin for bubonic plague, Nature Communications."
       }
     ]
   }

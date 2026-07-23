@@ -211,6 +211,8 @@ function AncientDnaPrimer() {
         </div>
       </div>
 
+      <AncientModernStrandComparison />
+
       <section data-demo-id="dna-workflow" className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
         <div className="flex items-center gap-2">
           <FlaskConical className="h-5 w-5 text-lagoon" aria-hidden="true" />
@@ -277,6 +279,174 @@ function AncientDnaPrimer() {
         </article>
       </section>
     </section>
+  );
+}
+
+function AncientModernStrandComparison() {
+  const modernBases = ['A', 'C', 'G', 'T', 'C', 'C', 'A', 'G', 'T', 'A', 'C', 'G', 'G', 'T', 'C', 'A'];
+  const ancientBases = [
+    { base: 'T', original: 'C', damage: 'C>T' },
+    { base: 'A' },
+    { base: 'G' },
+    { base: 'T' },
+    { base: 'C' },
+    { base: 'A' },
+    { base: 'G' },
+    { base: 'T' },
+    { base: 'A' },
+    { base: 'G', original: 'C', damage: 'G>A' }
+  ];
+
+  return (
+    <section data-demo-id="dna-damage-compare" className="overflow-hidden rounded-lg border border-black/10 bg-paper shadow-soft">
+      <div className="grid gap-5 border-b border-black/10 p-5 lg:grid-cols-[0.9fr_1.1fr]">
+        <div>
+          <div className="flex items-center gap-2">
+            <Dna className="h-5 w-5 text-lagoon" aria-hidden="true" />
+            <h2 className="text-xl font-bold">Brin d'ADN ancien vs moderne</h2>
+          </div>
+          <p className="mt-3 leading-7 text-ink/75">
+            L'ADN moderne conserve des brins longs et peu marques. L'ADN ancien est fragmente; ses extremites portent
+            souvent des substitutions caracteristiques, surtout des cytosines desaminees lues comme des thymines.
+          </p>
+        </div>
+        <div className="grid gap-3 sm:grid-cols-3">
+          <DamageMetric label="Longueur" modern="Longue" ancient="Courte" />
+          <DamageMetric label="Dommages" modern="Rares" ancient="Enrichis aux bouts" />
+          <DamageMetric label="Signal attendu" modern="Bases intactes" ancient="C>T / G>A" />
+        </div>
+      </div>
+
+      <div className="grid gap-5 p-5 xl:grid-cols-[1.2fr_0.8fr]">
+        <div className="overflow-hidden rounded-lg border border-black/10 bg-white">
+          <svg viewBox="0 0 820 420" role="img" aria-label="Comparaison entre ADN moderne intact et ADN ancien endommage" className="h-auto w-full">
+            <rect width="820" height="420" fill="#ffffff" />
+
+            <text x="48" y="42" fill="#24312f" fontSize="20" fontWeight="800">
+              ADN moderne intact
+            </text>
+            <text x="48" y="74" fill="#48635b" fontSize="14" fontWeight="600">
+              Brin long, peu de cassures, bases lues comme attendues
+            </text>
+            <line x1="72" y1="140" x2="748" y2="140" stroke="#0f6f73" strokeWidth="8" strokeLinecap="round" />
+            <line x1="72" y1="178" x2="748" y2="178" stroke="#c3542f" strokeWidth="8" strokeLinecap="round" />
+            <text x="48" y="146" fill="#24312f" fontSize="14" fontWeight="800">
+              5'
+            </text>
+            <text x="770" y="146" fill="#24312f" fontSize="14" fontWeight="800">
+              3'
+            </text>
+            <text x="48" y="184" fill="#24312f" fontSize="14" fontWeight="800">
+              3'
+            </text>
+            <text x="770" y="184" fill="#24312f" fontSize="14" fontWeight="800">
+              5'
+            </text>
+            {modernBases.map((base, index) => {
+              const x = 94 + index * 40;
+              return (
+                <g key={`${base}-${index}`}>
+                  <line x1={x} y1="146" x2={x} y2="172" stroke="#24312f" strokeWidth="2" opacity="0.45" />
+                  <circle cx={x} cy="112" r="15" fill="#e8f1ef" stroke="#0f6f73" strokeWidth="2" />
+                  <text x={x} y="117" textAnchor="middle" fill="#0f6f73" fontSize="14" fontWeight="800">
+                    {base}
+                  </text>
+                </g>
+              );
+            })}
+
+            <text x="48" y="246" fill="#24312f" fontSize="20" fontWeight="800">
+              ADN ancien authentique
+            </text>
+            <text x="48" y="278" fill="#48635b" fontSize="14" fontWeight="600">
+              Fragment court, cassures et dommages concentres aux extremites
+            </text>
+            <path d="M110 340 H314 M348 340 H576 M614 340 H710" stroke="#0f6f73" strokeWidth="8" strokeLinecap="round" />
+            <path d="M110 374 H238 M270 374 H514 M548 374 H710" stroke="#c3542f" strokeWidth="8" strokeLinecap="round" />
+            <text x="82" y="345" fill="#24312f" fontSize="14" fontWeight="800">
+              5'
+            </text>
+            <text x="724" y="345" fill="#24312f" fontSize="14" fontWeight="800">
+              3'
+            </text>
+            {ancientBases.map((item, index) => {
+              const x = 130 + index * 62;
+              const isDamaged = Boolean(item.damage);
+              return (
+                <g key={`${item.base}-${index}`}>
+                  <line x1={x} y1="346" x2={x} y2="368" stroke="#24312f" strokeWidth="2" opacity="0.4" />
+                  <circle cx={x} cy="312" r="17" fill={isDamaged ? '#f7d8c9' : '#e8f1ef'} stroke={isDamaged ? '#c3542f' : '#0f6f73'} strokeWidth="2" />
+                  <text x={x} y="318" textAnchor="middle" fill={isDamaged ? '#8f331c' : '#0f6f73'} fontSize="15" fontWeight="900">
+                    {item.base}
+                  </text>
+                  {isDamaged ? (
+                    <>
+                      <text x={x} y="288" textAnchor="middle" fill="#8f331c" fontSize="12" fontWeight="800">
+                        {item.original}
+                      </text>
+                      <path d={`M${x - 10} 292 L${x + 10} 292`} stroke="#8f331c" strokeWidth="2" strokeLinecap="round" />
+                    </>
+                  ) : null}
+                </g>
+              );
+            })}
+            <g fill="#7b4d2a" opacity="0.9">
+              <rect x="315" y="334" width="22" height="12" rx="4" />
+              <rect x="580" y="334" width="28" height="12" rx="4" />
+              <rect x="242" y="368" width="20" height="12" rx="4" />
+              <rect x="520" y="368" width="22" height="12" rx="4" />
+            </g>
+            <g>
+              <path d="M146 300 C126 272 114 258 96 250" fill="none" stroke="#c3542f" strokeWidth="2" strokeDasharray="5 5" />
+              <path d="M688 300 C710 270 728 256 748 248" fill="none" stroke="#c3542f" strokeWidth="2" strokeDasharray="5 5" />
+              <text x="546" y="250" fill="#8f331c" fontSize="13" fontWeight="800">
+                substitutions terminales
+              </text>
+            </g>
+          </svg>
+        </div>
+
+        <div className="grid content-start gap-3">
+          <DamageExplanation
+            title="Desamination"
+            text="Une cytosine endommagee peut etre lue comme une thymine. Ce motif C>T est typique pres des extremites 5' des molecules anciennes."
+          />
+          <DamageExplanation
+            title="Signal complementaire"
+            text="Sur le brin oppose ou apres alignement, le meme phenomene apparait souvent comme un exces de G>A pres de l'autre extremite."
+          />
+          <DamageExplanation
+            title="Authentification"
+            text="Les bioinformaticiens utilisent ces profils, avec la longueur des fragments et la contamination, pour distinguer un vrai signal ancien d'un ADN moderne."
+          />
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DamageMetric({ label, modern, ancient }: { label: string; modern: string; ancient: string }) {
+  return (
+    <div className="rounded-lg border border-black/10 bg-white/70 p-4">
+      <p className="text-xs font-bold uppercase text-ink/50">{label}</p>
+      <div className="mt-3 grid gap-2 text-sm">
+        <p>
+          <span className="font-bold text-lagoon">Moderne:</span> <span className="text-ink/70">{modern}</span>
+        </p>
+        <p>
+          <span className="font-bold text-ochre">Ancien:</span> <span className="text-ink/70">{ancient}</span>
+        </p>
+      </div>
+    </div>
+  );
+}
+
+function DamageExplanation({ title, text }: { title: string; text: string }) {
+  return (
+    <article className="rounded-lg border border-black/10 bg-white/70 p-4">
+      <h3 className="font-bold text-ink">{title}</h3>
+      <p className="mt-2 text-sm leading-6 text-ink/70">{text}</p>
+    </article>
   );
 }
 

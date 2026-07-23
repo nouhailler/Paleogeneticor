@@ -4,7 +4,7 @@
 
 Derniere mise a jour : 23 juillet 2026.
 
-Paleogeneticor dispose maintenant d'une base PWA offline-first avec navigation thematique, recherche globale, fiches especes detaillees, page ADN ancien enrichie, visualisations scientifiques, favoris/historique locaux et mode demo guide.
+Paleogeneticor dispose maintenant d'une base PWA offline-first avec navigation thematique, recherche globale, fiches especes detaillees, decouvertes illustrees, page ADN ancien enrichie, visualisations scientifiques, favoris/historique locaux et mode demo guide.
 
 ## Termine Recemment
 
@@ -16,9 +16,14 @@ Paleogeneticor dispose maintenant d'une base PWA offline-first avec navigation t
 - Curseur virtuel, surbrillance, narration et barre de controle.
 - Seed demo isole en memoire, sans ecriture IndexedDB.
 - Sortie propre par bouton quitter ou `Echap`.
+- Module `Brin d'ADN ancien vs moderne` montrant les dommages caracteristiques de l'aDNA.
+- Cartes de decouvertes illustrees avec images Wikimedia Commons locales, credits et liens source.
+- Nouvelles decouvertes sur hybridations archaiques, domestication animale par ADN ancien et pathogenes anciens.
 
 ## Court Terme
 
+- Ajouter des tests de rendu pour `DiscoveriesPage` et `DiscoveryDetailPage`.
+- Ajouter un controle de presence des fichiers images references dans les JSON.
 - Ajouter des tests unitaires pour `DemoScenarioEngine`.
 - Ajouter des tests du store en mode demo pour garantir l'absence d'ecriture IndexedDB.
 - Ajouter un second scenario demo centre sur carte, migrations et chronologie.
@@ -31,7 +36,8 @@ Paleogeneticor dispose maintenant d'une base PWA offline-first avec navigation t
 - Ajouter une chronologie interactive complete.
 - Developper les pages chercheurs et laboratoires.
 - Etendre les donnees bibliographiques et les credits medias.
-- Ajouter des tests de rendu pour les routes principales.
+- Enrichir les decouvertes avec des liens entre especes, techniques, fossiles et termes du glossaire.
+- Ajouter des tests de rendu pour les routes principales restantes.
 - Ajouter un audit Lighthouse PWA au workflow de validation.
 
 ## Long Terme

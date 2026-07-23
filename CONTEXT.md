@@ -52,11 +52,11 @@ La base actuelle contient :
 - recherche globale Fuse.js ;
 - fiches especes et fiches detail enrichies par sections ;
 - medias locaux dedies aux especes dans `public/images/species/details` ;
-- page ADN ancien avec dossiers de methodes cliquables et graphique Recharts ;
+- page ADN ancien avec dossiers de methodes cliquables, graphique Recharts et visualisation des dommages de l'ADN ancien ;
 - carte Leaflet offline-friendly ;
 - arbre evolutif ReactFlow ;
 - glossaire filtrable ;
-- pages fossiles et decouvertes ;
+- pages fossiles et decouvertes, avec fiches de decouvertes illustrees ;
 - favoris et historique en IndexedDB ;
 - mode demo guide avec curseur virtuel, surbrillance, narration et controles ;
 - manifest PWA, service worker et configuration Netlify.
@@ -69,6 +69,11 @@ Le projet est pousse sur `main` vers `https://github.com/nouhailler/Paleogenetic
 
 Ce qui vient d'etre termine :
 
+- ajout du module `Brin d'ADN ancien vs moderne` sur la page `ADN ancien`, avec comparaison visuelle entre ADN intact et fragments anciens endommages ;
+- representation des signatures d'authentification de l'aDNA : fragmentation, cassures, desamination des cytosines et substitutions terminales `C>T` / `G>A` ;
+- enrichissement de l'ecran `Decouvertes majeures` avec images Wikimedia Commons locales, credits et liens source ;
+- ajout des champs `image`, `imageAlt`, `imageCredit` et `imageSource` au type `Discovery` ;
+- ajout de trois decouvertes : hybridations Homo sapiens / Neandertaliens / Denisoviens, domestication animale tracee par ADN ancien, pathogenes anciens et evolution des maladies ;
 - ajout d'un mode demo lanceable par `?demo=onboarding` et par un bouton dans le header/menu ;
 - ajout du moteur `src/demo/engine.ts`, capable d'executer des etapes `navigate`, `click`, `type`, `wait`, `highlight` et `narrate` ;
 - ajout de scenarios declaratifs dans `src/demo/scenarios`, sans logique applicative ;
@@ -111,6 +116,14 @@ Pour ajouter un dossier ADN :
 3. Verifier que l'image est locale ou deja disponible dans `public/images`.
 4. Lancer `npm run build`, `npm run lint` et `npm run test`.
 
+Pour ajouter une decouverte :
+
+1. Ajouter une entree dans `src/data/discoveries/discoveries.json`.
+2. Renseigner `image`, `imageAlt`, `imageCredit` et `imageSource`.
+3. Placer l'image locale dans `public/images/discoveries` pour conserver l'experience offline-first.
+4. Renseigner `details`, `impact` et `sources` avec des references scientifiques lisibles.
+5. Verifier la carte dans `DiscoveriesPage` et la fiche dans `DiscoveryDetailPage`.
+
 Pour ajouter un scenario demo :
 
 1. Creer un fichier declaratif dans `src/demo/scenarios`.
@@ -127,7 +140,7 @@ Pour ajouter un scenario demo :
 - Ajouter une vraie chronologie interactive complete.
 - Ajouter des pages chercheurs et laboratoires dediees.
 - Etendre les donnees bibliographiques.
-- Ajouter des credits/sources plus visibles pour les medias Wikimedia Commons et les jalons ADN.
+- Harmoniser les credits/sources Wikimedia Commons sur les autres ecrans encore moins detailles.
 - Ajouter des tests automatises pour le moteur demo et le store en mode demo.
 - Ajouter des tests de rendu pour les routes principales.
 - Ajouter un audit Lighthouse PWA dans le workflow de validation.
@@ -140,5 +153,6 @@ Pour ajouter un scenario demo :
 - Les captures README sont dans `public/images/screenshots`.
 - Les icones d'installation sont dans `public/icons`.
 - Les visuels d'especes ajoutes pendant l'enrichissement sont dans `public/images/species/details`.
+- Les visuels de decouvertes sont dans `public/images/discoveries`.
 - Le scenario demo actuel est `onboarding` et couvre accueil, especes, fiche Neandertal et ADN ancien.
 - Si `localhost:5173` affiche une ancienne app, vider le service worker PWA et les donnees du site dans les DevTools.

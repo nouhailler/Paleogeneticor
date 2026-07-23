@@ -26,7 +26,7 @@ Paleogeneticor est une application educative concue pour le grand public, les et
 
 ## Etat au 23 juillet 2026
 
-La session s'arrete sur une base applicative compilee, documentee et enrichie avec un mode demo rejouant automatiquement un parcours utilisateur.
+La session s'arrete sur une base applicative compilee, documentee et enrichie avec un mode demo, une visualisation des dommages de l'ADN ancien et des decouvertes illustrees.
 
 Etat valide :
 
@@ -36,6 +36,9 @@ Etat valide :
 - captures d'ecran generees dans `public/images/screenshots` ;
 - fiches especes detaillees avec sections pedagogiques, graphiques, fenetres de detail et visuels Wikimedia Commons locaux ;
 - page ADN ancien enrichie avec 13 dossiers cliquables, de la PCR au criblage haut debit des sediments ;
+- module visuel `Brin d'ADN ancien vs moderne` montrant fragmentation, cassures et substitutions terminales `C>T` / `G>A` ;
+- ecran `Decouvertes majeures` illustre par des images Wikimedia Commons locales avec credits et liens source ;
+- nouvelles decouvertes sur hybridations archaiques, domestication animale par ADN ancien et pathogenes anciens ;
 - mode demo activable par `?demo=onboarding` ou par le bouton dedie dans le menu/header ;
 - moteur de demo TypeScript dans `src/demo/engine.ts`, scenarios declaratifs dans `src/demo/scenarios` ;
 - curseur virtuel, surbrillance, narration, controles play/pause/etape suivante/vitesse/quitter et sortie par `Echap` ;
@@ -63,6 +66,8 @@ npm run build
 - Fiches d'especes humaines avec periode, repartition, ADN, culture, outils, hybridations et dossiers explicatifs ouvrables.
 - Illustrations locales pour les especes, dont visuels Wikimedia Commons dedies a Neandertal, Denisoviens et Homo sapiens.
 - Page ADN ancien composee de dossiers cliquables : PCR, extraction, salles blanches, authentification, sequencage, capture, bioinformatique, introgression, bibliotheques simple brin, os petreux, ADN sedimentaire et criblage recent.
+- Visualisation comparative entre ADN moderne intact et ADN ancien endommage, avec desamination terminale des cytosines.
+- Decouvertes majeures illustrees : genomes d'hominines, hybridation, domestication animale, pathogenes anciens, proteomique et reconnaissance Nobel.
 - Carte interactive Leaflet compatible offline-first, sans appel obligatoire a des tuiles externes.
 - Arbre evolutif interactif avec ReactFlow.
 - Graphiques de melanges genetiques avec Recharts.
@@ -125,6 +130,7 @@ public/
   icons/            icones PWA et application
   images/
     screenshots/    captures d'ecran documentaires
+    discoveries/     images Wikimedia Commons locales pour les decouvertes
     species/
       details/       visuels Wikimedia Commons locaux pour les fiches especes
 ```
@@ -134,6 +140,8 @@ public/
 Toutes les donnees applicatives sont locales et stockees en JSON dans `src/data`. Le projet ne depend pas d'un backend. Chaque domaine peut etre enrichi progressivement avec de nouveaux fichiers ou collections JSON.
 
 Les donnees d'especes utilisent maintenant des sections detaillees dans `src/data/species`, avec medias, points pedagogiques, sujets ouvrables et indicateurs visuels. Les dossiers de methodes paleogenetiques sont dans `src/data/techniques/techniques.json`.
+
+Les decouvertes sont stockees dans `src/data/discoveries/discoveries.json`. Chaque entree contient une image locale, un texte alternatif, un credit et une URL source Wikimedia. Les images associees sont placees dans `public/images/discoveries`.
 
 ## Mode demo
 
@@ -170,5 +178,6 @@ Le manifest est genere par `vite-plugin-pwa` depuis `vite.config.ts`. Le service
 2. Lancer `npm run dev` puis verifier l'accueil mobile et desktop.
 3. Si le navigateur affiche une ancienne PWA sur `localhost:5173`, vider le service worker et les donnees du site, ou lancer Vite sur un autre port.
 4. Tester le mode demo avec `/?demo=onboarding` et verifier que la sortie par `Echap` restaure l'URL et le store local.
-5. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
-6. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.
+5. Verifier l'ecran `Decouvertes majeures` et les fiches detail sur mobile et desktop.
+6. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
+7. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.

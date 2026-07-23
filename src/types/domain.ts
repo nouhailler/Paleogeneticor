@@ -112,6 +112,10 @@ export interface Discovery {
   year: number;
   category: string;
   summary: string;
+  image: string;
+  imageAlt: string;
+  imageCredit: string;
+  imageSource: string;
   details: string[];
   impact: string;
   sources: BibliographyEntry[];
