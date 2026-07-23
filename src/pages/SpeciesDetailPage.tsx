@@ -95,7 +95,7 @@ export function SpeciesDetailPage() {
         </button>
       </div>
 
-      <section className="overflow-hidden rounded-lg border border-black/10 bg-ink text-paper shadow-soft">
+      <section data-demo-id="species-detail-summary" className="overflow-hidden rounded-lg border border-black/10 bg-ink text-paper shadow-soft">
         <div className="grid lg:grid-cols-[0.9fr_1.1fr]">
           <img
             src={item.image}
@@ -206,7 +206,7 @@ function IdentityPanel({ species }: { species: Species }) {
   ];
 
   return (
-    <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
+    <section data-demo-id="species-detail-identity" className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
       <div className="flex items-center gap-2">
         <Info className="h-5 w-5 text-lagoon" />
         <h2 className="text-2xl font-bold">Fiche d'identite scientifique</h2>

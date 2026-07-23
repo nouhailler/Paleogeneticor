@@ -31,9 +31,9 @@ export function SpeciesPage() {
           <p className="mt-1 text-sm font-semibold text-ink/70">contemporains recents de Sapiens ou survivances tardives</p>
         </div>
       </section>
-      <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
+      <div data-demo-id="species-grid" className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
         {species.map((item) => (
-          <Link key={item.id} to={`/species/${item.id}`}>
+          <Link key={item.id} to={`/species/${item.id}`} data-demo-id={`species-card-${item.id}`}>
             <Card className="h-full overflow-hidden p-0 transition hover:-translate-y-1 hover:border-lagoon/40">
               <img
                 src={item.image}

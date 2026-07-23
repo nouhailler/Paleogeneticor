@@ -24,18 +24,22 @@ Paleogeneticor est une application educative concue pour le grand public, les et
   <img src="public/images/screenshots/home-desktop.png" alt="Accueil Paleogeneticor desktop" width="900" />
 </p>
 
-## Etat au 22 juillet 2026
+## Etat au 23 juillet 2026
 
-La session s'arrete sur une base applicative compilee, documentee et enrichie sur les ecrans `Especes humaines` et `ADN ancien`.
+La session s'arrete sur une base applicative compilee, documentee et enrichie avec un mode demo rejouant automatiquement un parcours utilisateur.
 
 Etat valide :
 
 - application React/Vite fonctionnelle en local ;
 - PWA configuree avec icones mobile et service worker ;
-- README, CONTEXT et CHANGELOG presents ;
+- README, CONTEXT, ROADMAP et CHANGELOG presents ;
 - captures d'ecran generees dans `public/images/screenshots` ;
 - fiches especes detaillees avec sections pedagogiques, graphiques, fenetres de detail et visuels Wikimedia Commons locaux ;
 - page ADN ancien enrichie avec 13 dossiers cliquables, de la PCR au criblage haut debit des sediments ;
+- mode demo activable par `?demo=onboarding` ou par le bouton dedie dans le menu/header ;
+- moteur de demo TypeScript dans `src/demo/engine.ts`, scenarios declaratifs dans `src/demo/scenarios` ;
+- curseur virtuel, surbrillance, narration, controles play/pause/etape suivante/vitesse/quitter et sortie par `Echap` ;
+- seed de demo isole en memoire, sans ecriture IndexedDB pendant la demonstration ;
 - accueil mobile corrige, dont la frise rapide responsive ;
 - depot distant configure sur `https://github.com/nouhailler/Paleogeneticor`.
 
@@ -63,6 +67,7 @@ npm run build
 - Arbre evolutif interactif avec ReactFlow.
 - Graphiques de melanges genetiques avec Recharts.
 - Favoris et historique conserves localement avec Dexie / IndexedDB.
+- Mode demo guide avec scenario declaratif, activation par URL ou bouton, curseur virtuel et donnees isolees.
 - Chargement progressif des pages avec React Router et lazy loading.
 - PWA installable sur Android avec manifest, icones et service worker Workbox.
 
@@ -111,6 +116,7 @@ src/
   components/       composants reutilisables
   pages/            ecrans routes charges en lazy loading
   layouts/          structure globale de l'application
+  demo/             moteur et scenarios declaratifs du mode demo
   services/         contenu, recherche, IndexedDB
   store/            etat Zustand
   types/            modeles TypeScript
@@ -129,6 +135,18 @@ Toutes les donnees applicatives sont locales et stockees en JSON dans `src/data`
 
 Les donnees d'especes utilisent maintenant des sections detaillees dans `src/data/species`, avec medias, points pedagogiques, sujets ouvrables et indicateurs visuels. Les dossiers de methodes paleogenetiques sont dans `src/data/techniques/techniques.json`.
 
+## Mode demo
+
+Le mode demo se lance avec :
+
+```text
+/?demo=onboarding
+```
+
+Il peut aussi etre lance depuis le bouton dedie dans le header/menu. Le moteur execute des etapes `navigate`, `click`, `type`, `wait`, `highlight` et `narrate`, en ciblant exclusivement les elements marques par `data-demo-id`.
+
+Les scenarios restent declaratifs dans `src/demo/scenarios`. Le store local bascule temporairement sur un seed en memoire pendant la demonstration, puis restaure l'etat IndexedDB normal a la sortie.
+
 ## PWA Android
 
 Les assets d'installation sont disponibles dans `public/icons` :
@@ -142,6 +160,7 @@ Le manifest est genere par `vite-plugin-pwa` depuis `vite.config.ts`. Le service
 ## Documentation projet
 
 - [CONTEXT.md](CONTEXT.md) : vision produit, principes techniques et conventions d'evolution.
+- [ROADMAP.md](ROADMAP.md) : priorites de livraison et prochaines etapes.
 - [CHANGELOG.md](CHANGELOG.md) : historique des versions.
 - [PROMPT.md](PROMPT.md) : cahier des charges initial.
 
@@ -150,5 +169,6 @@ Le manifest est genere par `vite-plugin-pwa` depuis `vite.config.ts`. Le service
 1. Lancer `npm install` si les dependances ne sont pas presentes.
 2. Lancer `npm run dev` puis verifier l'accueil mobile et desktop.
 3. Si le navigateur affiche une ancienne PWA sur `localhost:5173`, vider le service worker et les donnees du site, ou lancer Vite sur un autre port.
-4. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
-5. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.
+4. Tester le mode demo avec `/?demo=onboarding` et verifier que la sortie par `Echap` restaure l'URL et le store local.
+5. Continuer par l'enrichissement des donnees JSON, surtout glossaire, timeline, chercheurs et laboratoires.
+6. Ajouter des tests de rendu sur les routes principales avant d'elargir les fonctionnalites.

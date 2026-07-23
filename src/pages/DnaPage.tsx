@@ -182,7 +182,7 @@ export function DnaPage() {
 
 function AncientDnaPrimer() {
   return (
-    <section className="mb-6 grid gap-5">
+    <section data-demo-id="dna-primer" className="mb-6 grid gap-5">
       <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
         <article className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
           <div className="flex items-center gap-2">
@@ -211,7 +211,7 @@ function AncientDnaPrimer() {
         </div>
       </div>
 
-      <section className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
+      <section data-demo-id="dna-workflow" className="rounded-lg border border-black/10 bg-paper p-5 shadow-soft">
         <div className="flex items-center gap-2">
           <FlaskConical className="h-5 w-5 text-lagoon" aria-hidden="true" />
           <h2 className="text-xl font-bold">Du fragment biologique a la donnee numerique</h2>

@@ -7,7 +7,10 @@ import { WorldMap } from '../components/WorldMap';
 export function HomePage() {
   return (
     <div className="grid min-w-0 gap-6">
-      <section className="grid min-h-[calc(100vh-9rem)] w-full min-w-0 max-w-[calc(100vw-2rem)] content-center gap-8 overflow-hidden rounded-lg bg-ink px-4 py-8 text-white sm:max-w-full sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:py-12">
+      <section
+        data-demo-id="home-hero"
+        className="grid min-h-[calc(100vh-9rem)] w-full min-w-0 max-w-[calc(100vw-2rem)] content-center gap-8 overflow-hidden rounded-lg bg-ink px-4 py-8 text-white sm:max-w-full sm:px-8 lg:grid-cols-[1.1fr_0.9fr] lg:py-12"
+      >
         <motion.div
           className="min-w-0 max-w-full"
           initial={{ opacity: 1, y: 0 }}
@@ -23,7 +26,7 @@ export function HomePage() {
             comprehension de l'evolution humaine.
           </p>
           <div className="mt-7 grid gap-3 sm:flex sm:flex-wrap">
-            <Link className="rounded-md bg-clay px-4 py-3 text-sm font-semibold text-ink" to="/species">
+            <Link data-demo-id="home-species-link" className="rounded-md bg-clay px-4 py-3 text-sm font-semibold text-ink" to="/species">
               Explorer les especes
             </Link>
             <Link className="rounded-md border border-white/25 px-4 py-3 text-sm font-semibold text-white" to="/map">

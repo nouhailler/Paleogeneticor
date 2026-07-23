@@ -34,6 +34,7 @@ src/
   components/       UI partagee et visualisations
   pages/            routes principales
   layouts/          shell applicatif
+  demo/             moteur de demonstration et scenarios declaratifs
   services/         acces donnees, recherche, IndexedDB
   store/            etat applicatif Zustand
   types/            contrats TypeScript
@@ -57,16 +58,23 @@ La base actuelle contient :
 - glossaire filtrable ;
 - pages fossiles et decouvertes ;
 - favoris et historique en IndexedDB ;
+- mode demo guide avec curseur virtuel, surbrillance, narration et controles ;
 - manifest PWA, service worker et configuration Netlify.
 
 ## Point d'Arret
 
-Derniere mise a jour de contexte : 22 juillet 2026.
+Derniere mise a jour de contexte : 23 juillet 2026.
 
 Le projet est pousse sur `main` vers `https://github.com/nouhailler/Paleogeneticor`.
 
 Ce qui vient d'etre termine :
 
+- ajout d'un mode demo lanceable par `?demo=onboarding` et par un bouton dans le header/menu ;
+- ajout du moteur `src/demo/engine.ts`, capable d'executer des etapes `navigate`, `click`, `type`, `wait`, `highlight` et `narrate` ;
+- ajout de scenarios declaratifs dans `src/demo/scenarios`, sans logique applicative ;
+- ajout du lecteur React avec curseur virtuel, surbrillance, narration, controles play/pause/etape suivante/vitesse/quitter et sortie par `Echap` ;
+- ajout d'un seed de demo isole dans le store Zustand, sans ecriture IndexedDB pendant la demonstration ;
+- ajout des attributs `data-demo-id` necessaires sur accueil, navigation, especes, fiche Neandertal et page ADN ;
 - enrichissement des fiches especes avec sections detaillees `ADN et parentes`, `Culture`, `Reperes` et `Outils` ;
 - ajout de fenetres de detail ouvrables depuis chaque fiche espece ;
 - ajout de medias Wikimedia Commons locaux pour differencier Neandertal, Denisoviens et Homo sapiens ;
@@ -103,6 +111,16 @@ Pour ajouter un dossier ADN :
 3. Verifier que l'image est locale ou deja disponible dans `public/images`.
 4. Lancer `npm run build`, `npm run lint` et `npm run test`.
 
+Pour ajouter un scenario demo :
+
+1. Creer un fichier declaratif dans `src/demo/scenarios`.
+2. Declarer des etapes avec les types supportes par `src/demo/engine.ts`.
+3. Cibler les elements uniquement avec `data-demo-id`, jamais avec des classes CSS.
+4. Ajouter les `data-demo-id` manquants sur les composants concernes.
+5. Utiliser `seed` pour simuler favoris et historique sans toucher aux donnees reelles.
+6. Exporter le scenario depuis `src/demo/scenarios/index.ts`.
+7. Verifier le parcours avec `/?demo=<id-du-scenario>`.
+
 ## Priorites Suivantes
 
 - Enrichir le glossaire vers plusieurs centaines de termes.
@@ -110,6 +128,7 @@ Pour ajouter un dossier ADN :
 - Ajouter des pages chercheurs et laboratoires dediees.
 - Etendre les donnees bibliographiques.
 - Ajouter des credits/sources plus visibles pour les medias Wikimedia Commons et les jalons ADN.
+- Ajouter des tests automatises pour le moteur demo et le store en mode demo.
 - Ajouter des tests de rendu pour les routes principales.
 - Ajouter un audit Lighthouse PWA dans le workflow de validation.
 
@@ -121,4 +140,5 @@ Pour ajouter un dossier ADN :
 - Les captures README sont dans `public/images/screenshots`.
 - Les icones d'installation sont dans `public/icons`.
 - Les visuels d'especes ajoutes pendant l'enrichissement sont dans `public/images/species/details`.
+- Le scenario demo actuel est `onboarding` et couvre accueil, especes, fiche Neandertal et ADN ancien.
 - Si `localhost:5173` affiche une ancienne app, vider le service worker PWA et les donnees du site dans les DevTools.

@@ -1,6 +1,23 @@
-import { ArrowLeft, BookOpen, Bone, Box, CalendarDays, Dna, GitFork, Home, Landmark, Map, Menu, Search, Star, X } from 'lucide-react';
+import {
+  ArrowLeft,
+  BookOpen,
+  Bone,
+  Box,
+  CalendarDays,
+  Dna,
+  GitFork,
+  Home,
+  Landmark,
+  Map,
+  Menu,
+  PlayCircle,
+  Search,
+  Star,
+  X
+} from 'lucide-react';
 import { useEffect, useState } from 'react';
 import { Link, NavLink, Outlet, useLocation, useMatches, useNavigate } from 'react-router-dom';
+import { DemoPlayer, getDemoScenarioPath } from '../demo/DemoPlayer';
 import { useLibraryStore } from '../store/libraryStore';
 
 const navItems = [
@@ -82,6 +99,7 @@ export function AppLayout() {
               <NavLink
                 key={item.to}
                 to={item.to}
+                data-demo-id={`nav-${item.to === '/' ? 'home' : item.to.slice(1)}`}
                 onClick={() => setIsMenuOpen(false)}
                 className={({ isActive }) =>
                   `flex items-center gap-2 rounded-md px-3 py-2 text-sm font-medium ${
@@ -97,12 +115,26 @@ export function AppLayout() {
           <div className="flex items-center gap-2">
             <Link
               to="/library"
+              data-demo-id="nav-library"
               className="hidden h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon sm:grid"
               aria-label="Favoris et historique"
               onClick={() => setIsMenuOpen(false)}
             >
               <Star className="h-5 w-5" />
             </Link>
+            <button
+              type="button"
+              data-demo-id="settings-demo-button"
+              className="hidden h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon sm:grid"
+              aria-label="Lancer le mode demo"
+              title="Lancer le mode demo"
+              onClick={() => {
+                setIsMenuOpen(false);
+                void navigate(getDemoScenarioPath('onboarding'));
+              }}
+            >
+              <PlayCircle className="h-5 w-5" />
+            </button>
             <button
               type="button"
               className="grid h-10 w-10 place-items-center rounded-md border border-black/10 bg-white text-lagoon"
@@ -125,6 +157,7 @@ export function AppLayout() {
                 <NavLink
                   key={item.to}
                   to={item.to}
+                  data-demo-id={`menu-${item.to === '/' ? 'home' : item.to.slice(1)}`}
                   onClick={() => setIsMenuOpen(false)}
                   className={({ isActive }) =>
                     `flex min-h-14 items-center gap-3 rounded-md border px-3 py-2 text-sm font-semibold transition ${
@@ -140,6 +173,20 @@ export function AppLayout() {
                   <span>{item.label}</span>
                 </NavLink>
               ))}
+              <button
+                type="button"
+                data-demo-id="settings-demo-button"
+                className="flex min-h-14 items-center gap-3 rounded-md border border-black/10 bg-white px-3 py-2 text-left text-sm font-semibold text-ink/78 transition hover:border-lagoon/30 hover:bg-lagoon/10 hover:text-ink"
+                onClick={() => {
+                  setIsMenuOpen(false);
+                  void navigate(getDemoScenarioPath('onboarding'));
+                }}
+              >
+                <span className="grid h-9 w-9 shrink-0 place-items-center rounded-md bg-bone text-lagoon">
+                  <PlayCircle className="h-5 w-5" aria-hidden="true" />
+                </span>
+                <span>Mode demo</span>
+              </button>
             </nav>
           </div>
         ) : null}
@@ -156,6 +203,7 @@ export function AppLayout() {
             <NavLink
               key={item.to}
               to={item.to}
+              data-demo-id={`mobile-nav-${item.to === '/' ? 'home' : item.to.slice(1)}`}
               className={({ isActive }) =>
                 `grid min-h-14 place-items-center text-[11px] ${isActive ? 'text-lagoon' : 'text-ink/60'}`
               }
@@ -166,6 +214,7 @@ export function AppLayout() {
           ))}
         </div>
       </nav>
+      <DemoPlayer />
     </div>
   );
 }
